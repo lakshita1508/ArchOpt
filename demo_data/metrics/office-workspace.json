@@ -1,0 +1,41 @@
+{
+ "projectKey": "office-workspace",
+ "layouts": [
+  {
+   "id": "L1",
+   "totalCost": 164.8291,
+   "areaEfficiency": 93.46,
+   "adjacencySatisfaction": 100,
+   "circulationScore": 71.7965,
+   "accessibilityScore": 100,
+   "violations": 0
+  },
+  {
+   "id": "L2",
+   "totalCost": 173.4892,
+   "areaEfficiency": 91.88,
+   "adjacencySatisfaction": 100,
+   "circulationScore": 73.2401,
+   "accessibilityScore": 100,
+   "violations": 0
+  },
+  {
+   "id": "L3",
+   "totalCost": 185.2798,
+   "areaEfficiency": 95.7867,
+   "adjacencySatisfaction": 98.4848,
+   "circulationScore": 70.0062,
+   "accessibilityScore": 100,
+   "violations": 0
+  },
+  {
+   "id": "L4",
+   "totalCost": 220.5428,
+   "areaEfficiency": 94.8867,
+   "adjacencySatisfaction": 100,
+   "circulationScore": 60.1611,
+   "accessibilityScore": 100,
+   "violations": 0
+  }
+ ]
+}

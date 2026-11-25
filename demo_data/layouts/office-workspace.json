@@ -1,0 +1,3928 @@
+{
+ "projectKey": "office-workspace",
+ "generatedBy": "archopt_engine 1.0.0 (C++20)",
+ "algorithm": "simulated_annealing",
+ "seed": 42,
+ "candidatesEvaluated": 48328,
+ "feasibleFound": 4687,
+ "layouts": [
+  {
+   "rooms": [
+    {
+     "name": "Reception",
+     "type": "Reception",
+     "x": 12.5,
+     "y": 16,
+     "width": 6.6,
+     "height": 4,
+     "area": 26.4,
+     "requiredArea": 25,
+     "isFree": false,
+     "transit": true
+    },
+    {
+     "name": "Manager Cabin",
+     "type": "Office",
+     "x": 0,
+     "y": 16,
+     "width": 12.5,
+     "height": 4,
+     "area": 50,
+     "requiredArea": 16,
+     "isFree": false,
+     "transit": false
+    },
+    {
+     "name": "Meeting Room",
+     "type": "Meeting Room",
+     "x": 8.4,
+     "y": 0,
+     "width": 10.7,
+     "height": 5.3,
+     "area": 56.71,
+     "requiredArea": 24,
+     "isFree": false,
+     "transit": false
+    },
+    {
+     "name": "Open Workspace",
+     "type": "Open Area",
+     "x": 8.4,
+     "y": 5.3,
+     "width": 10.7,
+     "height": 10.7,
+     "area": 114.49,
+     "requiredArea": 120,
+     "isFree": false,
+     "transit": true
+    },
+    {
+     "name": "Conference Room",
+     "type": "Conference Room",
+     "x": 23.8,
+     "y": 11.3,
+     "width": 6.2,
+     "height": 8.7,
+     "area": 53.94,
+     "requiredArea": 40,
+     "isFree": false,
+     "transit": false
+    },
+    {
+     "name": "Pantry",
+     "type": "Custom Room",
+     "x": 0,
+     "y": 0,
+     "width": 8.4,
+     "height": 16,
+     "area": 134.4,
+     "requiredArea": 16,
+     "isFree": false,
+     "transit": false
+    },
+    {
+     "name": "Toilets",
+     "type": "Toilet",
+     "x": 19.1,
+     "y": 3.6,
+     "width": 10.9,
+     "height": 4,
+     "area": 43.6,
+     "requiredArea": 24,
+     "isFree": false,
+     "transit": false
+    },
+    {
+     "name": "Storage",
+     "type": "Storage",
+     "x": 23.8,
+     "y": 7.6,
+     "width": 6.2,
+     "height": 3.7,
+     "area": 22.94,
+     "requiredArea": 12,
+     "isFree": false,
+     "transit": false
+    },
+    {
+     "name": "Circulation",
+     "type": "Corridor",
+     "x": 19.1,
+     "y": 7.6,
+     "width": 4.7,
+     "height": 12.4,
+     "area": 58.28,
+     "requiredArea": 45,
+     "isFree": false,
+     "transit": true
+    },
+    {
+     "name": "Unallocated",
+     "type": "Open Space",
+     "x": 19.1,
+     "y": 0,
+     "width": 10.9,
+     "height": 3.6,
+     "area": 39.24,
+     "requiredArea": 117,
+     "isFree": true,
+     "transit": false
+    }
+   ],
+   "metrics": {
+    "totalCost": 164.8291,
+    "costBreakdown": {
+     "overlap": 0,
+     "boundary": 0,
+     "adjacency": 0,
+     "corridor": 0,
+     "circulation": 145.2091,
+     "unused": 19.62,
+     "hardConstraints": 0
+    },
+    "plotArea": 600,
+    "usableArea": 502.48,
+    "circulationArea": 58.28,
+    "unusedArea": 39.24,
+    "areaEfficiency": 93.46,
+    "adjacencySatisfaction": 100,
+    "circulationScore": 71.7965,
+    "accessibilityScore": 100,
+    "avgWalk": 14.1018,
+    "maxWalk": 20.1995,
+    "violations": 0,
+    "feasible": true
+   },
+   "validation": [
+    {
+     "id": "boundary",
+     "category": "hard",
+     "status": "passed",
+     "room": "Reception",
+     "message": "Inside the plot boundary."
+    },
+    {
+     "id": "boundary",
+     "category": "hard",
+     "status": "passed",
+     "room": "Manager Cabin",
+     "message": "Inside the plot boundary."
+    },
+    {
+     "id": "boundary",
+     "category": "hard",
+     "status": "passed",
+     "room": "Meeting Room",
+     "message": "Inside the plot boundary."
+    },
+    {
+     "id": "boundary",
+     "category": "hard",
+     "status": "passed",
+     "room": "Open Workspace",
+     "message": "Inside the plot boundary."
+    },
+    {
+     "id": "boundary",
+     "category": "hard",
+     "status": "passed",
+     "room": "Conference Room",
+     "message": "Inside the plot boundary."
+    },
+    {
+     "id": "boundary",
+     "category": "hard",
+     "status": "passed",
+     "room": "Pantry",
+     "message": "Inside the plot boundary."
+    },
+    {
+     "id": "boundary",
+     "category": "hard",
+     "status": "passed",
+     "room": "Toilets",
+     "message": "Inside the plot boundary."
+    },
+    {
+     "id": "boundary",
+     "category": "hard",
+     "status": "passed",
+     "room": "Storage",
+     "message": "Inside the plot boundary."
+    },
+    {
+     "id": "boundary",
+     "category": "hard",
+     "status": "passed",
+     "room": "Circulation",
+     "message": "Inside the plot boundary."
+    },
+    {
+     "id": "boundary",
+     "category": "hard",
+     "status": "passed",
+     "room": "Unallocated",
+     "message": "Inside the plot boundary."
+    },
+    {
+     "id": "overlap",
+     "category": "hard",
+     "status": "passed",
+     "room": "",
+     "message": "No two rooms overlap."
+    },
+    {
+     "id": "min_dimensions",
+     "category": "hard",
+     "status": "passed",
+     "room": "Reception",
+     "message": "Minimum dimensions satisfied (6.60 x 4.00 m)."
+    },
+    {
+     "id": "required_area",
+     "category": "hard",
+     "status": "passed",
+     "room": "Reception",
+     "message": "Area 26.40 m2 meets the required 25.00 m2."
+    },
+    {
+     "id": "min_dimensions",
+     "category": "hard",
+     "status": "passed",
+     "room": "Manager Cabin",
+     "message": "Minimum dimensions satisfied (12.50 x 4.00 m)."
+    },
+    {
+     "id": "required_area",
+     "category": "hard",
+     "status": "passed",
+     "room": "Manager Cabin",
+     "message": "Area 50.00 m2 meets the required 16.00 m2."
+    },
+    {
+     "id": "min_dimensions",
+     "category": "hard",
+     "status": "passed",
+     "room": "Meeting Room",
+     "message": "Minimum dimensions satisfied (10.70 x 5.30 m)."
+    },
+    {
+     "id": "required_area",
+     "category": "hard",
+     "status": "passed",
+     "room": "Meeting Room",
+     "message": "Area 56.71 m2 meets the required 24.00 m2."
+    },
+    {
+     "id": "min_dimensions",
+     "category": "hard",
+     "status": "passed",
+     "room": "Open Workspace",
+     "message": "Minimum dimensions satisfied (10.70 x 10.70 m)."
+    },
+    {
+     "id": "required_area",
+     "category": "hard",
+     "status": "passed",
+     "room": "Open Workspace",
+     "message": "Area 114.49 m2 meets the required 120.00 m2."
+    },
+    {
+     "id": "min_dimensions",
+     "category": "hard",
+     "status": "passed",
+     "room": "Conference Room",
+     "message": "Minimum dimensions satisfied (6.20 x 8.70 m)."
+    },
+    {
+     "id": "required_area",
+     "category": "hard",
+     "status": "passed",
+     "room": "Conference Room",
+     "message": "Area 53.94 m2 meets the required 40.00 m2."
+    },
+    {
+     "id": "min_dimensions",
+     "category": "hard",
+     "status": "passed",
+     "room": "Pantry",
+     "message": "Minimum dimensions satisfied (8.40 x 16.00 m)."
+    },
+    {
+     "id": "required_area",
+     "category": "hard",
+     "status": "passed",
+     "room": "Pantry",
+     "message": "Area 134.40 m2 meets the required 16.00 m2."
+    },
+    {
+     "id": "min_dimensions",
+     "category": "hard",
+     "status": "passed",
+     "room": "Toilets",
+     "message": "Minimum dimensions satisfied (10.90 x 4.00 m)."
+    },
+    {
+     "id": "required_area",
+     "category": "hard",
+     "status": "passed",
+     "room": "Toilets",
+     "message": "Area 43.60 m2 meets the required 24.00 m2."
+    },
+    {
+     "id": "min_dimensions",
+     "category": "hard",
+     "status": "passed",
+     "room": "Storage",
+     "message": "Minimum dimensions satisfied (6.20 x 3.70 m)."
+    },
+    {
+     "id": "required_area",
+     "category": "hard",
+     "status": "passed",
+     "room": "Storage",
+     "message": "Area 22.94 m2 meets the required 12.00 m2."
+    },
+    {
+     "id": "min_dimensions",
+     "category": "hard",
+     "status": "passed",
+     "room": "Circulation",
+     "message": "Minimum dimensions satisfied (4.70 x 12.40 m)."
+    },
+    {
+     "id": "required_area",
+     "category": "hard",
+     "status": "passed",
+     "room": "Circulation",
+     "message": "Area 58.28 m2 meets the required 45.00 m2."
+    },
+    {
+     "id": "corridor_width",
+     "category": "hard",
+     "status": "passed",
+     "room": "Circulation",
+     "message": "Corridor width 4.70 m is sufficient."
+    },
+    {
+     "id": "connectivity",
+     "category": "hard",
+     "status": "passed",
+     "room": "",
+     "message": "All rooms are reachable from the entrance."
+    },
+    {
+     "id": "relationship",
+     "category": "hard",
+     "status": "passed",
+     "room": "Reception",
+     "message": "Reception / ENTRANCE (must be adjacent) satisfied."
+    },
+    {
+     "id": "relationship",
+     "category": "soft",
+     "status": "passed",
+     "room": "Manager Cabin",
+     "message": "Manager Cabin / Reception (prefers adjacency) satisfied."
+    },
+    {
+     "id": "relationship",
+     "category": "soft",
+     "status": "passed",
+     "room": "Meeting Room",
+     "message": "Meeting Room / Open Workspace (prefers adjacency) satisfied."
+    },
+    {
+     "id": "relationship",
+     "category": "soft",
+     "status": "passed",
+     "room": "Pantry",
+     "message": "Pantry / Open Workspace (prefers to be nearby) satisfied."
+    },
+    {
+     "id": "relationship",
+     "category": "hard",
+     "status": "passed",
+     "room": "Conference Room",
+     "message": "Conference Room / Open Workspace (must be separated) satisfied."
+    },
+    {
+     "id": "relationship",
+     "category": "soft",
+     "status": "passed",
+     "room": "Toilets",
+     "message": "Toilets / Circulation (prefers adjacency) satisfied."
+    }
+   ],
+   "disconnected": [],
+   "circulation": {
+    "entrance": {
+     "x": 15,
+     "y": 20
+    },
+    "nodes": [
+     {
+      "name": "Reception",
+      "cx": 15.8,
+      "cy": 18,
+      "transit": true
+     },
+     {
+      "name": "Manager Cabin",
+      "cx": 6.25,
+      "cy": 18,
+      "transit": false
+     },
+     {
+      "name": "Meeting Room",
+      "cx": 13.75,
+      "cy": 2.65,
+      "transit": false
+     },
+     {
+      "name": "Open Workspace",
+      "cx": 13.75,
+      "cy": 10.65,
+      "transit": true
+     },
+     {
+      "name": "Conference Room",
+      "cx": 26.9,
+      "cy": 15.65,
+      "transit": false
+     },
+     {
+      "name": "Pantry",
+      "cx": 4.2,
+      "cy": 8,
+      "transit": false
+     },
+     {
+      "name": "Toilets",
+      "cx": 24.55,
+      "cy": 5.6,
+      "transit": false
+     },
+     {
+      "name": "Storage",
+      "cx": 26.9,
+      "cy": 9.45,
+      "transit": false
+     },
+     {
+      "name": "Circulation",
+      "cx": 21.45,
+      "cy": 13.8,
+      "transit": true
+     }
+    ],
+    "edges": [
+     {
+      "a": "Reception",
+      "b": "Manager Cabin",
+      "weight": 9.55,
+      "doorX": 12.5,
+      "doorY": 18
+     },
+     {
+      "a": "Reception",
+      "b": "Open Workspace",
+      "weight": 7.7293,
+      "doorX": 15.8,
+      "doorY": 16
+     },
+     {
+      "a": "Reception",
+      "b": "Circulation",
+      "weight": 8.1127,
+      "doorX": 19.1,
+      "doorY": 18
+     },
+     {
+      "a": "Reception",
+      "b": "ENTRANCE",
+      "weight": 2.1541,
+      "doorX": 15,
+      "doorY": 20
+     },
+     {
+      "a": "Manager Cabin",
+      "b": "Open Workspace",
+      "weight": 10.9378,
+      "doorX": 10.45,
+      "doorY": 16
+     },
+     {
+      "a": "Manager Cabin",
+      "b": "Pantry",
+      "weight": 10.864,
+      "doorX": 4.2,
+      "doorY": 16
+     },
+     {
+      "a": "Meeting Room",
+      "b": "Open Workspace",
+      "weight": 8,
+      "doorX": 13.75,
+      "doorY": 5.3
+     },
+     {
+      "a": "Meeting Room",
+      "b": "Pantry",
+      "weight": 12.1517,
+      "doorX": 8.4,
+      "doorY": 2.65
+     },
+     {
+      "a": "Meeting Room",
+      "b": "Toilets",
+      "weight": 11.2147,
+      "doorX": 19.1,
+      "doorY": 4.45
+     },
+     {
+      "a": "Open Workspace",
+      "b": "Pantry",
+      "weight": 10.3161,
+      "doorX": 8.4,
+      "doorY": 10.65
+     },
+     {
+      "a": "Open Workspace",
+      "b": "Toilets",
+      "weight": 12.3175,
+      "doorX": 19.1,
+      "doorY": 6.45
+     },
+     {
+      "a": "Open Workspace",
+      "b": "Circulation",
+      "weight": 8.5581,
+      "doorX": 19.1,
+      "doorY": 11.8
+     },
+     {
+      "a": "Conference Room",
+      "b": "Storage",
+      "weight": 6.2,
+      "doorX": 26.9,
+      "doorY": 11.3
+     },
+     {
+      "a": "Conference Room",
+      "b": "Circulation",
+      "weight": 6.0908,
+      "doorX": 23.8,
+      "doorY": 15.65
+     },
+     {
+      "a": "Toilets",
+      "b": "Storage",
+      "weight": 4.9359,
+      "doorX": 26.9,
+      "doorY": 7.6
+     },
+     {
+      "a": "Toilets",
+      "b": "Circulation",
+      "weight": 9.8892,
+      "doorX": 21.45,
+      "doorY": 7.6
+     },
+     {
+      "a": "Storage",
+      "b": "Circulation",
+      "weight": 8.0442,
+      "doorX": 23.8,
+      "doorY": 9.45
+     }
+    ],
+    "paths": [
+     {
+      "room": "Reception",
+      "reachable": true,
+      "distance": 2.1541,
+      "route": [
+       "ENTRANCE",
+       "Reception"
+      ],
+      "polyline": [
+       [
+        15,
+        20
+       ],
+       [
+        15.8,
+        18
+       ]
+      ]
+     },
+     {
+      "room": "Manager Cabin",
+      "reachable": true,
+      "distance": 11.7041,
+      "route": [
+       "ENTRANCE",
+       "Reception",
+       "Manager Cabin"
+      ],
+      "polyline": [
+       [
+        15,
+        20
+       ],
+       [
+        15.8,
+        18
+       ],
+       [
+        12.5,
+        18
+       ],
+       [
+        6.25,
+        18
+       ]
+      ]
+     },
+     {
+      "room": "Meeting Room",
+      "reachable": true,
+      "distance": 17.8834,
+      "route": [
+       "ENTRANCE",
+       "Reception",
+       "Open Workspace",
+       "Meeting Room"
+      ],
+      "polyline": [
+       [
+        15,
+        20
+       ],
+       [
+        15.8,
+        18
+       ],
+       [
+        15.8,
+        16
+       ],
+       [
+        13.75,
+        10.65
+       ],
+       [
+        13.75,
+        5.3
+       ],
+       [
+        13.75,
+        2.65
+       ]
+      ]
+     },
+     {
+      "room": "Open Workspace",
+      "reachable": true,
+      "distance": 9.8834,
+      "route": [
+       "ENTRANCE",
+       "Reception",
+       "Open Workspace"
+      ],
+      "polyline": [
+       [
+        15,
+        20
+       ],
+       [
+        15.8,
+        18
+       ],
+       [
+        15.8,
+        16
+       ],
+       [
+        13.75,
+        10.65
+       ]
+      ]
+     },
+     {
+      "room": "Conference Room",
+      "reachable": true,
+      "distance": 16.3576,
+      "route": [
+       "ENTRANCE",
+       "Reception",
+       "Circulation",
+       "Conference Room"
+      ],
+      "polyline": [
+       [
+        15,
+        20
+       ],
+       [
+        15.8,
+        18
+       ],
+       [
+        19.1,
+        18
+       ],
+       [
+        21.45,
+        13.8
+       ],
+       [
+        23.8,
+        15.65
+       ],
+       [
+        26.9,
+        15.65
+       ]
+      ]
+     },
+     {
+      "room": "Pantry",
+      "reachable": true,
+      "distance": 20.1995,
+      "route": [
+       "ENTRANCE",
+       "Reception",
+       "Open Workspace",
+       "Pantry"
+      ],
+      "polyline": [
+       [
+        15,
+        20
+       ],
+       [
+        15.8,
+        18
+       ],
+       [
+        15.8,
+        16
+       ],
+       [
+        13.75,
+        10.65
+       ],
+       [
+        8.4,
+        10.65
+       ],
+       [
+        4.2,
+        8
+       ]
+      ]
+     },
+     {
+      "room": "Toilets",
+      "reachable": true,
+      "distance": 20.156,
+      "route": [
+       "ENTRANCE",
+       "Reception",
+       "Circulation",
+       "Toilets"
+      ],
+      "polyline": [
+       [
+        15,
+        20
+       ],
+       [
+        15.8,
+        18
+       ],
+       [
+        19.1,
+        18
+       ],
+       [
+        21.45,
+        13.8
+       ],
+       [
+        21.45,
+        7.6
+       ],
+       [
+        24.55,
+        5.6
+       ]
+      ]
+     },
+     {
+      "room": "Storage",
+      "reachable": true,
+      "distance": 18.311,
+      "route": [
+       "ENTRANCE",
+       "Reception",
+       "Circulation",
+       "Storage"
+      ],
+      "polyline": [
+       [
+        15,
+        20
+       ],
+       [
+        15.8,
+        18
+       ],
+       [
+        19.1,
+        18
+       ],
+       [
+        21.45,
+        13.8
+       ],
+       [
+        23.8,
+        9.45
+       ],
+       [
+        26.9,
+        9.45
+       ]
+      ]
+     },
+     {
+      "room": "Circulation",
+      "reachable": true,
+      "distance": 10.2668,
+      "route": [
+       "ENTRANCE",
+       "Reception",
+       "Circulation"
+      ],
+      "polyline": [
+       [
+        15,
+        20
+       ],
+       [
+        15.8,
+        18
+       ],
+       [
+        19.1,
+        18
+       ],
+       [
+        21.45,
+        13.8
+       ]
+      ]
+     }
+    ],
+    "disconnected": [],
+    "bottlenecks": [
+     {
+      "room": "Reception",
+      "load": 8
+     }
+    ],
+    "matrixNames": [
+     "Reception",
+     "Manager Cabin",
+     "Meeting Room",
+     "Open Workspace",
+     "Conference Room",
+     "Pantry",
+     "Toilets",
+     "Storage",
+     "Circulation"
+    ],
+    "distanceMatrix": [
+     [
+      0,
+      9.55,
+      15.7293,
+      7.7293,
+      14.2036,
+      18.0454,
+      18.0019,
+      16.1569,
+      8.1127
+     ],
+     [
+      9.55,
+      0,
+      18.9378,
+      10.9378,
+      23.7536,
+      10.864,
+      23.2553,
+      25.7069,
+      17.6627
+     ],
+     [
+      15.7293,
+      18.9378,
+      0,
+      8,
+      22.6489,
+      12.1517,
+      11.2147,
+      24.6022,
+      16.5581
+     ],
+     [
+      7.7293,
+      10.9378,
+      8,
+      0,
+      14.6489,
+      10.3161,
+      12.3175,
+      16.6022,
+      8.5581
+     ],
+     [
+      14.2036,
+      23.7536,
+      22.6489,
+      14.6489,
+      0,
+      24.965,
+      15.98,
+      6.2,
+      6.0908
+     ],
+     [
+      18.0454,
+      10.864,
+      12.1517,
+      10.3161,
+      24.965,
+      0,
+      22.6337,
+      26.9184,
+      18.8742
+     ],
+     [
+      18.0019,
+      23.2553,
+      11.2147,
+      12.3175,
+      15.98,
+      22.6337,
+      0,
+      4.9359,
+      9.8892
+     ],
+     [
+      16.1569,
+      25.7069,
+      24.6022,
+      16.6022,
+      6.2,
+      26.9184,
+      4.9359,
+      0,
+      8.0442
+     ],
+     [
+      8.1127,
+      17.6627,
+      16.5581,
+      8.5581,
+      6.0908,
+      18.8742,
+      9.8892,
+      8.0442,
+      0
+     ]
+    ],
+    "avgDistance": 14.1018,
+    "maxDistance": 20.1995,
+    "components": 1,
+    "fullyConnected": true
+   },
+   "id": "L1",
+   "verified": true
+  },
+  {
+   "rooms": [
+    {
+     "name": "Reception",
+     "type": "Reception",
+     "x": 5.3,
+     "y": 15.9,
+     "width": 9.7,
+     "height": 4.1,
+     "area": 39.77,
+     "requiredArea": 25,
+     "isFree": false,
+     "transit": true
+    },
+    {
+     "name": "Manager Cabin",
+     "type": "Office",
+     "x": 0,
+     "y": 13.2,
+     "width": 5.3,
+     "height": 3.7,
+     "area": 19.61,
+     "requiredArea": 16,
+     "isFree": false,
+     "transit": false
+    },
+    {
+     "name": "Meeting Room",
+     "type": "Meeting Room",
+     "x": 0,
+     "y": 0,
+     "width": 5.3,
+     "height": 13.2,
+     "area": 69.96,
+     "requiredArea": 24,
+     "isFree": false,
+     "transit": false
+    },
+    {
+     "name": "Open Workspace",
+     "type": "Open Area",
+     "x": 5.3,
+     "y": 0,
+     "width": 9.7,
+     "height": 15.9,
+     "area": 154.23,
+     "requiredArea": 120,
+     "isFree": false,
+     "transit": true
+    },
+    {
+     "name": "Conference Room",
+     "type": "Conference Room",
+     "x": 21.6,
+     "y": 5.8,
+     "width": 8.4,
+     "height": 9,
+     "area": 75.6,
+     "requiredArea": 40,
+     "isFree": false,
+     "transit": false
+    },
+    {
+     "name": "Pantry",
+     "type": "Custom Room",
+     "x": 15,
+     "y": 0,
+     "width": 6.6,
+     "height": 14.8,
+     "area": 97.68,
+     "requiredArea": 16,
+     "isFree": false,
+     "transit": false
+    },
+    {
+     "name": "Toilets",
+     "type": "Toilet",
+     "x": 25.5,
+     "y": 14.8,
+     "width": 4.5,
+     "height": 5.2,
+     "area": 23.4,
+     "requiredArea": 24,
+     "isFree": false,
+     "transit": false
+    },
+    {
+     "name": "Storage",
+     "type": "Storage",
+     "x": 0,
+     "y": 16.9,
+     "width": 5.3,
+     "height": 3.1,
+     "area": 16.43,
+     "requiredArea": 12,
+     "isFree": false,
+     "transit": false
+    },
+    {
+     "name": "Circulation",
+     "type": "Corridor",
+     "x": 15,
+     "y": 14.8,
+     "width": 10.5,
+     "height": 5.2,
+     "area": 54.6,
+     "requiredArea": 45,
+     "isFree": false,
+     "transit": true
+    },
+    {
+     "name": "Unallocated",
+     "type": "Open Space",
+     "x": 21.6,
+     "y": 0,
+     "width": 8.4,
+     "height": 5.8,
+     "area": 48.72,
+     "requiredArea": 117,
+     "isFree": true,
+     "transit": false
+    }
+   ],
+   "metrics": {
+    "totalCost": 173.4892,
+    "costBreakdown": {
+     "overlap": 0,
+     "boundary": 0,
+     "adjacency": 0,
+     "corridor": 0,
+     "circulation": 149.1292,
+     "unused": 24.36,
+     "hardConstraints": 0
+    },
+    "plotArea": 600,
+    "usableArea": 496.68,
+    "circulationArea": 54.6,
+    "unusedArea": 48.72,
+    "areaEfficiency": 91.88,
+    "adjacencySatisfaction": 100,
+    "circulationScore": 73.2401,
+    "accessibilityScore": 100,
+    "avgWalk": 13.38,
+    "maxWalk": 22.9498,
+    "violations": 0,
+    "feasible": true
+   },
+   "validation": [
+    {
+     "id": "boundary",
+     "category": "hard",
+     "status": "passed",
+     "room": "Reception",
+     "message": "Inside the plot boundary."
+    },
+    {
+     "id": "boundary",
+     "category": "hard",
+     "status": "passed",
+     "room": "Manager Cabin",
+     "message": "Inside the plot boundary."
+    },
+    {
+     "id": "boundary",
+     "category": "hard",
+     "status": "passed",
+     "room": "Meeting Room",
+     "message": "Inside the plot boundary."
+    },
+    {
+     "id": "boundary",
+     "category": "hard",
+     "status": "passed",
+     "room": "Open Workspace",
+     "message": "Inside the plot boundary."
+    },
+    {
+     "id": "boundary",
+     "category": "hard",
+     "status": "passed",
+     "room": "Conference Room",
+     "message": "Inside the plot boundary."
+    },
+    {
+     "id": "boundary",
+     "category": "hard",
+     "status": "passed",
+     "room": "Pantry",
+     "message": "Inside the plot boundary."
+    },
+    {
+     "id": "boundary",
+     "category": "hard",
+     "status": "passed",
+     "room": "Toilets",
+     "message": "Inside the plot boundary."
+    },
+    {
+     "id": "boundary",
+     "category": "hard",
+     "status": "passed",
+     "room": "Storage",
+     "message": "Inside the plot boundary."
+    },
+    {
+     "id": "boundary",
+     "category": "hard",
+     "status": "passed",
+     "room": "Circulation",
+     "message": "Inside the plot boundary."
+    },
+    {
+     "id": "boundary",
+     "category": "hard",
+     "status": "passed",
+     "room": "Unallocated",
+     "message": "Inside the plot boundary."
+    },
+    {
+     "id": "overlap",
+     "category": "hard",
+     "status": "passed",
+     "room": "",
+     "message": "No two rooms overlap."
+    },
+    {
+     "id": "min_dimensions",
+     "category": "hard",
+     "status": "passed",
+     "room": "Reception",
+     "message": "Minimum dimensions satisfied (9.70 x 4.10 m)."
+    },
+    {
+     "id": "required_area",
+     "category": "hard",
+     "status": "passed",
+     "room": "Reception",
+     "message": "Area 39.77 m2 meets the required 25.00 m2."
+    },
+    {
+     "id": "min_dimensions",
+     "category": "hard",
+     "status": "passed",
+     "room": "Manager Cabin",
+     "message": "Minimum dimensions satisfied (5.30 x 3.70 m)."
+    },
+    {
+     "id": "required_area",
+     "category": "hard",
+     "status": "passed",
+     "room": "Manager Cabin",
+     "message": "Area 19.61 m2 meets the required 16.00 m2."
+    },
+    {
+     "id": "min_dimensions",
+     "category": "hard",
+     "status": "passed",
+     "room": "Meeting Room",
+     "message": "Minimum dimensions satisfied (5.30 x 13.20 m)."
+    },
+    {
+     "id": "required_area",
+     "category": "hard",
+     "status": "passed",
+     "room": "Meeting Room",
+     "message": "Area 69.96 m2 meets the required 24.00 m2."
+    },
+    {
+     "id": "min_dimensions",
+     "category": "hard",
+     "status": "passed",
+     "room": "Open Workspace",
+     "message": "Minimum dimensions satisfied (9.70 x 15.90 m)."
+    },
+    {
+     "id": "required_area",
+     "category": "hard",
+     "status": "passed",
+     "room": "Open Workspace",
+     "message": "Area 154.23 m2 meets the required 120.00 m2."
+    },
+    {
+     "id": "min_dimensions",
+     "category": "hard",
+     "status": "passed",
+     "room": "Conference Room",
+     "message": "Minimum dimensions satisfied (8.40 x 9.00 m)."
+    },
+    {
+     "id": "required_area",
+     "category": "hard",
+     "status": "passed",
+     "room": "Conference Room",
+     "message": "Area 75.60 m2 meets the required 40.00 m2."
+    },
+    {
+     "id": "min_dimensions",
+     "category": "hard",
+     "status": "passed",
+     "room": "Pantry",
+     "message": "Minimum dimensions satisfied (6.60 x 14.80 m)."
+    },
+    {
+     "id": "required_area",
+     "category": "hard",
+     "status": "passed",
+     "room": "Pantry",
+     "message": "Area 97.68 m2 meets the required 16.00 m2."
+    },
+    {
+     "id": "min_dimensions",
+     "category": "hard",
+     "status": "passed",
+     "room": "Toilets",
+     "message": "Minimum dimensions satisfied (4.50 x 5.20 m)."
+    },
+    {
+     "id": "required_area",
+     "category": "hard",
+     "status": "passed",
+     "room": "Toilets",
+     "message": "Area 23.40 m2 meets the required 24.00 m2."
+    },
+    {
+     "id": "min_dimensions",
+     "category": "hard",
+     "status": "passed",
+     "room": "Storage",
+     "message": "Minimum dimensions satisfied (5.30 x 3.10 m)."
+    },
+    {
+     "id": "required_area",
+     "category": "hard",
+     "status": "passed",
+     "room": "Storage",
+     "message": "Area 16.43 m2 meets the required 12.00 m2."
+    },
+    {
+     "id": "min_dimensions",
+     "category": "hard",
+     "status": "passed",
+     "room": "Circulation",
+     "message": "Minimum dimensions satisfied (10.50 x 5.20 m)."
+    },
+    {
+     "id": "required_area",
+     "category": "hard",
+     "status": "passed",
+     "room": "Circulation",
+     "message": "Area 54.60 m2 meets the required 45.00 m2."
+    },
+    {
+     "id": "corridor_width",
+     "category": "hard",
+     "status": "passed",
+     "room": "Circulation",
+     "message": "Corridor width 5.20 m is sufficient."
+    },
+    {
+     "id": "connectivity",
+     "category": "hard",
+     "status": "passed",
+     "room": "",
+     "message": "All rooms are reachable from the entrance."
+    },
+    {
+     "id": "relationship",
+     "category": "hard",
+     "status": "passed",
+     "room": "Reception",
+     "message": "Reception / ENTRANCE (must be adjacent) satisfied."
+    },
+    {
+     "id": "relationship",
+     "category": "soft",
+     "status": "passed",
+     "room": "Manager Cabin",
+     "message": "Manager Cabin / Reception (prefers adjacency) satisfied."
+    },
+    {
+     "id": "relationship",
+     "category": "soft",
+     "status": "passed",
+     "room": "Meeting Room",
+     "message": "Meeting Room / Open Workspace (prefers adjacency) satisfied."
+    },
+    {
+     "id": "relationship",
+     "category": "soft",
+     "status": "passed",
+     "room": "Pantry",
+     "message": "Pantry / Open Workspace (prefers to be nearby) satisfied."
+    },
+    {
+     "id": "relationship",
+     "category": "hard",
+     "status": "passed",
+     "room": "Conference Room",
+     "message": "Conference Room / Open Workspace (must be separated) satisfied."
+    },
+    {
+     "id": "relationship",
+     "category": "soft",
+     "status": "passed",
+     "room": "Toilets",
+     "message": "Toilets / Circulation (prefers adjacency) satisfied."
+    }
+   ],
+   "disconnected": [],
+   "circulation": {
+    "entrance": {
+     "x": 15,
+     "y": 20
+    },
+    "nodes": [
+     {
+      "name": "Reception",
+      "cx": 10.15,
+      "cy": 17.95,
+      "transit": true
+     },
+     {
+      "name": "Manager Cabin",
+      "cx": 2.65,
+      "cy": 15.05,
+      "transit": false
+     },
+     {
+      "name": "Meeting Room",
+      "cx": 2.65,
+      "cy": 6.6,
+      "transit": false
+     },
+     {
+      "name": "Open Workspace",
+      "cx": 10.15,
+      "cy": 7.95,
+      "transit": true
+     },
+     {
+      "name": "Conference Room",
+      "cx": 25.8,
+      "cy": 10.3,
+      "transit": false
+     },
+     {
+      "name": "Pantry",
+      "cx": 18.3,
+      "cy": 7.4,
+      "transit": false
+     },
+     {
+      "name": "Toilets",
+      "cx": 27.75,
+      "cy": 17.4,
+      "transit": false
+     },
+     {
+      "name": "Storage",
+      "cx": 2.65,
+      "cy": 18.45,
+      "transit": false
+     },
+     {
+      "name": "Circulation",
+      "cx": 20.25,
+      "cy": 17.4,
+      "transit": true
+     }
+    ],
+    "edges": [
+     {
+      "a": "Reception",
+      "b": "Manager Cabin",
+      "weight": 8.0657,
+      "doorX": 5.3,
+      "doorY": 16.4
+     },
+     {
+      "a": "Reception",
+      "b": "Open Workspace",
+      "weight": 10,
+      "doorX": 10.15,
+      "doorY": 15.9
+     },
+     {
+      "a": "Reception",
+      "b": "Storage",
+      "weight": 7.5257,
+      "doorX": 5.3,
+      "doorY": 18.45
+     },
+     {
+      "a": "Reception",
+      "b": "Circulation",
+      "weight": 10.1287,
+      "doorX": 15,
+      "doorY": 17.95
+     },
+     {
+      "a": "Reception",
+      "b": "ENTRANCE",
+      "weight": 5.2655,
+      "doorX": 15,
+      "doorY": 20
+     },
+     {
+      "a": "Manager Cabin",
+      "b": "Meeting Room",
+      "weight": 8.45,
+      "doorX": 2.65,
+      "doorY": 13.2
+     },
+     {
+      "a": "Manager Cabin",
+      "b": "Open Workspace",
+      "weight": 10.8871,
+      "doorX": 5.3,
+      "doorY": 14.55
+     },
+     {
+      "a": "Manager Cabin",
+      "b": "Storage",
+      "weight": 3.4,
+      "doorX": 2.65,
+      "doorY": 16.9
+     },
+     {
+      "a": "Meeting Room",
+      "b": "Open Workspace",
+      "weight": 7.6844,
+      "doorX": 5.3,
+      "doorY": 6.6
+     },
+     {
+      "a": "Open Workspace",
+      "b": "Pantry",
+      "weight": 8.1811,
+      "doorX": 15,
+      "doorY": 7.4
+     },
+     {
+      "a": "Open Workspace",
+      "b": "Circulation",
+      "weight": 14.4838,
+      "doorX": 15,
+      "doorY": 15.35
+     },
+     {
+      "a": "Conference Room",
+      "b": "Pantry",
+      "weight": 8.5932,
+      "doorX": 21.6,
+      "doorY": 10.3
+     },
+     {
+      "a": "Conference Room",
+      "b": "Toilets",
+      "weight": 7.5043,
+      "doorX": 27.75,
+      "doorY": 14.8
+     },
+     {
+      "a": "Conference Room",
+      "b": "Circulation",
+      "weight": 9.2323,
+      "doorX": 23.55,
+      "doorY": 14.8
+     },
+     {
+      "a": "Pantry",
+      "b": "Circulation",
+      "weight": 10.65,
+      "doorX": 18.3,
+      "doorY": 14.8
+     },
+     {
+      "a": "Toilets",
+      "b": "Circulation",
+      "weight": 7.5,
+      "doorX": 25.5,
+      "doorY": 17.4
+     },
+     {
+      "a": "Circulation",
+      "b": "ENTRANCE",
+      "weight": 5.8585,
+      "doorX": 15,
+      "doorY": 20
+     }
+    ],
+    "paths": [
+     {
+      "room": "Reception",
+      "reachable": true,
+      "distance": 5.2655,
+      "route": [
+       "ENTRANCE",
+       "Reception"
+      ],
+      "polyline": [
+       [
+        15,
+        20
+       ],
+       [
+        10.15,
+        17.95
+       ]
+      ]
+     },
+     {
+      "room": "Manager Cabin",
+      "reachable": true,
+      "distance": 13.3312,
+      "route": [
+       "ENTRANCE",
+       "Reception",
+       "Manager Cabin"
+      ],
+      "polyline": [
+       [
+        15,
+        20
+       ],
+       [
+        10.15,
+        17.95
+       ],
+       [
+        5.3,
+        16.4
+       ],
+       [
+        2.65,
+        15.05
+       ]
+      ]
+     },
+     {
+      "room": "Meeting Room",
+      "reachable": true,
+      "distance": 22.9498,
+      "route": [
+       "ENTRANCE",
+       "Reception",
+       "Open Workspace",
+       "Meeting Room"
+      ],
+      "polyline": [
+       [
+        15,
+        20
+       ],
+       [
+        10.15,
+        17.95
+       ],
+       [
+        10.15,
+        15.9
+       ],
+       [
+        10.15,
+        7.95
+       ],
+       [
+        5.3,
+        6.6
+       ],
+       [
+        2.65,
+        6.6
+       ]
+      ]
+     },
+     {
+      "room": "Open Workspace",
+      "reachable": true,
+      "distance": 15.2655,
+      "route": [
+       "ENTRANCE",
+       "Reception",
+       "Open Workspace"
+      ],
+      "polyline": [
+       [
+        15,
+        20
+       ],
+       [
+        10.15,
+        17.95
+       ],
+       [
+        10.15,
+        15.9
+       ],
+       [
+        10.15,
+        7.95
+       ]
+      ]
+     },
+     {
+      "room": "Conference Room",
+      "reachable": true,
+      "distance": 15.0909,
+      "route": [
+       "ENTRANCE",
+       "Circulation",
+       "Conference Room"
+      ],
+      "polyline": [
+       [
+        15,
+        20
+       ],
+       [
+        20.25,
+        17.4
+       ],
+       [
+        23.55,
+        14.8
+       ],
+       [
+        25.8,
+        10.3
+       ]
+      ]
+     },
+     {
+      "room": "Pantry",
+      "reachable": true,
+      "distance": 16.5085,
+      "route": [
+       "ENTRANCE",
+       "Circulation",
+       "Pantry"
+      ],
+      "polyline": [
+       [
+        15,
+        20
+       ],
+       [
+        20.25,
+        17.4
+       ],
+       [
+        18.3,
+        14.8
+       ],
+       [
+        18.3,
+        7.4
+       ]
+      ]
+     },
+     {
+      "room": "Toilets",
+      "reachable": true,
+      "distance": 13.3585,
+      "route": [
+       "ENTRANCE",
+       "Circulation",
+       "Toilets"
+      ],
+      "polyline": [
+       [
+        15,
+        20
+       ],
+       [
+        20.25,
+        17.4
+       ],
+       [
+        25.5,
+        17.4
+       ],
+       [
+        27.75,
+        17.4
+       ]
+      ]
+     },
+     {
+      "room": "Storage",
+      "reachable": true,
+      "distance": 12.7912,
+      "route": [
+       "ENTRANCE",
+       "Reception",
+       "Storage"
+      ],
+      "polyline": [
+       [
+        15,
+        20
+       ],
+       [
+        10.15,
+        17.95
+       ],
+       [
+        5.3,
+        18.45
+       ],
+       [
+        2.65,
+        18.45
+       ]
+      ]
+     },
+     {
+      "room": "Circulation",
+      "reachable": true,
+      "distance": 5.8585,
+      "route": [
+       "ENTRANCE",
+       "Circulation"
+      ],
+      "polyline": [
+       [
+        15,
+        20
+       ],
+       [
+        20.25,
+        17.4
+       ]
+      ]
+     }
+    ],
+    "disconnected": [],
+    "bottlenecks": [
+     {
+      "room": "Reception",
+      "load": 4
+     }
+    ],
+    "matrixNames": [
+     "Reception",
+     "Manager Cabin",
+     "Meeting Room",
+     "Open Workspace",
+     "Conference Room",
+     "Pantry",
+     "Toilets",
+     "Storage",
+     "Circulation"
+    ],
+    "distanceMatrix": [
+     [
+      0,
+      8.0657,
+      17.6844,
+      10,
+      19.3611,
+      18.1811,
+      17.6287,
+      7.5257,
+      10.1287
+     ],
+     [
+      8.0657,
+      0,
+      8.45,
+      10.8871,
+      27.4268,
+      19.0682,
+      25.6944,
+      3.4,
+      18.1944
+     ],
+     [
+      17.6844,
+      8.45,
+      0,
+      7.6844,
+      31.4005,
+      15.8655,
+      29.6682,
+      25.2101,
+      22.1682
+     ],
+     [
+      10,
+      10.8871,
+      7.6844,
+      0,
+      23.7161,
+      8.1811,
+      21.9838,
+      17.5257,
+      14.4838
+     ],
+     [
+      19.3611,
+      27.4268,
+      31.4005,
+      23.7161,
+      0,
+      8.5932,
+      7.5043,
+      26.8868,
+      9.2323
+     ],
+     [
+      18.1811,
+      19.0682,
+      15.8655,
+      8.1811,
+      8.5932,
+      0,
+      18.15,
+      25.7068,
+      10.65
+     ],
+     [
+      17.6287,
+      25.6944,
+      29.6682,
+      21.9838,
+      7.5043,
+      18.15,
+      0,
+      25.1544,
+      7.5
+     ],
+     [
+      7.5257,
+      3.4,
+      25.2101,
+      17.5257,
+      26.8868,
+      25.7068,
+      25.1544,
+      0,
+      17.6544
+     ],
+     [
+      10.1287,
+      18.1944,
+      22.1682,
+      14.4838,
+      9.2323,
+      10.65,
+      7.5,
+      17.6544,
+      0
+     ]
+    ],
+    "avgDistance": 13.38,
+    "maxDistance": 22.9498,
+    "components": 1,
+    "fullyConnected": true
+   },
+   "id": "L2",
+   "verified": true
+  },
+  {
+   "rooms": [
+    {
+     "name": "Reception",
+     "type": "Reception",
+     "x": 15,
+     "y": 9.6,
+     "width": 4.1,
+     "height": 10.4,
+     "area": 42.64,
+     "requiredArea": 25,
+     "isFree": false,
+     "transit": true
+    },
+    {
+     "name": "Manager Cabin",
+     "type": "Office",
+     "x": 19.1,
+     "y": 14.1,
+     "width": 10.9,
+     "height": 5.9,
+     "area": 64.31,
+     "requiredArea": 16,
+     "isFree": false,
+     "transit": false
+    },
+    {
+     "name": "Meeting Room",
+     "type": "Meeting Room",
+     "x": 19.1,
+     "y": 9.6,
+     "width": 10.9,
+     "height": 4.5,
+     "area": 49.05,
+     "requiredArea": 24,
+     "isFree": false,
+     "transit": false
+    },
+    {
+     "name": "Open Workspace",
+     "type": "Open Area",
+     "x": 15,
+     "y": 0,
+     "width": 15,
+     "height": 9.6,
+     "area": 144,
+     "requiredArea": 120,
+     "isFree": false,
+     "transit": true
+    },
+    {
+     "name": "Conference Room",
+     "type": "Conference Room",
+     "x": 0,
+     "y": 0,
+     "width": 5.2,
+     "height": 10.6,
+     "area": 55.12,
+     "requiredArea": 40,
+     "isFree": false,
+     "transit": false
+    },
+    {
+     "name": "Pantry",
+     "type": "Custom Room",
+     "x": 7.9,
+     "y": 10.6,
+     "width": 7.1,
+     "height": 3.2,
+     "area": 22.72,
+     "requiredArea": 16,
+     "isFree": false,
+     "transit": false
+    },
+    {
+     "name": "Toilets",
+     "type": "Toilet",
+     "x": 5.2,
+     "y": 0,
+     "width": 9.8,
+     "height": 5.6,
+     "area": 54.88,
+     "requiredArea": 24,
+     "isFree": false,
+     "transit": false
+    },
+    {
+     "name": "Storage",
+     "type": "Storage",
+     "x": 0,
+     "y": 13.8,
+     "width": 15,
+     "height": 6.2,
+     "area": 93,
+     "requiredArea": 12,
+     "isFree": false,
+     "transit": false
+    },
+    {
+     "name": "Circulation",
+     "type": "Corridor",
+     "x": 5.2,
+     "y": 5.6,
+     "width": 9.8,
+     "height": 5,
+     "area": 49,
+     "requiredArea": 45,
+     "isFree": false,
+     "transit": true
+    },
+    {
+     "name": "Unallocated",
+     "type": "Open Space",
+     "x": 0,
+     "y": 10.6,
+     "width": 7.9,
+     "height": 3.2,
+     "area": 25.28,
+     "requiredArea": 117,
+     "isFree": true,
+     "transit": false
+    }
+   ],
+   "metrics": {
+    "totalCost": 185.2798,
+    "costBreakdown": {
+     "overlap": 0,
+     "boundary": 0,
+     "adjacency": 6.6667,
+     "corridor": 1.8,
+     "circulation": 164.1731,
+     "unused": 12.64,
+     "hardConstraints": 0
+    },
+    "plotArea": 600,
+    "usableArea": 525.72,
+    "circulationArea": 49,
+    "unusedArea": 25.28,
+    "areaEfficiency": 95.7867,
+    "adjacencySatisfaction": 98.4848,
+    "circulationScore": 70.0062,
+    "accessibilityScore": 100,
+    "avgWalk": 14.9969,
+    "maxWalk": 24.7306,
+    "violations": 0,
+    "feasible": true
+   },
+   "validation": [
+    {
+     "id": "boundary",
+     "category": "hard",
+     "status": "passed",
+     "room": "Reception",
+     "message": "Inside the plot boundary."
+    },
+    {
+     "id": "boundary",
+     "category": "hard",
+     "status": "passed",
+     "room": "Manager Cabin",
+     "message": "Inside the plot boundary."
+    },
+    {
+     "id": "boundary",
+     "category": "hard",
+     "status": "passed",
+     "room": "Meeting Room",
+     "message": "Inside the plot boundary."
+    },
+    {
+     "id": "boundary",
+     "category": "hard",
+     "status": "passed",
+     "room": "Open Workspace",
+     "message": "Inside the plot boundary."
+    },
+    {
+     "id": "boundary",
+     "category": "hard",
+     "status": "passed",
+     "room": "Conference Room",
+     "message": "Inside the plot boundary."
+    },
+    {
+     "id": "boundary",
+     "category": "hard",
+     "status": "passed",
+     "room": "Pantry",
+     "message": "Inside the plot boundary."
+    },
+    {
+     "id": "boundary",
+     "category": "hard",
+     "status": "passed",
+     "room": "Toilets",
+     "message": "Inside the plot boundary."
+    },
+    {
+     "id": "boundary",
+     "category": "hard",
+     "status": "passed",
+     "room": "Storage",
+     "message": "Inside the plot boundary."
+    },
+    {
+     "id": "boundary",
+     "category": "hard",
+     "status": "passed",
+     "room": "Circulation",
+     "message": "Inside the plot boundary."
+    },
+    {
+     "id": "boundary",
+     "category": "hard",
+     "status": "passed",
+     "room": "Unallocated",
+     "message": "Inside the plot boundary."
+    },
+    {
+     "id": "overlap",
+     "category": "hard",
+     "status": "passed",
+     "room": "",
+     "message": "No two rooms overlap."
+    },
+    {
+     "id": "min_dimensions",
+     "category": "hard",
+     "status": "passed",
+     "room": "Reception",
+     "message": "Minimum dimensions satisfied (4.10 x 10.40 m)."
+    },
+    {
+     "id": "required_area",
+     "category": "hard",
+     "status": "passed",
+     "room": "Reception",
+     "message": "Area 42.64 m2 meets the required 25.00 m2."
+    },
+    {
+     "id": "min_dimensions",
+     "category": "hard",
+     "status": "passed",
+     "room": "Manager Cabin",
+     "message": "Minimum dimensions satisfied (10.90 x 5.90 m)."
+    },
+    {
+     "id": "required_area",
+     "category": "hard",
+     "status": "passed",
+     "room": "Manager Cabin",
+     "message": "Area 64.31 m2 meets the required 16.00 m2."
+    },
+    {
+     "id": "min_dimensions",
+     "category": "hard",
+     "status": "passed",
+     "room": "Meeting Room",
+     "message": "Minimum dimensions satisfied (10.90 x 4.50 m)."
+    },
+    {
+     "id": "required_area",
+     "category": "hard",
+     "status": "passed",
+     "room": "Meeting Room",
+     "message": "Area 49.05 m2 meets the required 24.00 m2."
+    },
+    {
+     "id": "min_dimensions",
+     "category": "hard",
+     "status": "passed",
+     "room": "Open Workspace",
+     "message": "Minimum dimensions satisfied (15.00 x 9.60 m)."
+    },
+    {
+     "id": "required_area",
+     "category": "hard",
+     "status": "passed",
+     "room": "Open Workspace",
+     "message": "Area 144.00 m2 meets the required 120.00 m2."
+    },
+    {
+     "id": "min_dimensions",
+     "category": "hard",
+     "status": "passed",
+     "room": "Conference Room",
+     "message": "Minimum dimensions satisfied (5.20 x 10.60 m)."
+    },
+    {
+     "id": "required_area",
+     "category": "hard",
+     "status": "passed",
+     "room": "Conference Room",
+     "message": "Area 55.12 m2 meets the required 40.00 m2."
+    },
+    {
+     "id": "min_dimensions",
+     "category": "hard",
+     "status": "passed",
+     "room": "Pantry",
+     "message": "Minimum dimensions satisfied (7.10 x 3.20 m)."
+    },
+    {
+     "id": "required_area",
+     "category": "hard",
+     "status": "passed",
+     "room": "Pantry",
+     "message": "Area 22.72 m2 meets the required 16.00 m2."
+    },
+    {
+     "id": "min_dimensions",
+     "category": "hard",
+     "status": "passed",
+     "room": "Toilets",
+     "message": "Minimum dimensions satisfied (9.80 x 5.60 m)."
+    },
+    {
+     "id": "required_area",
+     "category": "hard",
+     "status": "passed",
+     "room": "Toilets",
+     "message": "Area 54.88 m2 meets the required 24.00 m2."
+    },
+    {
+     "id": "min_dimensions",
+     "category": "hard",
+     "status": "passed",
+     "room": "Storage",
+     "message": "Minimum dimensions satisfied (15.00 x 6.20 m)."
+    },
+    {
+     "id": "required_area",
+     "category": "hard",
+     "status": "passed",
+     "room": "Storage",
+     "message": "Area 93.00 m2 meets the required 12.00 m2."
+    },
+    {
+     "id": "min_dimensions",
+     "category": "hard",
+     "status": "passed",
+     "room": "Circulation",
+     "message": "Minimum dimensions satisfied (9.80 x 5.00 m)."
+    },
+    {
+     "id": "required_area",
+     "category": "hard",
+     "status": "passed",
+     "room": "Circulation",
+     "message": "Area 49.00 m2 meets the required 45.00 m2."
+    },
+    {
+     "id": "corridor_width",
+     "category": "hard",
+     "status": "passed",
+     "room": "Circulation",
+     "message": "Corridor width 5.00 m is sufficient."
+    },
+    {
+     "id": "connectivity",
+     "category": "hard",
+     "status": "passed",
+     "room": "",
+     "message": "All rooms are reachable from the entrance."
+    },
+    {
+     "id": "relationship",
+     "category": "hard",
+     "status": "passed",
+     "room": "Reception",
+     "message": "Reception / ENTRANCE (must be adjacent) satisfied."
+    },
+    {
+     "id": "relationship",
+     "category": "soft",
+     "status": "passed",
+     "room": "Manager Cabin",
+     "message": "Manager Cabin / Reception (prefers adjacency) satisfied."
+    },
+    {
+     "id": "relationship",
+     "category": "soft",
+     "status": "passed",
+     "room": "Meeting Room",
+     "message": "Meeting Room / Open Workspace (prefers adjacency) satisfied."
+    },
+    {
+     "id": "relationship",
+     "category": "soft",
+     "status": "warning",
+     "room": "Pantry",
+     "message": "Pantry / Open Workspace (prefers to be nearby) not fully satisfied (score 0.83)."
+    },
+    {
+     "id": "relationship",
+     "category": "hard",
+     "status": "passed",
+     "room": "Conference Room",
+     "message": "Conference Room / Open Workspace (must be separated) satisfied."
+    },
+    {
+     "id": "relationship",
+     "category": "soft",
+     "status": "passed",
+     "room": "Toilets",
+     "message": "Toilets / Circulation (prefers adjacency) satisfied."
+    }
+   ],
+   "disconnected": [],
+   "circulation": {
+    "entrance": {
+     "x": 15,
+     "y": 20
+    },
+    "nodes": [
+     {
+      "name": "Reception",
+      "cx": 17.05,
+      "cy": 14.8,
+      "transit": true
+     },
+     {
+      "name": "Manager Cabin",
+      "cx": 24.55,
+      "cy": 17.05,
+      "transit": false
+     },
+     {
+      "name": "Meeting Room",
+      "cx": 24.55,
+      "cy": 11.85,
+      "transit": false
+     },
+     {
+      "name": "Open Workspace",
+      "cx": 22.5,
+      "cy": 4.8,
+      "transit": true
+     },
+     {
+      "name": "Conference Room",
+      "cx": 2.6,
+      "cy": 5.3,
+      "transit": false
+     },
+     {
+      "name": "Pantry",
+      "cx": 11.45,
+      "cy": 12.2,
+      "transit": false
+     },
+     {
+      "name": "Toilets",
+      "cx": 10.1,
+      "cy": 2.8,
+      "transit": false
+     },
+     {
+      "name": "Storage",
+      "cx": 7.5,
+      "cy": 16.9,
+      "transit": false
+     },
+     {
+      "name": "Circulation",
+      "cx": 10.1,
+      "cy": 8.1,
+      "transit": true
+     }
+    ],
+    "edges": [
+     {
+      "a": "Reception",
+      "b": "Manager Cabin",
+      "weight": 8.4938,
+      "doorX": 19.1,
+      "doorY": 17.05
+     },
+     {
+      "a": "Reception",
+      "b": "Meeting Room",
+      "weight": 9.0424,
+      "doorX": 19.1,
+      "doorY": 11.85
+     },
+     {
+      "a": "Reception",
+      "b": "Open Workspace",
+      "weight": 12.4624,
+      "doorX": 17.05,
+      "doorY": 9.6
+     },
+     {
+      "a": "Reception",
+      "b": "Pantry",
+      "weight": 6.861,
+      "doorX": 15,
+      "doorY": 12.2
+     },
+     {
+      "a": "Reception",
+      "b": "Storage",
+      "weight": 10.4347,
+      "doorX": 15,
+      "doorY": 16.9
+     },
+     {
+      "a": "Reception",
+      "b": "Circulation",
+      "weight": 10.4201,
+      "doorX": 15,
+      "doorY": 10.1
+     },
+     {
+      "a": "Reception",
+      "b": "ENTRANCE",
+      "weight": 5.5895,
+      "doorX": 15,
+      "doorY": 20
+     },
+     {
+      "a": "Manager Cabin",
+      "b": "Meeting Room",
+      "weight": 5.2,
+      "doorX": 24.55,
+      "doorY": 14.1
+     },
+     {
+      "a": "Meeting Room",
+      "b": "Open Workspace",
+      "weight": 7.4694,
+      "doorX": 24.55,
+      "doorY": 9.6
+     },
+     {
+      "a": "Open Workspace",
+      "b": "Toilets",
+      "weight": 12.6621,
+      "doorX": 15,
+      "doorY": 2.8
+     },
+     {
+      "a": "Open Workspace",
+      "b": "Circulation",
+      "weight": 12.9311,
+      "doorX": 15,
+      "doorY": 7.6
+     },
+     {
+      "a": "Conference Room",
+      "b": "Toilets",
+      "weight": 8.5069,
+      "doorX": 5.2,
+      "doorY": 2.8
+     },
+     {
+      "a": "Conference Room",
+      "b": "Circulation",
+      "weight": 8.721,
+      "doorX": 5.2,
+      "doorY": 8.1
+     },
+     {
+      "a": "Pantry",
+      "b": "Storage",
+      "weight": 6.6212,
+      "doorX": 11.45,
+      "doorY": 13.8
+     },
+     {
+      "a": "Pantry",
+      "b": "Circulation",
+      "weight": 4.4412,
+      "doorX": 11.45,
+      "doorY": 10.6
+     },
+     {
+      "a": "Toilets",
+      "b": "Circulation",
+      "weight": 5.3,
+      "doorX": 10.1,
+      "doorY": 5.6
+     },
+     {
+      "a": "Storage",
+      "b": "ENTRANCE",
+      "weight": 8.1154,
+      "doorX": 15,
+      "doorY": 20
+     }
+    ],
+    "paths": [
+     {
+      "room": "Reception",
+      "reachable": true,
+      "distance": 5.5895,
+      "route": [
+       "ENTRANCE",
+       "Reception"
+      ],
+      "polyline": [
+       [
+        15,
+        20
+       ],
+       [
+        17.05,
+        14.8
+       ]
+      ]
+     },
+     {
+      "room": "Manager Cabin",
+      "reachable": true,
+      "distance": 14.0833,
+      "route": [
+       "ENTRANCE",
+       "Reception",
+       "Manager Cabin"
+      ],
+      "polyline": [
+       [
+        15,
+        20
+       ],
+       [
+        17.05,
+        14.8
+       ],
+       [
+        19.1,
+        17.05
+       ],
+       [
+        24.55,
+        17.05
+       ]
+      ]
+     },
+     {
+      "room": "Meeting Room",
+      "reachable": true,
+      "distance": 14.6319,
+      "route": [
+       "ENTRANCE",
+       "Reception",
+       "Meeting Room"
+      ],
+      "polyline": [
+       [
+        15,
+        20
+       ],
+       [
+        17.05,
+        14.8
+       ],
+       [
+        19.1,
+        11.85
+       ],
+       [
+        24.55,
+        11.85
+       ]
+      ]
+     },
+     {
+      "room": "Open Workspace",
+      "reachable": true,
+      "distance": 18.0519,
+      "route": [
+       "ENTRANCE",
+       "Reception",
+       "Open Workspace"
+      ],
+      "polyline": [
+       [
+        15,
+        20
+       ],
+       [
+        17.05,
+        14.8
+       ],
+       [
+        17.05,
+        9.6
+       ],
+       [
+        22.5,
+        4.8
+       ]
+      ]
+     },
+     {
+      "room": "Conference Room",
+      "reachable": true,
+      "distance": 24.7306,
+      "route": [
+       "ENTRANCE",
+       "Reception",
+       "Circulation",
+       "Conference Room"
+      ],
+      "polyline": [
+       [
+        15,
+        20
+       ],
+       [
+        17.05,
+        14.8
+       ],
+       [
+        15,
+        10.1
+       ],
+       [
+        10.1,
+        8.1
+       ],
+       [
+        5.2,
+        8.1
+       ],
+       [
+        2.6,
+        5.3
+       ]
+      ]
+     },
+     {
+      "room": "Pantry",
+      "reachable": true,
+      "distance": 12.4505,
+      "route": [
+       "ENTRANCE",
+       "Reception",
+       "Pantry"
+      ],
+      "polyline": [
+       [
+        15,
+        20
+       ],
+       [
+        17.05,
+        14.8
+       ],
+       [
+        15,
+        12.2
+       ],
+       [
+        11.45,
+        12.2
+       ]
+      ]
+     },
+     {
+      "room": "Toilets",
+      "reachable": true,
+      "distance": 21.3096,
+      "route": [
+       "ENTRANCE",
+       "Reception",
+       "Circulation",
+       "Toilets"
+      ],
+      "polyline": [
+       [
+        15,
+        20
+       ],
+       [
+        17.05,
+        14.8
+       ],
+       [
+        15,
+        10.1
+       ],
+       [
+        10.1,
+        8.1
+       ],
+       [
+        10.1,
+        5.6
+       ],
+       [
+        10.1,
+        2.8
+       ]
+      ]
+     },
+     {
+      "room": "Storage",
+      "reachable": true,
+      "distance": 8.1154,
+      "route": [
+       "ENTRANCE",
+       "Storage"
+      ],
+      "polyline": [
+       [
+        15,
+        20
+       ],
+       [
+        7.5,
+        16.9
+       ]
+      ]
+     },
+     {
+      "room": "Circulation",
+      "reachable": true,
+      "distance": 16.0096,
+      "route": [
+       "ENTRANCE",
+       "Reception",
+       "Circulation"
+      ],
+      "polyline": [
+       [
+        15,
+        20
+       ],
+       [
+        17.05,
+        14.8
+       ],
+       [
+        15,
+        10.1
+       ],
+       [
+        10.1,
+        8.1
+       ]
+      ]
+     }
+    ],
+    "disconnected": [],
+    "bottlenecks": [
+     {
+      "room": "Reception",
+      "load": 7
+     }
+    ],
+    "matrixNames": [
+     "Reception",
+     "Manager Cabin",
+     "Meeting Room",
+     "Open Workspace",
+     "Conference Room",
+     "Pantry",
+     "Toilets",
+     "Storage",
+     "Circulation"
+    ],
+    "distanceMatrix": [
+     [
+      0,
+      8.4938,
+      9.0424,
+      12.4624,
+      19.1411,
+      6.861,
+      15.7201,
+      10.4347,
+      10.4201
+     ],
+     [
+      8.4938,
+      0,
+      5.2,
+      20.9562,
+      27.6349,
+      15.3548,
+      24.2139,
+      18.9286,
+      18.9139
+     ],
+     [
+      9.0424,
+      5.2,
+      0,
+      7.4694,
+      28.1834,
+      15.9033,
+      20.1315,
+      19.4771,
+      19.4624
+     ],
+     [
+      12.4624,
+      20.9562,
+      7.4694,
+      0,
+      21.6521,
+      17.3723,
+      12.6621,
+      22.8971,
+      12.9311
+     ],
+     [
+      19.1411,
+      27.6349,
+      28.1834,
+      21.6521,
+      0,
+      13.1622,
+      8.5069,
+      29.5758,
+      8.721
+     ],
+     [
+      6.861,
+      15.3548,
+      15.9033,
+      17.3723,
+      13.1622,
+      0,
+      9.7412,
+      6.6212,
+      4.4412
+     ],
+     [
+      15.7201,
+      24.2139,
+      20.1315,
+      12.6621,
+      8.5069,
+      9.7412,
+      0,
+      26.1548,
+      5.3
+     ],
+     [
+      10.4347,
+      18.9286,
+      19.4771,
+      22.8971,
+      29.5758,
+      6.6212,
+      26.1548,
+      0,
+      20.8548
+     ],
+     [
+      10.4201,
+      18.9139,
+      19.4624,
+      12.9311,
+      8.721,
+      4.4412,
+      5.3,
+      20.8548,
+      0
+     ]
+    ],
+    "avgDistance": 14.9969,
+    "maxDistance": 24.7306,
+    "components": 1,
+    "fullyConnected": true
+   },
+   "id": "L3",
+   "verified": true
+  },
+  {
+   "rooms": [
+    {
+     "name": "Reception",
+     "type": "Reception",
+     "x": 15,
+     "y": 0,
+     "width": 4,
+     "height": 20,
+     "area": 80,
+     "requiredArea": 25,
+     "isFree": false,
+     "transit": true
+    },
+    {
+     "name": "Manager Cabin",
+     "type": "Office",
+     "x": 9.2,
+     "y": 13.7,
+     "width": 5.8,
+     "height": 6.3,
+     "area": 36.54,
+     "requiredArea": 16,
+     "isFree": false,
+     "transit": false
+    },
+    {
+     "name": "Meeting Room",
+     "type": "Meeting Room",
+     "x": 0,
+     "y": 0,
+     "width": 6,
+     "height": 5.2,
+     "area": 31.2,
+     "requiredArea": 24,
+     "isFree": false,
+     "transit": false
+    },
+    {
+     "name": "Open Workspace",
+     "type": "Open Area",
+     "x": 0,
+     "y": 5.2,
+     "width": 15,
+     "height": 8.5,
+     "area": 127.5,
+     "requiredArea": 120,
+     "isFree": false,
+     "transit": true
+    },
+    {
+     "name": "Conference Room",
+     "type": "Conference Room",
+     "x": 19,
+     "y": 11.4,
+     "width": 11,
+     "height": 8.6,
+     "area": 94.6,
+     "requiredArea": 40,
+     "isFree": false,
+     "transit": false
+    },
+    {
+     "name": "Pantry",
+     "type": "Custom Room",
+     "x": 6,
+     "y": 0,
+     "width": 3.1,
+     "height": 5.2,
+     "area": 16.12,
+     "requiredArea": 16,
+     "isFree": false,
+     "transit": false
+    },
+    {
+     "name": "Toilets",
+     "type": "Toilet",
+     "x": 19,
+     "y": 0,
+     "width": 11,
+     "height": 7.5,
+     "area": 82.5,
+     "requiredArea": 24,
+     "isFree": false,
+     "transit": false
+    },
+    {
+     "name": "Storage",
+     "type": "Storage",
+     "x": 0,
+     "y": 13.7,
+     "width": 9.2,
+     "height": 6.3,
+     "area": 57.96,
+     "requiredArea": 12,
+     "isFree": false,
+     "transit": false
+    },
+    {
+     "name": "Circulation",
+     "type": "Corridor",
+     "x": 19,
+     "y": 7.5,
+     "width": 11,
+     "height": 3.9,
+     "area": 42.9,
+     "requiredArea": 45,
+     "isFree": false,
+     "transit": true
+    },
+    {
+     "name": "Unallocated",
+     "type": "Open Space",
+     "x": 9.1,
+     "y": 0,
+     "width": 5.9,
+     "height": 5.2,
+     "area": 30.68,
+     "requiredArea": 117,
+     "isFree": true,
+     "transit": false
+    }
+   ],
+   "metrics": {
+    "totalCost": 220.5428,
+    "costBreakdown": {
+     "overlap": 0,
+     "boundary": 0,
+     "adjacency": 0,
+     "corridor": 0,
+     "circulation": 205.2028,
+     "unused": 15.34,
+     "hardConstraints": 0
+    },
+    "plotArea": 600,
+    "usableArea": 526.42,
+    "circulationArea": 42.9,
+    "unusedArea": 30.68,
+    "areaEfficiency": 94.8867,
+    "adjacencySatisfaction": 100,
+    "circulationScore": 60.1611,
+    "accessibilityScore": 100,
+    "avgWalk": 19.9195,
+    "maxWalk": 28.562,
+    "violations": 0,
+    "feasible": true
+   },
+   "validation": [
+    {
+     "id": "boundary",
+     "category": "hard",
+     "status": "passed",
+     "room": "Reception",
+     "message": "Inside the plot boundary."
+    },
+    {
+     "id": "boundary",
+     "category": "hard",
+     "status": "passed",
+     "room": "Manager Cabin",
+     "message": "Inside the plot boundary."
+    },
+    {
+     "id": "boundary",
+     "category": "hard",
+     "status": "passed",
+     "room": "Meeting Room",
+     "message": "Inside the plot boundary."
+    },
+    {
+     "id": "boundary",
+     "category": "hard",
+     "status": "passed",
+     "room": "Open Workspace",
+     "message": "Inside the plot boundary."
+    },
+    {
+     "id": "boundary",
+     "category": "hard",
+     "status": "passed",
+     "room": "Conference Room",
+     "message": "Inside the plot boundary."
+    },
+    {
+     "id": "boundary",
+     "category": "hard",
+     "status": "passed",
+     "room": "Pantry",
+     "message": "Inside the plot boundary."
+    },
+    {
+     "id": "boundary",
+     "category": "hard",
+     "status": "passed",
+     "room": "Toilets",
+     "message": "Inside the plot boundary."
+    },
+    {
+     "id": "boundary",
+     "category": "hard",
+     "status": "passed",
+     "room": "Storage",
+     "message": "Inside the plot boundary."
+    },
+    {
+     "id": "boundary",
+     "category": "hard",
+     "status": "passed",
+     "room": "Circulation",
+     "message": "Inside the plot boundary."
+    },
+    {
+     "id": "boundary",
+     "category": "hard",
+     "status": "passed",
+     "room": "Unallocated",
+     "message": "Inside the plot boundary."
+    },
+    {
+     "id": "overlap",
+     "category": "hard",
+     "status": "passed",
+     "room": "",
+     "message": "No two rooms overlap."
+    },
+    {
+     "id": "min_dimensions",
+     "category": "hard",
+     "status": "passed",
+     "room": "Reception",
+     "message": "Minimum dimensions satisfied (4.00 x 20.00 m)."
+    },
+    {
+     "id": "required_area",
+     "category": "hard",
+     "status": "passed",
+     "room": "Reception",
+     "message": "Area 80.00 m2 meets the required 25.00 m2."
+    },
+    {
+     "id": "aspect_ratio",
+     "category": "soft",
+     "status": "warning",
+     "room": "Reception",
+     "message": "Aspect ratio 5.00:1 is close to the limit."
+    },
+    {
+     "id": "min_dimensions",
+     "category": "hard",
+     "status": "passed",
+     "room": "Manager Cabin",
+     "message": "Minimum dimensions satisfied (5.80 x 6.30 m)."
+    },
+    {
+     "id": "required_area",
+     "category": "hard",
+     "status": "passed",
+     "room": "Manager Cabin",
+     "message": "Area 36.54 m2 meets the required 16.00 m2."
+    },
+    {
+     "id": "min_dimensions",
+     "category": "hard",
+     "status": "passed",
+     "room": "Meeting Room",
+     "message": "Minimum dimensions satisfied (6.00 x 5.20 m)."
+    },
+    {
+     "id": "required_area",
+     "category": "hard",
+     "status": "passed",
+     "room": "Meeting Room",
+     "message": "Area 31.20 m2 meets the required 24.00 m2."
+    },
+    {
+     "id": "min_dimensions",
+     "category": "hard",
+     "status": "passed",
+     "room": "Open Workspace",
+     "message": "Minimum dimensions satisfied (15.00 x 8.50 m)."
+    },
+    {
+     "id": "required_area",
+     "category": "hard",
+     "status": "passed",
+     "room": "Open Workspace",
+     "message": "Area 127.50 m2 meets the required 120.00 m2."
+    },
+    {
+     "id": "min_dimensions",
+     "category": "hard",
+     "status": "passed",
+     "room": "Conference Room",
+     "message": "Minimum dimensions satisfied (11.00 x 8.60 m)."
+    },
+    {
+     "id": "required_area",
+     "category": "hard",
+     "status": "passed",
+     "room": "Conference Room",
+     "message": "Area 94.60 m2 meets the required 40.00 m2."
+    },
+    {
+     "id": "min_dimensions",
+     "category": "hard",
+     "status": "passed",
+     "room": "Pantry",
+     "message": "Minimum dimensions satisfied (3.10 x 5.20 m)."
+    },
+    {
+     "id": "required_area",
+     "category": "hard",
+     "status": "passed",
+     "room": "Pantry",
+     "message": "Area 16.12 m2 meets the required 16.00 m2."
+    },
+    {
+     "id": "min_dimensions",
+     "category": "hard",
+     "status": "passed",
+     "room": "Toilets",
+     "message": "Minimum dimensions satisfied (11.00 x 7.50 m)."
+    },
+    {
+     "id": "required_area",
+     "category": "hard",
+     "status": "passed",
+     "room": "Toilets",
+     "message": "Area 82.50 m2 meets the required 24.00 m2."
+    },
+    {
+     "id": "min_dimensions",
+     "category": "hard",
+     "status": "passed",
+     "room": "Storage",
+     "message": "Minimum dimensions satisfied (9.20 x 6.30 m)."
+    },
+    {
+     "id": "required_area",
+     "category": "hard",
+     "status": "passed",
+     "room": "Storage",
+     "message": "Area 57.96 m2 meets the required 12.00 m2."
+    },
+    {
+     "id": "min_dimensions",
+     "category": "hard",
+     "status": "passed",
+     "room": "Circulation",
+     "message": "Minimum dimensions satisfied (11.00 x 3.90 m)."
+    },
+    {
+     "id": "required_area",
+     "category": "hard",
+     "status": "passed",
+     "room": "Circulation",
+     "message": "Area 42.90 m2 meets the required 45.00 m2."
+    },
+    {
+     "id": "corridor_width",
+     "category": "hard",
+     "status": "passed",
+     "room": "Circulation",
+     "message": "Corridor width 3.90 m is sufficient."
+    },
+    {
+     "id": "connectivity",
+     "category": "hard",
+     "status": "passed",
+     "room": "",
+     "message": "All rooms are reachable from the entrance."
+    },
+    {
+     "id": "relationship",
+     "category": "hard",
+     "status": "passed",
+     "room": "Reception",
+     "message": "Reception / ENTRANCE (must be adjacent) satisfied."
+    },
+    {
+     "id": "relationship",
+     "category": "soft",
+     "status": "passed",
+     "room": "Manager Cabin",
+     "message": "Manager Cabin / Reception (prefers adjacency) satisfied."
+    },
+    {
+     "id": "relationship",
+     "category": "soft",
+     "status": "passed",
+     "room": "Meeting Room",
+     "message": "Meeting Room / Open Workspace (prefers adjacency) satisfied."
+    },
+    {
+     "id": "relationship",
+     "category": "soft",
+     "status": "passed",
+     "room": "Pantry",
+     "message": "Pantry / Open Workspace (prefers to be nearby) satisfied."
+    },
+    {
+     "id": "relationship",
+     "category": "hard",
+     "status": "passed",
+     "room": "Conference Room",
+     "message": "Conference Room / Open Workspace (must be separated) satisfied."
+    },
+    {
+     "id": "relationship",
+     "category": "soft",
+     "status": "passed",
+     "room": "Toilets",
+     "message": "Toilets / Circulation (prefers adjacency) satisfied."
+    }
+   ],
+   "disconnected": [],
+   "circulation": {
+    "entrance": {
+     "x": 15,
+     "y": 20
+    },
+    "nodes": [
+     {
+      "name": "Reception",
+      "cx": 17,
+      "cy": 10,
+      "transit": true
+     },
+     {
+      "name": "Manager Cabin",
+      "cx": 12.1,
+      "cy": 16.85,
+      "transit": false
+     },
+     {
+      "name": "Meeting Room",
+      "cx": 3,
+      "cy": 2.6,
+      "transit": false
+     },
+     {
+      "name": "Open Workspace",
+      "cx": 7.5,
+      "cy": 9.45,
+      "transit": true
+     },
+     {
+      "name": "Conference Room",
+      "cx": 24.5,
+      "cy": 15.7,
+      "transit": false
+     },
+     {
+      "name": "Pantry",
+      "cx": 7.55,
+      "cy": 2.6,
+      "transit": false
+     },
+     {
+      "name": "Toilets",
+      "cx": 24.5,
+      "cy": 3.75,
+      "transit": false
+     },
+     {
+      "name": "Storage",
+      "cx": 4.6,
+      "cy": 16.85,
+      "transit": false
+     },
+     {
+      "name": "Circulation",
+      "cx": 24.5,
+      "cy": 9.45,
+      "transit": true
+     }
+    ],
+    "edges": [
+     {
+      "a": "Reception",
+      "b": "Manager Cabin",
+      "weight": 10.036,
+      "doorX": 15,
+      "doorY": 16.85
+     },
+     {
+      "a": "Reception",
+      "b": "Open Workspace",
+      "weight": 9.5742,
+      "doorX": 15,
+      "doorY": 9.45
+     },
+     {
+      "a": "Reception",
+      "b": "Conference Room",
+      "weight": 11.5407,
+      "doorX": 19,
+      "doorY": 15.7
+     },
+     {
+      "a": "Reception",
+      "b": "Toilets",
+      "weight": 12.0622,
+      "doorX": 19,
+      "doorY": 3.75
+     },
+     {
+      "a": "Reception",
+      "b": "Circulation",
+      "weight": 7.5742,
+      "doorX": 19,
+      "doorY": 9.45
+     },
+     {
+      "a": "Reception",
+      "b": "ENTRANCE",
+      "weight": 10.198,
+      "doorX": 15,
+      "doorY": 20
+     },
+     {
+      "a": "Manager Cabin",
+      "b": "Open Workspace",
+      "weight": 9.4128,
+      "doorX": 12.1,
+      "doorY": 13.7
+     },
+     {
+      "a": "Manager Cabin",
+      "b": "Storage",
+      "weight": 7.5,
+      "doorX": 9.2,
+      "doorY": 16.85
+     },
+     {
+      "a": "Manager Cabin",
+      "b": "ENTRANCE",
+      "weight": 4.2816,
+      "doorX": 15,
+      "doorY": 20
+     },
+     {
+      "a": "Meeting Room",
+      "b": "Open Workspace",
+      "weight": 8.7897,
+      "doorX": 3,
+      "doorY": 5.2
+     },
+     {
+      "a": "Meeting Room",
+      "b": "Pantry",
+      "weight": 4.55,
+      "doorX": 6,
+      "doorY": 2.6
+     },
+     {
+      "a": "Open Workspace",
+      "b": "Pantry",
+      "weight": 6.8503,
+      "doorX": 7.55,
+      "doorY": 5.2
+     },
+     {
+      "a": "Open Workspace",
+      "b": "Storage",
+      "weight": 8.2951,
+      "doorX": 4.6,
+      "doorY": 13.7
+     },
+     {
+      "a": "Conference Room",
+      "b": "Circulation",
+      "weight": 6.25,
+      "doorX": 24.5,
+      "doorY": 11.4
+     },
+     {
+      "a": "Toilets",
+      "b": "Circulation",
+      "weight": 5.7,
+      "doorX": 24.5,
+      "doorY": 7.5
+     }
+    ],
+    "paths": [
+     {
+      "room": "Reception",
+      "reachable": true,
+      "distance": 10.198,
+      "route": [
+       "ENTRANCE",
+       "Reception"
+      ],
+      "polyline": [
+       [
+        15,
+        20
+       ],
+       [
+        17,
+        10
+       ]
+      ]
+     },
+     {
+      "room": "Manager Cabin",
+      "reachable": true,
+      "distance": 4.2816,
+      "route": [
+       "ENTRANCE",
+       "Manager Cabin"
+      ],
+      "polyline": [
+       [
+        15,
+        20
+       ],
+       [
+        12.1,
+        16.85
+       ]
+      ]
+     },
+     {
+      "room": "Meeting Room",
+      "reachable": true,
+      "distance": 28.562,
+      "route": [
+       "ENTRANCE",
+       "Reception",
+       "Open Workspace",
+       "Meeting Room"
+      ],
+      "polyline": [
+       [
+        15,
+        20
+       ],
+       [
+        17,
+        10
+       ],
+       [
+        15,
+        9.45
+       ],
+       [
+        7.5,
+        9.45
+       ],
+       [
+        3,
+        5.2
+       ],
+       [
+        3,
+        2.6
+       ]
+      ]
+     },
+     {
+      "room": "Open Workspace",
+      "reachable": true,
+      "distance": 19.7723,
+      "route": [
+       "ENTRANCE",
+       "Reception",
+       "Open Workspace"
+      ],
+      "polyline": [
+       [
+        15,
+        20
+       ],
+       [
+        17,
+        10
+       ],
+       [
+        15,
+        9.45
+       ],
+       [
+        7.5,
+        9.45
+       ]
+      ]
+     },
+     {
+      "room": "Conference Room",
+      "reachable": true,
+      "distance": 21.7387,
+      "route": [
+       "ENTRANCE",
+       "Reception",
+       "Conference Room"
+      ],
+      "polyline": [
+       [
+        15,
+        20
+       ],
+       [
+        17,
+        10
+       ],
+       [
+        19,
+        15.7
+       ],
+       [
+        24.5,
+        15.7
+       ]
+      ]
+     },
+     {
+      "room": "Pantry",
+      "reachable": true,
+      "distance": 26.6226,
+      "route": [
+       "ENTRANCE",
+       "Reception",
+       "Open Workspace",
+       "Pantry"
+      ],
+      "polyline": [
+       [
+        15,
+        20
+       ],
+       [
+        17,
+        10
+       ],
+       [
+        15,
+        9.45
+       ],
+       [
+        7.5,
+        9.45
+       ],
+       [
+        7.55,
+        5.2
+       ],
+       [
+        7.55,
+        2.6
+       ]
+      ]
+     },
+     {
+      "room": "Toilets",
+      "reachable": true,
+      "distance": 22.2602,
+      "route": [
+       "ENTRANCE",
+       "Reception",
+       "Toilets"
+      ],
+      "polyline": [
+       [
+        15,
+        20
+       ],
+       [
+        17,
+        10
+       ],
+       [
+        19,
+        3.75
+       ],
+       [
+        24.5,
+        3.75
+       ]
+      ]
+     },
+     {
+      "room": "Storage",
+      "reachable": true,
+      "distance": 28.0674,
+      "route": [
+       "ENTRANCE",
+       "Reception",
+       "Open Workspace",
+       "Storage"
+      ],
+      "polyline": [
+       [
+        15,
+        20
+       ],
+       [
+        17,
+        10
+       ],
+       [
+        15,
+        9.45
+       ],
+       [
+        7.5,
+        9.45
+       ],
+       [
+        4.6,
+        13.7
+       ],
+       [
+        4.6,
+        16.85
+       ]
+      ]
+     },
+     {
+      "room": "Circulation",
+      "reachable": true,
+      "distance": 17.7723,
+      "route": [
+       "ENTRANCE",
+       "Reception",
+       "Circulation"
+      ],
+      "polyline": [
+       [
+        15,
+        20
+       ],
+       [
+        17,
+        10
+       ],
+       [
+        19,
+        9.45
+       ],
+       [
+        24.5,
+        9.45
+       ]
+      ]
+     }
+    ],
+    "disconnected": [],
+    "bottlenecks": [
+     {
+      "room": "Reception",
+      "load": 7
+     }
+    ],
+    "matrixNames": [
+     "Reception",
+     "Manager Cabin",
+     "Meeting Room",
+     "Open Workspace",
+     "Conference Room",
+     "Pantry",
+     "Toilets",
+     "Storage",
+     "Circulation"
+    ],
+    "distanceMatrix": [
+     [
+      0,
+      10.036,
+      18.364,
+      9.5742,
+      11.5407,
+      16.4245,
+      12.0622,
+      17.8694,
+      7.5742
+     ],
+     [
+      10.036,
+      0,
+      18.2025,
+      9.4128,
+      21.5767,
+      16.2631,
+      22.0982,
+      7.5,
+      17.6102
+     ],
+     [
+      18.364,
+      18.2025,
+      0,
+      8.7897,
+      29.9047,
+      4.55,
+      30.4262,
+      17.0849,
+      25.9382
+     ],
+     [
+      9.5742,
+      9.4128,
+      8.7897,
+      0,
+      21.1149,
+      6.8503,
+      21.6364,
+      8.2951,
+      17.1485
+     ],
+     [
+      11.5407,
+      21.5767,
+      29.9047,
+      21.1149,
+      0,
+      27.9652,
+      11.95,
+      29.4101,
+      6.25
+     ],
+     [
+      16.4245,
+      16.2631,
+      4.55,
+      6.8503,
+      27.9652,
+      0,
+      28.4867,
+      15.1454,
+      23.9988
+     ],
+     [
+      12.0622,
+      22.0982,
+      30.4262,
+      21.6364,
+      11.95,
+      28.4867,
+      0,
+      29.9316,
+      5.7
+     ],
+     [
+      17.8694,
+      7.5,
+      17.0849,
+      8.2951,
+      29.4101,
+      15.1454,
+      29.9316,
+      0,
+      25.4436
+     ],
+     [
+      7.5742,
+      17.6102,
+      25.9382,
+      17.1485,
+      6.25,
+      23.9988,
+      5.7,
+      25.4436,
+      0
+     ]
+    ],
+    "avgDistance": 19.9195,
+    "maxDistance": 28.562,
+    "components": 1,
+    "fullyConnected": true
+   },
+   "id": "L4",
+   "verified": true
+  }
+ ],
+ "note": "Precomputed by the live C++ engine and independently verified. Used only in Demo Mode."
+}

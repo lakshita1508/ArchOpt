@@ -1,0 +1,3878 @@
+{
+ "projectKey": "community-centre",
+ "generatedBy": "archopt_engine 1.0.0 (C++20)",
+ "algorithm": "simulated_annealing",
+ "seed": 42,
+ "candidatesEvaluated": 48328,
+ "feasibleFound": 6572,
+ "layouts": [
+  {
+   "rooms": [
+    {
+     "name": "Reception",
+     "type": "Reception",
+     "x": 4.9,
+     "y": 11.9,
+     "width": 10.1,
+     "height": 8.1,
+     "area": 81.81,
+     "requiredArea": 30,
+     "isFree": false,
+     "transit": true
+    },
+    {
+     "name": "Classroom 1",
+     "type": "Classroom",
+     "x": 12.2,
+     "y": 0,
+     "width": 6.5,
+     "height": 11.9,
+     "area": 77.35,
+     "requiredArea": 48,
+     "isFree": false,
+     "transit": false
+    },
+    {
+     "name": "Classroom 2",
+     "type": "Classroom",
+     "x": 18.7,
+     "y": 0,
+     "width": 11.3,
+     "height": 11.9,
+     "area": 134.47,
+     "requiredArea": 48,
+     "isFree": false,
+     "transit": false
+    },
+    {
+     "name": "Office",
+     "type": "Office",
+     "x": 4.9,
+     "y": 0,
+     "width": 7.3,
+     "height": 11.9,
+     "area": 86.87,
+     "requiredArea": 20,
+     "isFree": false,
+     "transit": false
+    },
+    {
+     "name": "Toilet 1",
+     "type": "Toilet",
+     "x": 0,
+     "y": 15.7,
+     "width": 4.9,
+     "height": 4.3,
+     "area": 21.07,
+     "requiredArea": 12,
+     "isFree": false,
+     "transit": false
+    },
+    {
+     "name": "Toilet 2",
+     "type": "Toilet",
+     "x": 1.7,
+     "y": 0,
+     "width": 3.2,
+     "height": 3.8,
+     "area": 12.16,
+     "requiredArea": 12,
+     "isFree": false,
+     "transit": false
+    },
+    {
+     "name": "Storage",
+     "type": "Storage",
+     "x": 27,
+     "y": 11.9,
+     "width": 3,
+     "height": 8.1,
+     "area": 24.3,
+     "requiredArea": 12,
+     "isFree": false,
+     "transit": false
+    },
+    {
+     "name": "Multipurpose Hall",
+     "type": "Open Area",
+     "x": 15,
+     "y": 11.9,
+     "width": 12,
+     "height": 8.1,
+     "area": 97.2,
+     "requiredArea": 100,
+     "isFree": false,
+     "transit": true
+    },
+    {
+     "name": "Corridor",
+     "type": "Corridor",
+     "x": 1.7,
+     "y": 3.8,
+     "width": 3.2,
+     "height": 11.9,
+     "area": 38.08,
+     "requiredArea": 40,
+     "isFree": false,
+     "transit": true
+    },
+    {
+     "name": "Unallocated",
+     "type": "Open Space",
+     "x": 0,
+     "y": 0,
+     "width": 1.7,
+     "height": 15.7,
+     "area": 26.69,
+     "requiredArea": 117,
+     "isFree": true,
+     "transit": false
+    }
+   ],
+   "metrics": {
+    "totalCost": 176.4757,
+    "costBreakdown": {
+     "overlap": 0,
+     "boundary": 0,
+     "adjacency": 0,
+     "corridor": 0,
+     "circulation": 163.1307,
+     "unused": 13.345,
+     "hardConstraints": 0
+    },
+    "plotArea": 600,
+    "usableArea": 535.23,
+    "circulationArea": 38.08,
+    "unusedArea": 26.69,
+    "areaEfficiency": 95.5517,
+    "adjacencySatisfaction": 100,
+    "circulationScore": 69.7897,
+    "accessibilityScore": 100,
+    "avgWalk": 15.1051,
+    "maxWalk": 24.1666,
+    "violations": 0,
+    "feasible": true
+   },
+   "validation": [
+    {
+     "id": "boundary",
+     "category": "hard",
+     "status": "passed",
+     "room": "Reception",
+     "message": "Inside the plot boundary."
+    },
+    {
+     "id": "boundary",
+     "category": "hard",
+     "status": "passed",
+     "room": "Classroom 1",
+     "message": "Inside the plot boundary."
+    },
+    {
+     "id": "boundary",
+     "category": "hard",
+     "status": "passed",
+     "room": "Classroom 2",
+     "message": "Inside the plot boundary."
+    },
+    {
+     "id": "boundary",
+     "category": "hard",
+     "status": "passed",
+     "room": "Office",
+     "message": "Inside the plot boundary."
+    },
+    {
+     "id": "boundary",
+     "category": "hard",
+     "status": "passed",
+     "room": "Toilet 1",
+     "message": "Inside the plot boundary."
+    },
+    {
+     "id": "boundary",
+     "category": "hard",
+     "status": "passed",
+     "room": "Toilet 2",
+     "message": "Inside the plot boundary."
+    },
+    {
+     "id": "boundary",
+     "category": "hard",
+     "status": "passed",
+     "room": "Storage",
+     "message": "Inside the plot boundary."
+    },
+    {
+     "id": "boundary",
+     "category": "hard",
+     "status": "passed",
+     "room": "Multipurpose Hall",
+     "message": "Inside the plot boundary."
+    },
+    {
+     "id": "boundary",
+     "category": "hard",
+     "status": "passed",
+     "room": "Corridor",
+     "message": "Inside the plot boundary."
+    },
+    {
+     "id": "boundary",
+     "category": "hard",
+     "status": "passed",
+     "room": "Unallocated",
+     "message": "Inside the plot boundary."
+    },
+    {
+     "id": "overlap",
+     "category": "hard",
+     "status": "passed",
+     "room": "",
+     "message": "No two rooms overlap."
+    },
+    {
+     "id": "min_dimensions",
+     "category": "hard",
+     "status": "passed",
+     "room": "Reception",
+     "message": "Minimum dimensions satisfied (10.10 x 8.10 m)."
+    },
+    {
+     "id": "required_area",
+     "category": "hard",
+     "status": "passed",
+     "room": "Reception",
+     "message": "Area 81.81 m2 meets the required 30.00 m2."
+    },
+    {
+     "id": "min_dimensions",
+     "category": "hard",
+     "status": "passed",
+     "room": "Classroom 1",
+     "message": "Minimum dimensions satisfied (6.50 x 11.90 m)."
+    },
+    {
+     "id": "required_area",
+     "category": "hard",
+     "status": "passed",
+     "room": "Classroom 1",
+     "message": "Area 77.35 m2 meets the required 48.00 m2."
+    },
+    {
+     "id": "min_dimensions",
+     "category": "hard",
+     "status": "passed",
+     "room": "Classroom 2",
+     "message": "Minimum dimensions satisfied (11.30 x 11.90 m)."
+    },
+    {
+     "id": "required_area",
+     "category": "hard",
+     "status": "passed",
+     "room": "Classroom 2",
+     "message": "Area 134.47 m2 meets the required 48.00 m2."
+    },
+    {
+     "id": "min_dimensions",
+     "category": "hard",
+     "status": "passed",
+     "room": "Office",
+     "message": "Minimum dimensions satisfied (7.30 x 11.90 m)."
+    },
+    {
+     "id": "required_area",
+     "category": "hard",
+     "status": "passed",
+     "room": "Office",
+     "message": "Area 86.87 m2 meets the required 20.00 m2."
+    },
+    {
+     "id": "min_dimensions",
+     "category": "hard",
+     "status": "passed",
+     "room": "Toilet 1",
+     "message": "Minimum dimensions satisfied (4.90 x 4.30 m)."
+    },
+    {
+     "id": "required_area",
+     "category": "hard",
+     "status": "passed",
+     "room": "Toilet 1",
+     "message": "Area 21.07 m2 meets the required 12.00 m2."
+    },
+    {
+     "id": "min_dimensions",
+     "category": "hard",
+     "status": "passed",
+     "room": "Toilet 2",
+     "message": "Minimum dimensions satisfied (3.20 x 3.80 m)."
+    },
+    {
+     "id": "required_area",
+     "category": "hard",
+     "status": "passed",
+     "room": "Toilet 2",
+     "message": "Area 12.16 m2 meets the required 12.00 m2."
+    },
+    {
+     "id": "min_dimensions",
+     "category": "hard",
+     "status": "passed",
+     "room": "Storage",
+     "message": "Minimum dimensions satisfied (3.00 x 8.10 m)."
+    },
+    {
+     "id": "required_area",
+     "category": "hard",
+     "status": "passed",
+     "room": "Storage",
+     "message": "Area 24.30 m2 meets the required 12.00 m2."
+    },
+    {
+     "id": "min_dimensions",
+     "category": "hard",
+     "status": "passed",
+     "room": "Multipurpose Hall",
+     "message": "Minimum dimensions satisfied (12.00 x 8.10 m)."
+    },
+    {
+     "id": "required_area",
+     "category": "hard",
+     "status": "passed",
+     "room": "Multipurpose Hall",
+     "message": "Area 97.20 m2 meets the required 100.00 m2."
+    },
+    {
+     "id": "min_dimensions",
+     "category": "hard",
+     "status": "passed",
+     "room": "Corridor",
+     "message": "Minimum dimensions satisfied (3.20 x 11.90 m)."
+    },
+    {
+     "id": "required_area",
+     "category": "hard",
+     "status": "passed",
+     "room": "Corridor",
+     "message": "Area 38.08 m2 meets the required 40.00 m2."
+    },
+    {
+     "id": "corridor_width",
+     "category": "hard",
+     "status": "passed",
+     "room": "Corridor",
+     "message": "Corridor width 3.20 m is sufficient."
+    },
+    {
+     "id": "connectivity",
+     "category": "hard",
+     "status": "passed",
+     "room": "",
+     "message": "All rooms are reachable from the entrance."
+    },
+    {
+     "id": "relationship",
+     "category": "hard",
+     "status": "passed",
+     "room": "Reception",
+     "message": "Reception / ENTRANCE (must be adjacent) satisfied."
+    },
+    {
+     "id": "relationship",
+     "category": "soft",
+     "status": "passed",
+     "room": "Office",
+     "message": "Office / Reception (prefers adjacency) satisfied."
+    },
+    {
+     "id": "relationship",
+     "category": "hard",
+     "status": "passed",
+     "room": "Classroom 1",
+     "message": "Classroom 1 / Classroom 2 (must be adjacent) satisfied."
+    },
+    {
+     "id": "relationship",
+     "category": "soft",
+     "status": "passed",
+     "room": "Toilet 1",
+     "message": "Toilet 1 / Corridor (prefers adjacency) satisfied."
+    },
+    {
+     "id": "relationship",
+     "category": "soft",
+     "status": "passed",
+     "room": "Toilet 2",
+     "message": "Toilet 2 / Corridor (prefers adjacency) satisfied."
+    },
+    {
+     "id": "relationship",
+     "category": "soft",
+     "status": "passed",
+     "room": "Storage",
+     "message": "Storage / Multipurpose Hall (prefers adjacency) satisfied."
+    }
+   ],
+   "disconnected": [],
+   "circulation": {
+    "entrance": {
+     "x": 15,
+     "y": 20
+    },
+    "nodes": [
+     {
+      "name": "Reception",
+      "cx": 9.95,
+      "cy": 15.95,
+      "transit": true
+     },
+     {
+      "name": "Classroom 1",
+      "cx": 15.45,
+      "cy": 5.95,
+      "transit": false
+     },
+     {
+      "name": "Classroom 2",
+      "cx": 24.35,
+      "cy": 5.95,
+      "transit": false
+     },
+     {
+      "name": "Office",
+      "cx": 8.55,
+      "cy": 5.95,
+      "transit": false
+     },
+     {
+      "name": "Toilet 1",
+      "cx": 2.45,
+      "cy": 17.85,
+      "transit": false
+     },
+     {
+      "name": "Toilet 2",
+      "cx": 3.3,
+      "cy": 1.9,
+      "transit": false
+     },
+     {
+      "name": "Storage",
+      "cx": 28.5,
+      "cy": 15.95,
+      "transit": false
+     },
+     {
+      "name": "Multipurpose Hall",
+      "cx": 21,
+      "cy": 15.95,
+      "transit": true
+     },
+     {
+      "name": "Corridor",
+      "cx": 3.3,
+      "cy": 9.75,
+      "transit": true
+     }
+    ],
+    "edges": [
+     {
+      "a": "Reception",
+      "b": "Classroom 1",
+      "weight": 11.683,
+      "doorX": 13.6,
+      "doorY": 11.9
+     },
+     {
+      "a": "Reception",
+      "b": "Office",
+      "weight": 10.2351,
+      "doorX": 8.55,
+      "doorY": 11.9
+     },
+     {
+      "a": "Reception",
+      "b": "Toilet 1",
+      "weight": 7.8456,
+      "doorX": 4.9,
+      "doorY": 17.85
+     },
+     {
+      "a": "Reception",
+      "b": "Multipurpose Hall",
+      "weight": 11.05,
+      "doorX": 15,
+      "doorY": 15.95
+     },
+     {
+      "a": "Reception",
+      "b": "Corridor",
+      "weight": 9.8432,
+      "doorX": 4.9,
+      "doorY": 13.8
+     },
+     {
+      "a": "Reception",
+      "b": "ENTRANCE",
+      "weight": 6.4734,
+      "doorX": 15,
+      "doorY": 20
+     },
+     {
+      "a": "Classroom 1",
+      "b": "Classroom 2",
+      "weight": 8.9,
+      "doorX": 18.7,
+      "doorY": 5.95
+     },
+     {
+      "a": "Classroom 1",
+      "b": "Office",
+      "weight": 6.9,
+      "doorX": 12.2,
+      "doorY": 5.95
+     },
+     {
+      "a": "Classroom 1",
+      "b": "Multipurpose Hall",
+      "weight": 11.9112,
+      "doorX": 16.85,
+      "doorY": 11.9
+     },
+     {
+      "a": "Classroom 2",
+      "b": "Storage",
+      "weight": 11.3043,
+      "doorX": 28.5,
+      "doorY": 11.9
+     },
+     {
+      "a": "Classroom 2",
+      "b": "Multipurpose Hall",
+      "weight": 10.5887,
+      "doorX": 22.85,
+      "doorY": 11.9
+     },
+     {
+      "a": "Office",
+      "b": "Toilet 2",
+      "weight": 7.0521,
+      "doorX": 4.9,
+      "doorY": 1.9
+     },
+     {
+      "a": "Office",
+      "b": "Corridor",
+      "weight": 6.5989,
+      "doorX": 4.9,
+      "doorY": 7.85
+     },
+     {
+      "a": "Toilet 1",
+      "b": "Corridor",
+      "weight": 8.2619,
+      "doorX": 3.3,
+      "doorY": 15.7
+     },
+     {
+      "a": "Toilet 2",
+      "b": "Corridor",
+      "weight": 7.85,
+      "doorX": 3.3,
+      "doorY": 3.8
+     },
+     {
+      "a": "Storage",
+      "b": "Multipurpose Hall",
+      "weight": 7.5,
+      "doorX": 27,
+      "doorY": 15.95
+     },
+     {
+      "a": "Multipurpose Hall",
+      "b": "ENTRANCE",
+      "weight": 7.239,
+      "doorX": 15,
+      "doorY": 20
+     }
+    ],
+    "paths": [
+     {
+      "room": "Reception",
+      "reachable": true,
+      "distance": 6.4734,
+      "route": [
+       "ENTRANCE",
+       "Reception"
+      ],
+      "polyline": [
+       [
+        15,
+        20
+       ],
+       [
+        9.95,
+        15.95
+       ]
+      ]
+     },
+     {
+      "room": "Classroom 1",
+      "reachable": true,
+      "distance": 18.1564,
+      "route": [
+       "ENTRANCE",
+       "Reception",
+       "Classroom 1"
+      ],
+      "polyline": [
+       [
+        15,
+        20
+       ],
+       [
+        9.95,
+        15.95
+       ],
+       [
+        13.6,
+        11.9
+       ],
+       [
+        15.45,
+        5.95
+       ]
+      ]
+     },
+     {
+      "room": "Classroom 2",
+      "reachable": true,
+      "distance": 17.8276,
+      "route": [
+       "ENTRANCE",
+       "Multipurpose Hall",
+       "Classroom 2"
+      ],
+      "polyline": [
+       [
+        15,
+        20
+       ],
+       [
+        21,
+        15.95
+       ],
+       [
+        22.85,
+        11.9
+       ],
+       [
+        24.35,
+        5.95
+       ]
+      ]
+     },
+     {
+      "room": "Office",
+      "reachable": true,
+      "distance": 16.7086,
+      "route": [
+       "ENTRANCE",
+       "Reception",
+       "Office"
+      ],
+      "polyline": [
+       [
+        15,
+        20
+       ],
+       [
+        9.95,
+        15.95
+       ],
+       [
+        8.55,
+        11.9
+       ],
+       [
+        8.55,
+        5.95
+       ]
+      ]
+     },
+     {
+      "room": "Toilet 1",
+      "reachable": true,
+      "distance": 14.319,
+      "route": [
+       "ENTRANCE",
+       "Reception",
+       "Toilet 1"
+      ],
+      "polyline": [
+       [
+        15,
+        20
+       ],
+       [
+        9.95,
+        15.95
+       ],
+       [
+        4.9,
+        17.85
+       ],
+       [
+        2.45,
+        17.85
+       ]
+      ]
+     },
+     {
+      "room": "Toilet 2",
+      "reachable": true,
+      "distance": 24.1666,
+      "route": [
+       "ENTRANCE",
+       "Reception",
+       "Corridor",
+       "Toilet 2"
+      ],
+      "polyline": [
+       [
+        15,
+        20
+       ],
+       [
+        9.95,
+        15.95
+       ],
+       [
+        4.9,
+        13.8
+       ],
+       [
+        3.3,
+        9.75
+       ],
+       [
+        3.3,
+        3.8
+       ],
+       [
+        3.3,
+        1.9
+       ]
+      ]
+     },
+     {
+      "room": "Storage",
+      "reachable": true,
+      "distance": 14.739,
+      "route": [
+       "ENTRANCE",
+       "Multipurpose Hall",
+       "Storage"
+      ],
+      "polyline": [
+       [
+        15,
+        20
+       ],
+       [
+        21,
+        15.95
+       ],
+       [
+        27,
+        15.95
+       ],
+       [
+        28.5,
+        15.95
+       ]
+      ]
+     },
+     {
+      "room": "Multipurpose Hall",
+      "reachable": true,
+      "distance": 7.239,
+      "route": [
+       "ENTRANCE",
+       "Multipurpose Hall"
+      ],
+      "polyline": [
+       [
+        15,
+        20
+       ],
+       [
+        21,
+        15.95
+       ]
+      ]
+     },
+     {
+      "room": "Corridor",
+      "reachable": true,
+      "distance": 16.3166,
+      "route": [
+       "ENTRANCE",
+       "Reception",
+       "Corridor"
+      ],
+      "polyline": [
+       [
+        15,
+        20
+       ],
+       [
+        9.95,
+        15.95
+       ],
+       [
+        4.9,
+        13.8
+       ],
+       [
+        3.3,
+        9.75
+       ]
+      ]
+     }
+    ],
+    "disconnected": [],
+    "bottlenecks": [
+     {
+      "room": "Reception",
+      "load": 5
+     }
+    ],
+    "matrixNames": [
+     "Reception",
+     "Classroom 1",
+     "Classroom 2",
+     "Office",
+     "Toilet 1",
+     "Toilet 2",
+     "Storage",
+     "Multipurpose Hall",
+     "Corridor"
+    ],
+    "distanceMatrix": [
+     [
+      0,
+      11.683,
+      21.6387,
+      10.2351,
+      7.8456,
+      17.6932,
+      18.55,
+      11.05,
+      9.8432
+     ],
+     [
+      11.683,
+      0,
+      8.9,
+      6.9,
+      19.5286,
+      29.3763,
+      19.4112,
+      11.9112,
+      21.5263
+     ],
+     [
+      21.6387,
+      8.9,
+      0,
+      31.8738,
+      29.4843,
+      39.3319,
+      11.3043,
+      10.5887,
+      31.4819
+     ],
+     [
+      10.2351,
+      6.9,
+      31.8738,
+      0,
+      14.8608,
+      7.0521,
+      28.7851,
+      21.2851,
+      6.5989
+     ],
+     [
+      7.8456,
+      19.5286,
+      29.4843,
+      14.8608,
+      0,
+      16.1119,
+      26.3956,
+      18.8956,
+      8.2619
+     ],
+     [
+      17.6932,
+      29.3763,
+      39.3319,
+      7.0521,
+      16.1119,
+      0,
+      36.2432,
+      28.7432,
+      7.85
+     ],
+     [
+      18.55,
+      19.4112,
+      11.3043,
+      28.7851,
+      26.3956,
+      36.2432,
+      0,
+      7.5,
+      28.3932
+     ],
+     [
+      11.05,
+      11.9112,
+      10.5887,
+      21.2851,
+      18.8956,
+      28.7432,
+      7.5,
+      0,
+      20.8932
+     ],
+     [
+      9.8432,
+      21.5263,
+      31.4819,
+      6.5989,
+      8.2619,
+      7.85,
+      28.3932,
+      20.8932,
+      0
+     ]
+    ],
+    "avgDistance": 15.1051,
+    "maxDistance": 24.1666,
+    "components": 1,
+    "fullyConnected": true
+   },
+   "id": "L1",
+   "verified": true
+  },
+  {
+   "rooms": [
+    {
+     "name": "Reception",
+     "type": "Reception",
+     "x": 4.9,
+     "y": 11.9,
+     "width": 10.1,
+     "height": 8.1,
+     "area": 81.81,
+     "requiredArea": 30,
+     "isFree": false,
+     "transit": true
+    },
+    {
+     "name": "Classroom 1",
+     "type": "Classroom",
+     "x": 12.2,
+     "y": 0,
+     "width": 8,
+     "height": 11.9,
+     "area": 95.2,
+     "requiredArea": 48,
+     "isFree": false,
+     "transit": false
+    },
+    {
+     "name": "Classroom 2",
+     "type": "Classroom",
+     "x": 20.2,
+     "y": 0,
+     "width": 9.8,
+     "height": 11.9,
+     "area": 116.62,
+     "requiredArea": 48,
+     "isFree": false,
+     "transit": false
+    },
+    {
+     "name": "Office",
+     "type": "Office",
+     "x": 4.9,
+     "y": 0,
+     "width": 7.3,
+     "height": 11.9,
+     "area": 86.87,
+     "requiredArea": 20,
+     "isFree": false,
+     "transit": false
+    },
+    {
+     "name": "Toilet 1",
+     "type": "Toilet",
+     "x": 1.7,
+     "y": 0,
+     "width": 3.2,
+     "height": 3.8,
+     "area": 12.16,
+     "requiredArea": 12,
+     "isFree": false,
+     "transit": false
+    },
+    {
+     "name": "Toilet 2",
+     "type": "Toilet",
+     "x": 0,
+     "y": 15.7,
+     "width": 4.9,
+     "height": 4.3,
+     "area": 21.07,
+     "requiredArea": 12,
+     "isFree": false,
+     "transit": false
+    },
+    {
+     "name": "Storage",
+     "type": "Storage",
+     "x": 27,
+     "y": 11.9,
+     "width": 3,
+     "height": 8.1,
+     "area": 24.3,
+     "requiredArea": 12,
+     "isFree": false,
+     "transit": false
+    },
+    {
+     "name": "Multipurpose Hall",
+     "type": "Open Area",
+     "x": 15,
+     "y": 11.9,
+     "width": 12,
+     "height": 8.1,
+     "area": 97.2,
+     "requiredArea": 100,
+     "isFree": false,
+     "transit": true
+    },
+    {
+     "name": "Corridor",
+     "type": "Corridor",
+     "x": 1.7,
+     "y": 3.8,
+     "width": 3.2,
+     "height": 11.9,
+     "area": 38.08,
+     "requiredArea": 40,
+     "isFree": false,
+     "transit": true
+    },
+    {
+     "name": "Unallocated",
+     "type": "Open Space",
+     "x": 0,
+     "y": 0,
+     "width": 1.7,
+     "height": 15.7,
+     "area": 26.69,
+     "requiredArea": 117,
+     "isFree": true,
+     "transit": false
+    }
+   ],
+   "metrics": {
+    "totalCost": 176.8907,
+    "costBreakdown": {
+     "overlap": 0,
+     "boundary": 0,
+     "adjacency": 0,
+     "corridor": 0,
+     "circulation": 163.5457,
+     "unused": 13.345,
+     "hardConstraints": 0
+    },
+    "plotArea": 600,
+    "usableArea": 535.23,
+    "circulationArea": 38.08,
+    "unusedArea": 26.69,
+    "areaEfficiency": 95.5517,
+    "adjacencySatisfaction": 100,
+    "circulationScore": 69.6514,
+    "accessibilityScore": 100,
+    "avgWalk": 15.1743,
+    "maxWalk": 24.1666,
+    "violations": 0,
+    "feasible": true
+   },
+   "validation": [
+    {
+     "id": "boundary",
+     "category": "hard",
+     "status": "passed",
+     "room": "Reception",
+     "message": "Inside the plot boundary."
+    },
+    {
+     "id": "boundary",
+     "category": "hard",
+     "status": "passed",
+     "room": "Classroom 1",
+     "message": "Inside the plot boundary."
+    },
+    {
+     "id": "boundary",
+     "category": "hard",
+     "status": "passed",
+     "room": "Classroom 2",
+     "message": "Inside the plot boundary."
+    },
+    {
+     "id": "boundary",
+     "category": "hard",
+     "status": "passed",
+     "room": "Office",
+     "message": "Inside the plot boundary."
+    },
+    {
+     "id": "boundary",
+     "category": "hard",
+     "status": "passed",
+     "room": "Toilet 1",
+     "message": "Inside the plot boundary."
+    },
+    {
+     "id": "boundary",
+     "category": "hard",
+     "status": "passed",
+     "room": "Toilet 2",
+     "message": "Inside the plot boundary."
+    },
+    {
+     "id": "boundary",
+     "category": "hard",
+     "status": "passed",
+     "room": "Storage",
+     "message": "Inside the plot boundary."
+    },
+    {
+     "id": "boundary",
+     "category": "hard",
+     "status": "passed",
+     "room": "Multipurpose Hall",
+     "message": "Inside the plot boundary."
+    },
+    {
+     "id": "boundary",
+     "category": "hard",
+     "status": "passed",
+     "room": "Corridor",
+     "message": "Inside the plot boundary."
+    },
+    {
+     "id": "boundary",
+     "category": "hard",
+     "status": "passed",
+     "room": "Unallocated",
+     "message": "Inside the plot boundary."
+    },
+    {
+     "id": "overlap",
+     "category": "hard",
+     "status": "passed",
+     "room": "",
+     "message": "No two rooms overlap."
+    },
+    {
+     "id": "min_dimensions",
+     "category": "hard",
+     "status": "passed",
+     "room": "Reception",
+     "message": "Minimum dimensions satisfied (10.10 x 8.10 m)."
+    },
+    {
+     "id": "required_area",
+     "category": "hard",
+     "status": "passed",
+     "room": "Reception",
+     "message": "Area 81.81 m2 meets the required 30.00 m2."
+    },
+    {
+     "id": "min_dimensions",
+     "category": "hard",
+     "status": "passed",
+     "room": "Classroom 1",
+     "message": "Minimum dimensions satisfied (8.00 x 11.90 m)."
+    },
+    {
+     "id": "required_area",
+     "category": "hard",
+     "status": "passed",
+     "room": "Classroom 1",
+     "message": "Area 95.20 m2 meets the required 48.00 m2."
+    },
+    {
+     "id": "min_dimensions",
+     "category": "hard",
+     "status": "passed",
+     "room": "Classroom 2",
+     "message": "Minimum dimensions satisfied (9.80 x 11.90 m)."
+    },
+    {
+     "id": "required_area",
+     "category": "hard",
+     "status": "passed",
+     "room": "Classroom 2",
+     "message": "Area 116.62 m2 meets the required 48.00 m2."
+    },
+    {
+     "id": "min_dimensions",
+     "category": "hard",
+     "status": "passed",
+     "room": "Office",
+     "message": "Minimum dimensions satisfied (7.30 x 11.90 m)."
+    },
+    {
+     "id": "required_area",
+     "category": "hard",
+     "status": "passed",
+     "room": "Office",
+     "message": "Area 86.87 m2 meets the required 20.00 m2."
+    },
+    {
+     "id": "min_dimensions",
+     "category": "hard",
+     "status": "passed",
+     "room": "Toilet 1",
+     "message": "Minimum dimensions satisfied (3.20 x 3.80 m)."
+    },
+    {
+     "id": "required_area",
+     "category": "hard",
+     "status": "passed",
+     "room": "Toilet 1",
+     "message": "Area 12.16 m2 meets the required 12.00 m2."
+    },
+    {
+     "id": "min_dimensions",
+     "category": "hard",
+     "status": "passed",
+     "room": "Toilet 2",
+     "message": "Minimum dimensions satisfied (4.90 x 4.30 m)."
+    },
+    {
+     "id": "required_area",
+     "category": "hard",
+     "status": "passed",
+     "room": "Toilet 2",
+     "message": "Area 21.07 m2 meets the required 12.00 m2."
+    },
+    {
+     "id": "min_dimensions",
+     "category": "hard",
+     "status": "passed",
+     "room": "Storage",
+     "message": "Minimum dimensions satisfied (3.00 x 8.10 m)."
+    },
+    {
+     "id": "required_area",
+     "category": "hard",
+     "status": "passed",
+     "room": "Storage",
+     "message": "Area 24.30 m2 meets the required 12.00 m2."
+    },
+    {
+     "id": "min_dimensions",
+     "category": "hard",
+     "status": "passed",
+     "room": "Multipurpose Hall",
+     "message": "Minimum dimensions satisfied (12.00 x 8.10 m)."
+    },
+    {
+     "id": "required_area",
+     "category": "hard",
+     "status": "passed",
+     "room": "Multipurpose Hall",
+     "message": "Area 97.20 m2 meets the required 100.00 m2."
+    },
+    {
+     "id": "min_dimensions",
+     "category": "hard",
+     "status": "passed",
+     "room": "Corridor",
+     "message": "Minimum dimensions satisfied (3.20 x 11.90 m)."
+    },
+    {
+     "id": "required_area",
+     "category": "hard",
+     "status": "passed",
+     "room": "Corridor",
+     "message": "Area 38.08 m2 meets the required 40.00 m2."
+    },
+    {
+     "id": "corridor_width",
+     "category": "hard",
+     "status": "passed",
+     "room": "Corridor",
+     "message": "Corridor width 3.20 m is sufficient."
+    },
+    {
+     "id": "connectivity",
+     "category": "hard",
+     "status": "passed",
+     "room": "",
+     "message": "All rooms are reachable from the entrance."
+    },
+    {
+     "id": "relationship",
+     "category": "hard",
+     "status": "passed",
+     "room": "Reception",
+     "message": "Reception / ENTRANCE (must be adjacent) satisfied."
+    },
+    {
+     "id": "relationship",
+     "category": "soft",
+     "status": "passed",
+     "room": "Office",
+     "message": "Office / Reception (prefers adjacency) satisfied."
+    },
+    {
+     "id": "relationship",
+     "category": "hard",
+     "status": "passed",
+     "room": "Classroom 1",
+     "message": "Classroom 1 / Classroom 2 (must be adjacent) satisfied."
+    },
+    {
+     "id": "relationship",
+     "category": "soft",
+     "status": "passed",
+     "room": "Toilet 1",
+     "message": "Toilet 1 / Corridor (prefers adjacency) satisfied."
+    },
+    {
+     "id": "relationship",
+     "category": "soft",
+     "status": "passed",
+     "room": "Toilet 2",
+     "message": "Toilet 2 / Corridor (prefers adjacency) satisfied."
+    },
+    {
+     "id": "relationship",
+     "category": "soft",
+     "status": "passed",
+     "room": "Storage",
+     "message": "Storage / Multipurpose Hall (prefers adjacency) satisfied."
+    }
+   ],
+   "disconnected": [],
+   "circulation": {
+    "entrance": {
+     "x": 15,
+     "y": 20
+    },
+    "nodes": [
+     {
+      "name": "Reception",
+      "cx": 9.95,
+      "cy": 15.95,
+      "transit": true
+     },
+     {
+      "name": "Classroom 1",
+      "cx": 16.2,
+      "cy": 5.95,
+      "transit": false
+     },
+     {
+      "name": "Classroom 2",
+      "cx": 25.1,
+      "cy": 5.95,
+      "transit": false
+     },
+     {
+      "name": "Office",
+      "cx": 8.55,
+      "cy": 5.95,
+      "transit": false
+     },
+     {
+      "name": "Toilet 1",
+      "cx": 3.3,
+      "cy": 1.9,
+      "transit": false
+     },
+     {
+      "name": "Toilet 2",
+      "cx": 2.45,
+      "cy": 17.85,
+      "transit": false
+     },
+     {
+      "name": "Storage",
+      "cx": 28.5,
+      "cy": 15.95,
+      "transit": false
+     },
+     {
+      "name": "Multipurpose Hall",
+      "cx": 21,
+      "cy": 15.95,
+      "transit": true
+     },
+     {
+      "name": "Corridor",
+      "cx": 3.3,
+      "cy": 9.75,
+      "transit": true
+     }
+    ],
+    "edges": [
+     {
+      "a": "Reception",
+      "b": "Classroom 1",
+      "weight": 11.9453,
+      "doorX": 13.6,
+      "doorY": 11.9
+     },
+     {
+      "a": "Reception",
+      "b": "Office",
+      "weight": 10.2351,
+      "doorX": 8.55,
+      "doorY": 11.9
+     },
+     {
+      "a": "Reception",
+      "b": "Toilet 2",
+      "weight": 7.8456,
+      "doorX": 4.9,
+      "doorY": 17.85
+     },
+     {
+      "a": "Reception",
+      "b": "Multipurpose Hall",
+      "weight": 11.05,
+      "doorX": 15,
+      "doorY": 15.95
+     },
+     {
+      "a": "Reception",
+      "b": "Corridor",
+      "weight": 9.8432,
+      "doorX": 4.9,
+      "doorY": 13.8
+     },
+     {
+      "a": "Reception",
+      "b": "ENTRANCE",
+      "weight": 6.4734,
+      "doorX": 15,
+      "doorY": 20
+     },
+     {
+      "a": "Classroom 1",
+      "b": "Classroom 2",
+      "weight": 8.9,
+      "doorX": 20.2,
+      "doorY": 5.95
+     },
+     {
+      "a": "Classroom 1",
+      "b": "Office",
+      "weight": 7.65,
+      "doorX": 12.2,
+      "doorY": 5.95
+     },
+     {
+      "a": "Classroom 1",
+      "b": "Multipurpose Hall",
+      "weight": 11.4004,
+      "doorX": 17.6,
+      "doorY": 11.9
+     },
+     {
+      "a": "Classroom 2",
+      "b": "Storage",
+      "weight": 10.9029,
+      "doorX": 28.5,
+      "doorY": 11.9
+     },
+     {
+      "a": "Classroom 2",
+      "b": "Multipurpose Hall",
+      "weight": 10.9489,
+      "doorX": 23.6,
+      "doorY": 11.9
+     },
+     {
+      "a": "Office",
+      "b": "Toilet 1",
+      "weight": 7.0521,
+      "doorX": 4.9,
+      "doorY": 1.9
+     },
+     {
+      "a": "Office",
+      "b": "Corridor",
+      "weight": 6.5989,
+      "doorX": 4.9,
+      "doorY": 7.85
+     },
+     {
+      "a": "Toilet 1",
+      "b": "Corridor",
+      "weight": 7.85,
+      "doorX": 3.3,
+      "doorY": 3.8
+     },
+     {
+      "a": "Toilet 2",
+      "b": "Corridor",
+      "weight": 8.2619,
+      "doorX": 3.3,
+      "doorY": 15.7
+     },
+     {
+      "a": "Storage",
+      "b": "Multipurpose Hall",
+      "weight": 7.5,
+      "doorX": 27,
+      "doorY": 15.95
+     },
+     {
+      "a": "Multipurpose Hall",
+      "b": "ENTRANCE",
+      "weight": 7.239,
+      "doorX": 15,
+      "doorY": 20
+     }
+    ],
+    "paths": [
+     {
+      "room": "Reception",
+      "reachable": true,
+      "distance": 6.4734,
+      "route": [
+       "ENTRANCE",
+       "Reception"
+      ],
+      "polyline": [
+       [
+        15,
+        20
+       ],
+       [
+        9.95,
+        15.95
+       ]
+      ]
+     },
+     {
+      "room": "Classroom 1",
+      "reachable": true,
+      "distance": 18.4187,
+      "route": [
+       "ENTRANCE",
+       "Reception",
+       "Classroom 1"
+      ],
+      "polyline": [
+       [
+        15,
+        20
+       ],
+       [
+        9.95,
+        15.95
+       ],
+       [
+        13.6,
+        11.9
+       ],
+       [
+        16.2,
+        5.95
+       ]
+      ]
+     },
+     {
+      "room": "Classroom 2",
+      "reachable": true,
+      "distance": 18.1879,
+      "route": [
+       "ENTRANCE",
+       "Multipurpose Hall",
+       "Classroom 2"
+      ],
+      "polyline": [
+       [
+        15,
+        20
+       ],
+       [
+        21,
+        15.95
+       ],
+       [
+        23.6,
+        11.9
+       ],
+       [
+        25.1,
+        5.95
+       ]
+      ]
+     },
+     {
+      "room": "Office",
+      "reachable": true,
+      "distance": 16.7086,
+      "route": [
+       "ENTRANCE",
+       "Reception",
+       "Office"
+      ],
+      "polyline": [
+       [
+        15,
+        20
+       ],
+       [
+        9.95,
+        15.95
+       ],
+       [
+        8.55,
+        11.9
+       ],
+       [
+        8.55,
+        5.95
+       ]
+      ]
+     },
+     {
+      "room": "Toilet 1",
+      "reachable": true,
+      "distance": 24.1666,
+      "route": [
+       "ENTRANCE",
+       "Reception",
+       "Corridor",
+       "Toilet 1"
+      ],
+      "polyline": [
+       [
+        15,
+        20
+       ],
+       [
+        9.95,
+        15.95
+       ],
+       [
+        4.9,
+        13.8
+       ],
+       [
+        3.3,
+        9.75
+       ],
+       [
+        3.3,
+        3.8
+       ],
+       [
+        3.3,
+        1.9
+       ]
+      ]
+     },
+     {
+      "room": "Toilet 2",
+      "reachable": true,
+      "distance": 14.319,
+      "route": [
+       "ENTRANCE",
+       "Reception",
+       "Toilet 2"
+      ],
+      "polyline": [
+       [
+        15,
+        20
+       ],
+       [
+        9.95,
+        15.95
+       ],
+       [
+        4.9,
+        17.85
+       ],
+       [
+        2.45,
+        17.85
+       ]
+      ]
+     },
+     {
+      "room": "Storage",
+      "reachable": true,
+      "distance": 14.739,
+      "route": [
+       "ENTRANCE",
+       "Multipurpose Hall",
+       "Storage"
+      ],
+      "polyline": [
+       [
+        15,
+        20
+       ],
+       [
+        21,
+        15.95
+       ],
+       [
+        27,
+        15.95
+       ],
+       [
+        28.5,
+        15.95
+       ]
+      ]
+     },
+     {
+      "room": "Multipurpose Hall",
+      "reachable": true,
+      "distance": 7.239,
+      "route": [
+       "ENTRANCE",
+       "Multipurpose Hall"
+      ],
+      "polyline": [
+       [
+        15,
+        20
+       ],
+       [
+        21,
+        15.95
+       ]
+      ]
+     },
+     {
+      "room": "Corridor",
+      "reachable": true,
+      "distance": 16.3166,
+      "route": [
+       "ENTRANCE",
+       "Reception",
+       "Corridor"
+      ],
+      "polyline": [
+       [
+        15,
+        20
+       ],
+       [
+        9.95,
+        15.95
+       ],
+       [
+        4.9,
+        13.8
+       ],
+       [
+        3.3,
+        9.75
+       ]
+      ]
+     }
+    ],
+    "disconnected": [],
+    "bottlenecks": [
+     {
+      "room": "Reception",
+      "load": 5
+     }
+    ],
+    "matrixNames": [
+     "Reception",
+     "Classroom 1",
+     "Classroom 2",
+     "Office",
+     "Toilet 1",
+     "Toilet 2",
+     "Storage",
+     "Multipurpose Hall",
+     "Corridor"
+    ],
+    "distanceMatrix": [
+     [
+      0,
+      11.9453,
+      21.9989,
+      10.2351,
+      17.6932,
+      7.8456,
+      18.55,
+      11.05,
+      9.8432
+     ],
+     [
+      11.9453,
+      0,
+      8.9,
+      7.65,
+      29.6385,
+      19.7909,
+      18.9004,
+      11.4004,
+      21.7885
+     ],
+     [
+      21.9989,
+      8.9,
+      0,
+      32.2341,
+      39.6921,
+      29.8445,
+      10.9029,
+      10.9489,
+      31.8421
+     ],
+     [
+      10.2351,
+      7.65,
+      32.2341,
+      0,
+      7.0521,
+      14.8608,
+      28.7851,
+      21.2851,
+      6.5989
+     ],
+     [
+      17.6932,
+      29.6385,
+      39.6921,
+      7.0521,
+      0,
+      16.1119,
+      36.2432,
+      28.7432,
+      7.85
+     ],
+     [
+      7.8456,
+      19.7909,
+      29.8445,
+      14.8608,
+      16.1119,
+      0,
+      26.3956,
+      18.8956,
+      8.2619
+     ],
+     [
+      18.55,
+      18.9004,
+      10.9029,
+      28.7851,
+      36.2432,
+      26.3956,
+      0,
+      7.5,
+      28.3932
+     ],
+     [
+      11.05,
+      11.4004,
+      10.9489,
+      21.2851,
+      28.7432,
+      18.8956,
+      7.5,
+      0,
+      20.8932
+     ],
+     [
+      9.8432,
+      21.7885,
+      31.8421,
+      6.5989,
+      7.85,
+      8.2619,
+      28.3932,
+      20.8932,
+      0
+     ]
+    ],
+    "avgDistance": 15.1743,
+    "maxDistance": 24.1666,
+    "components": 1,
+    "fullyConnected": true
+   },
+   "id": "L2",
+   "verified": true
+  },
+  {
+   "rooms": [
+    {
+     "name": "Reception",
+     "type": "Reception",
+     "x": 4.8,
+     "y": 11.4,
+     "width": 10.2,
+     "height": 8.6,
+     "area": 87.72,
+     "requiredArea": 30,
+     "isFree": false,
+     "transit": true
+    },
+    {
+     "name": "Classroom 1",
+     "type": "Classroom",
+     "x": 23.7,
+     "y": 0,
+     "width": 6.3,
+     "height": 11.4,
+     "area": 71.82,
+     "requiredArea": 48,
+     "isFree": false,
+     "transit": false
+    },
+    {
+     "name": "Classroom 2",
+     "type": "Classroom",
+     "x": 11.5,
+     "y": 0,
+     "width": 12.2,
+     "height": 11.4,
+     "area": 139.08,
+     "requiredArea": 48,
+     "isFree": false,
+     "transit": false
+    },
+    {
+     "name": "Office",
+     "type": "Office",
+     "x": 4.8,
+     "y": 0,
+     "width": 6.7,
+     "height": 11.4,
+     "area": 76.38,
+     "requiredArea": 20,
+     "isFree": false,
+     "transit": false
+    },
+    {
+     "name": "Toilet 1",
+     "type": "Toilet",
+     "x": 1.6,
+     "y": 0,
+     "width": 3.2,
+     "height": 3.9,
+     "area": 12.48,
+     "requiredArea": 12,
+     "isFree": false,
+     "transit": false
+    },
+    {
+     "name": "Toilet 2",
+     "type": "Toilet",
+     "x": 0,
+     "y": 15.8,
+     "width": 4.8,
+     "height": 4.2,
+     "area": 20.16,
+     "requiredArea": 12,
+     "isFree": false,
+     "transit": false
+    },
+    {
+     "name": "Storage",
+     "type": "Storage",
+     "x": 27,
+     "y": 11.4,
+     "width": 3,
+     "height": 8.6,
+     "area": 25.8,
+     "requiredArea": 12,
+     "isFree": false,
+     "transit": false
+    },
+    {
+     "name": "Multipurpose Hall",
+     "type": "Open Area",
+     "x": 15,
+     "y": 11.4,
+     "width": 12,
+     "height": 8.6,
+     "area": 103.2,
+     "requiredArea": 100,
+     "isFree": false,
+     "transit": true
+    },
+    {
+     "name": "Corridor",
+     "type": "Corridor",
+     "x": 1.6,
+     "y": 3.9,
+     "width": 3.2,
+     "height": 11.9,
+     "area": 38.08,
+     "requiredArea": 40,
+     "isFree": false,
+     "transit": true
+    },
+    {
+     "name": "Unallocated",
+     "type": "Open Space",
+     "x": 0,
+     "y": 0,
+     "width": 1.6,
+     "height": 15.8,
+     "area": 25.28,
+     "requiredArea": 117,
+     "isFree": true,
+     "transit": false
+    }
+   ],
+   "metrics": {
+    "totalCost": 177.3579,
+    "costBreakdown": {
+     "overlap": 0,
+     "boundary": 0,
+     "adjacency": 0,
+     "corridor": 0,
+     "circulation": 164.7179,
+     "unused": 12.64,
+     "hardConstraints": 0
+    },
+    "plotArea": 600,
+    "usableArea": 536.64,
+    "circulationArea": 38.08,
+    "unusedArea": 25.28,
+    "areaEfficiency": 95.7867,
+    "adjacencySatisfaction": 100,
+    "circulationScore": 69.2574,
+    "accessibilityScore": 100,
+    "avgWalk": 15.3713,
+    "maxWalk": 24.1633,
+    "violations": 0,
+    "feasible": true
+   },
+   "validation": [
+    {
+     "id": "boundary",
+     "category": "hard",
+     "status": "passed",
+     "room": "Reception",
+     "message": "Inside the plot boundary."
+    },
+    {
+     "id": "boundary",
+     "category": "hard",
+     "status": "passed",
+     "room": "Classroom 1",
+     "message": "Inside the plot boundary."
+    },
+    {
+     "id": "boundary",
+     "category": "hard",
+     "status": "passed",
+     "room": "Classroom 2",
+     "message": "Inside the plot boundary."
+    },
+    {
+     "id": "boundary",
+     "category": "hard",
+     "status": "passed",
+     "room": "Office",
+     "message": "Inside the plot boundary."
+    },
+    {
+     "id": "boundary",
+     "category": "hard",
+     "status": "passed",
+     "room": "Toilet 1",
+     "message": "Inside the plot boundary."
+    },
+    {
+     "id": "boundary",
+     "category": "hard",
+     "status": "passed",
+     "room": "Toilet 2",
+     "message": "Inside the plot boundary."
+    },
+    {
+     "id": "boundary",
+     "category": "hard",
+     "status": "passed",
+     "room": "Storage",
+     "message": "Inside the plot boundary."
+    },
+    {
+     "id": "boundary",
+     "category": "hard",
+     "status": "passed",
+     "room": "Multipurpose Hall",
+     "message": "Inside the plot boundary."
+    },
+    {
+     "id": "boundary",
+     "category": "hard",
+     "status": "passed",
+     "room": "Corridor",
+     "message": "Inside the plot boundary."
+    },
+    {
+     "id": "boundary",
+     "category": "hard",
+     "status": "passed",
+     "room": "Unallocated",
+     "message": "Inside the plot boundary."
+    },
+    {
+     "id": "overlap",
+     "category": "hard",
+     "status": "passed",
+     "room": "",
+     "message": "No two rooms overlap."
+    },
+    {
+     "id": "min_dimensions",
+     "category": "hard",
+     "status": "passed",
+     "room": "Reception",
+     "message": "Minimum dimensions satisfied (10.20 x 8.60 m)."
+    },
+    {
+     "id": "required_area",
+     "category": "hard",
+     "status": "passed",
+     "room": "Reception",
+     "message": "Area 87.72 m2 meets the required 30.00 m2."
+    },
+    {
+     "id": "min_dimensions",
+     "category": "hard",
+     "status": "passed",
+     "room": "Classroom 1",
+     "message": "Minimum dimensions satisfied (6.30 x 11.40 m)."
+    },
+    {
+     "id": "required_area",
+     "category": "hard",
+     "status": "passed",
+     "room": "Classroom 1",
+     "message": "Area 71.82 m2 meets the required 48.00 m2."
+    },
+    {
+     "id": "min_dimensions",
+     "category": "hard",
+     "status": "passed",
+     "room": "Classroom 2",
+     "message": "Minimum dimensions satisfied (12.20 x 11.40 m)."
+    },
+    {
+     "id": "required_area",
+     "category": "hard",
+     "status": "passed",
+     "room": "Classroom 2",
+     "message": "Area 139.08 m2 meets the required 48.00 m2."
+    },
+    {
+     "id": "min_dimensions",
+     "category": "hard",
+     "status": "passed",
+     "room": "Office",
+     "message": "Minimum dimensions satisfied (6.70 x 11.40 m)."
+    },
+    {
+     "id": "required_area",
+     "category": "hard",
+     "status": "passed",
+     "room": "Office",
+     "message": "Area 76.38 m2 meets the required 20.00 m2."
+    },
+    {
+     "id": "min_dimensions",
+     "category": "hard",
+     "status": "passed",
+     "room": "Toilet 1",
+     "message": "Minimum dimensions satisfied (3.20 x 3.90 m)."
+    },
+    {
+     "id": "required_area",
+     "category": "hard",
+     "status": "passed",
+     "room": "Toilet 1",
+     "message": "Area 12.48 m2 meets the required 12.00 m2."
+    },
+    {
+     "id": "min_dimensions",
+     "category": "hard",
+     "status": "passed",
+     "room": "Toilet 2",
+     "message": "Minimum dimensions satisfied (4.80 x 4.20 m)."
+    },
+    {
+     "id": "required_area",
+     "category": "hard",
+     "status": "passed",
+     "room": "Toilet 2",
+     "message": "Area 20.16 m2 meets the required 12.00 m2."
+    },
+    {
+     "id": "min_dimensions",
+     "category": "hard",
+     "status": "passed",
+     "room": "Storage",
+     "message": "Minimum dimensions satisfied (3.00 x 8.60 m)."
+    },
+    {
+     "id": "required_area",
+     "category": "hard",
+     "status": "passed",
+     "room": "Storage",
+     "message": "Area 25.80 m2 meets the required 12.00 m2."
+    },
+    {
+     "id": "min_dimensions",
+     "category": "hard",
+     "status": "passed",
+     "room": "Multipurpose Hall",
+     "message": "Minimum dimensions satisfied (12.00 x 8.60 m)."
+    },
+    {
+     "id": "required_area",
+     "category": "hard",
+     "status": "passed",
+     "room": "Multipurpose Hall",
+     "message": "Area 103.20 m2 meets the required 100.00 m2."
+    },
+    {
+     "id": "min_dimensions",
+     "category": "hard",
+     "status": "passed",
+     "room": "Corridor",
+     "message": "Minimum dimensions satisfied (3.20 x 11.90 m)."
+    },
+    {
+     "id": "required_area",
+     "category": "hard",
+     "status": "passed",
+     "room": "Corridor",
+     "message": "Area 38.08 m2 meets the required 40.00 m2."
+    },
+    {
+     "id": "corridor_width",
+     "category": "hard",
+     "status": "passed",
+     "room": "Corridor",
+     "message": "Corridor width 3.20 m is sufficient."
+    },
+    {
+     "id": "connectivity",
+     "category": "hard",
+     "status": "passed",
+     "room": "",
+     "message": "All rooms are reachable from the entrance."
+    },
+    {
+     "id": "relationship",
+     "category": "hard",
+     "status": "passed",
+     "room": "Reception",
+     "message": "Reception / ENTRANCE (must be adjacent) satisfied."
+    },
+    {
+     "id": "relationship",
+     "category": "soft",
+     "status": "passed",
+     "room": "Office",
+     "message": "Office / Reception (prefers adjacency) satisfied."
+    },
+    {
+     "id": "relationship",
+     "category": "hard",
+     "status": "passed",
+     "room": "Classroom 1",
+     "message": "Classroom 1 / Classroom 2 (must be adjacent) satisfied."
+    },
+    {
+     "id": "relationship",
+     "category": "soft",
+     "status": "passed",
+     "room": "Toilet 1",
+     "message": "Toilet 1 / Corridor (prefers adjacency) satisfied."
+    },
+    {
+     "id": "relationship",
+     "category": "soft",
+     "status": "passed",
+     "room": "Toilet 2",
+     "message": "Toilet 2 / Corridor (prefers adjacency) satisfied."
+    },
+    {
+     "id": "relationship",
+     "category": "soft",
+     "status": "passed",
+     "room": "Storage",
+     "message": "Storage / Multipurpose Hall (prefers adjacency) satisfied."
+    }
+   ],
+   "disconnected": [],
+   "circulation": {
+    "entrance": {
+     "x": 15,
+     "y": 20
+    },
+    "nodes": [
+     {
+      "name": "Reception",
+      "cx": 9.9,
+      "cy": 15.7,
+      "transit": true
+     },
+     {
+      "name": "Classroom 1",
+      "cx": 26.85,
+      "cy": 5.7,
+      "transit": false
+     },
+     {
+      "name": "Classroom 2",
+      "cx": 17.6,
+      "cy": 5.7,
+      "transit": false
+     },
+     {
+      "name": "Office",
+      "cx": 8.15,
+      "cy": 5.7,
+      "transit": false
+     },
+     {
+      "name": "Toilet 1",
+      "cx": 3.2,
+      "cy": 1.95,
+      "transit": false
+     },
+     {
+      "name": "Toilet 2",
+      "cx": 2.4,
+      "cy": 17.9,
+      "transit": false
+     },
+     {
+      "name": "Storage",
+      "cx": 28.5,
+      "cy": 15.7,
+      "transit": false
+     },
+     {
+      "name": "Multipurpose Hall",
+      "cx": 21,
+      "cy": 15.7,
+      "transit": true
+     },
+     {
+      "name": "Corridor",
+      "cx": 3.2,
+      "cy": 9.85,
+      "transit": true
+     }
+    ],
+    "edges": [
+     {
+      "a": "Reception",
+      "b": "Classroom 2",
+      "weight": 12.6212,
+      "doorX": 13.25,
+      "doorY": 11.4
+     },
+     {
+      "a": "Reception",
+      "b": "Office",
+      "weight": 10.3425,
+      "doorX": 8.15,
+      "doorY": 11.4
+     },
+     {
+      "a": "Reception",
+      "b": "Toilet 2",
+      "weight": 7.9543,
+      "doorX": 4.8,
+      "doorY": 17.9
+     },
+     {
+      "a": "Reception",
+      "b": "Multipurpose Hall",
+      "weight": 11.1,
+      "doorX": 15,
+      "doorY": 15.7
+     },
+     {
+      "a": "Reception",
+      "b": "Corridor",
+      "weight": 9.5925,
+      "doorX": 4.8,
+      "doorY": 13.6
+     },
+     {
+      "a": "Reception",
+      "b": "ENTRANCE",
+      "weight": 6.6708,
+      "doorX": 15,
+      "doorY": 20
+     },
+     {
+      "a": "Classroom 1",
+      "b": "Classroom 2",
+      "weight": 9.25,
+      "doorX": 23.7,
+      "doorY": 5.7
+     },
+     {
+      "a": "Classroom 1",
+      "b": "Storage",
+      "weight": 10.234,
+      "doorX": 28.5,
+      "doorY": 11.4
+     },
+     {
+      "a": "Classroom 1",
+      "b": "Multipurpose Hall",
+      "weight": 12.0106,
+      "doorX": 25.35,
+      "doorY": 11.4
+     },
+     {
+      "a": "Classroom 2",
+      "b": "Office",
+      "weight": 9.45,
+      "doorX": 11.5,
+      "doorY": 5.7
+     },
+     {
+      "a": "Classroom 2",
+      "b": "Multipurpose Hall",
+      "weight": 10.5683,
+      "doorX": 19.35,
+      "doorY": 11.4
+     },
+     {
+      "a": "Office",
+      "b": "Toilet 1",
+      "weight": 6.6284,
+      "doorX": 4.8,
+      "doorY": 1.95
+     },
+     {
+      "a": "Office",
+      "b": "Corridor",
+      "weight": 6.5965,
+      "doorX": 4.8,
+      "doorY": 7.65
+     },
+     {
+      "a": "Toilet 1",
+      "b": "Corridor",
+      "weight": 7.9,
+      "doorX": 3.2,
+      "doorY": 3.9
+     },
+     {
+      "a": "Toilet 2",
+      "b": "Corridor",
+      "weight": 8.1972,
+      "doorX": 3.2,
+      "doorY": 15.8
+     },
+     {
+      "a": "Storage",
+      "b": "Multipurpose Hall",
+      "weight": 7.5,
+      "doorX": 27,
+      "doorY": 15.7
+     },
+     {
+      "a": "Multipurpose Hall",
+      "b": "ENTRANCE",
+      "weight": 7.3817,
+      "doorX": 15,
+      "doorY": 20
+     }
+    ],
+    "paths": [
+     {
+      "room": "Reception",
+      "reachable": true,
+      "distance": 6.6708,
+      "route": [
+       "ENTRANCE",
+       "Reception"
+      ],
+      "polyline": [
+       [
+        15,
+        20
+       ],
+       [
+        9.9,
+        15.7
+       ]
+      ]
+     },
+     {
+      "room": "Classroom 1",
+      "reachable": true,
+      "distance": 19.3924,
+      "route": [
+       "ENTRANCE",
+       "Multipurpose Hall",
+       "Classroom 1"
+      ],
+      "polyline": [
+       [
+        15,
+        20
+       ],
+       [
+        21,
+        15.7
+       ],
+       [
+        25.35,
+        11.4
+       ],
+       [
+        26.85,
+        5.7
+       ]
+      ]
+     },
+     {
+      "room": "Classroom 2",
+      "reachable": true,
+      "distance": 17.95,
+      "route": [
+       "ENTRANCE",
+       "Multipurpose Hall",
+       "Classroom 2"
+      ],
+      "polyline": [
+       [
+        15,
+        20
+       ],
+       [
+        21,
+        15.7
+       ],
+       [
+        19.35,
+        11.4
+       ],
+       [
+        17.6,
+        5.7
+       ]
+      ]
+     },
+     {
+      "room": "Office",
+      "reachable": true,
+      "distance": 17.0133,
+      "route": [
+       "ENTRANCE",
+       "Reception",
+       "Office"
+      ],
+      "polyline": [
+       [
+        15,
+        20
+       ],
+       [
+        9.9,
+        15.7
+       ],
+       [
+        8.15,
+        11.4
+       ],
+       [
+        8.15,
+        5.7
+       ]
+      ]
+     },
+     {
+      "room": "Toilet 1",
+      "reachable": true,
+      "distance": 24.1633,
+      "route": [
+       "ENTRANCE",
+       "Reception",
+       "Corridor",
+       "Toilet 1"
+      ],
+      "polyline": [
+       [
+        15,
+        20
+       ],
+       [
+        9.9,
+        15.7
+       ],
+       [
+        4.8,
+        13.6
+       ],
+       [
+        3.2,
+        9.85
+       ],
+       [
+        3.2,
+        3.9
+       ],
+       [
+        3.2,
+        1.95
+       ]
+      ]
+     },
+     {
+      "room": "Toilet 2",
+      "reachable": true,
+      "distance": 14.6251,
+      "route": [
+       "ENTRANCE",
+       "Reception",
+       "Toilet 2"
+      ],
+      "polyline": [
+       [
+        15,
+        20
+       ],
+       [
+        9.9,
+        15.7
+       ],
+       [
+        4.8,
+        17.9
+       ],
+       [
+        2.4,
+        17.9
+       ]
+      ]
+     },
+     {
+      "room": "Storage",
+      "reachable": true,
+      "distance": 14.8817,
+      "route": [
+       "ENTRANCE",
+       "Multipurpose Hall",
+       "Storage"
+      ],
+      "polyline": [
+       [
+        15,
+        20
+       ],
+       [
+        21,
+        15.7
+       ],
+       [
+        27,
+        15.7
+       ],
+       [
+        28.5,
+        15.7
+       ]
+      ]
+     },
+     {
+      "room": "Multipurpose Hall",
+      "reachable": true,
+      "distance": 7.3817,
+      "route": [
+       "ENTRANCE",
+       "Multipurpose Hall"
+      ],
+      "polyline": [
+       [
+        15,
+        20
+       ],
+       [
+        21,
+        15.7
+       ]
+      ]
+     },
+     {
+      "room": "Corridor",
+      "reachable": true,
+      "distance": 16.2633,
+      "route": [
+       "ENTRANCE",
+       "Reception",
+       "Corridor"
+      ],
+      "polyline": [
+       [
+        15,
+        20
+       ],
+       [
+        9.9,
+        15.7
+       ],
+       [
+        4.8,
+        13.6
+       ],
+       [
+        3.2,
+        9.85
+       ]
+      ]
+     }
+    ],
+    "disconnected": [],
+    "bottlenecks": [
+     {
+      "room": "Reception",
+      "load": 4
+     }
+    ],
+    "matrixNames": [
+     "Reception",
+     "Classroom 1",
+     "Classroom 2",
+     "Office",
+     "Toilet 1",
+     "Toilet 2",
+     "Storage",
+     "Multipurpose Hall",
+     "Corridor"
+    ],
+    "distanceMatrix": [
+     [
+      0,
+      23.1106,
+      12.6212,
+      10.3425,
+      17.4925,
+      7.9543,
+      18.6,
+      11.1,
+      9.5925
+     ],
+     [
+      23.1106,
+      0,
+      9.25,
+      33.4531,
+      40.6031,
+      31.0649,
+      10.234,
+      12.0106,
+      32.7031
+     ],
+     [
+      12.6212,
+      9.25,
+      0,
+      9.45,
+      30.1137,
+      20.5754,
+      18.0683,
+      10.5683,
+      22.2137
+     ],
+     [
+      10.3425,
+      33.4531,
+      9.45,
+      0,
+      6.6284,
+      14.7937,
+      28.9425,
+      21.4425,
+      6.5965
+     ],
+     [
+      17.4925,
+      40.6031,
+      30.1137,
+      6.6284,
+      0,
+      16.0972,
+      36.0925,
+      28.5925,
+      7.9
+     ],
+     [
+      7.9543,
+      31.0649,
+      20.5754,
+      14.7937,
+      16.0972,
+      0,
+      26.5543,
+      19.0543,
+      8.1972
+     ],
+     [
+      18.6,
+      10.234,
+      18.0683,
+      28.9425,
+      36.0925,
+      26.5543,
+      0,
+      7.5,
+      28.1925
+     ],
+     [
+      11.1,
+      12.0106,
+      10.5683,
+      21.4425,
+      28.5925,
+      19.0543,
+      7.5,
+      0,
+      20.6925
+     ],
+     [
+      9.5925,
+      32.7031,
+      22.2137,
+      6.5965,
+      7.9,
+      8.1972,
+      28.1925,
+      20.6925,
+      0
+     ]
+    ],
+    "avgDistance": 15.3713,
+    "maxDistance": 24.1633,
+    "components": 1,
+    "fullyConnected": true
+   },
+   "id": "L3",
+   "verified": true
+  },
+  {
+   "rooms": [
+    {
+     "name": "Reception",
+     "type": "Reception",
+     "x": 12.3,
+     "y": 15,
+     "width": 8.1,
+     "height": 5,
+     "area": 40.5,
+     "requiredArea": 30,
+     "isFree": false,
+     "transit": true
+    },
+    {
+     "name": "Classroom 1",
+     "type": "Classroom",
+     "x": 20.4,
+     "y": 0,
+     "width": 9.6,
+     "height": 8,
+     "area": 76.8,
+     "requiredArea": 48,
+     "isFree": false,
+     "transit": false
+    },
+    {
+     "name": "Classroom 2",
+     "type": "Classroom",
+     "x": 20.4,
+     "y": 8,
+     "width": 9.6,
+     "height": 8,
+     "area": 76.8,
+     "requiredArea": 48,
+     "isFree": false,
+     "transit": false
+    },
+    {
+     "name": "Office",
+     "type": "Office",
+     "x": 20.4,
+     "y": 16,
+     "width": 9.6,
+     "height": 4,
+     "area": 38.4,
+     "requiredArea": 20,
+     "isFree": false,
+     "transit": false
+    },
+    {
+     "name": "Toilet 1",
+     "type": "Toilet",
+     "x": 0,
+     "y": 0,
+     "width": 5.4,
+     "height": 15.6,
+     "area": 84.24,
+     "requiredArea": 12,
+     "isFree": false,
+     "transit": false
+    },
+    {
+     "name": "Toilet 2",
+     "type": "Toilet",
+     "x": 0,
+     "y": 15.6,
+     "width": 3.3,
+     "height": 4.4,
+     "area": 14.52,
+     "requiredArea": 12,
+     "isFree": false,
+     "transit": false
+    },
+    {
+     "name": "Storage",
+     "type": "Storage",
+     "x": 5.4,
+     "y": 0,
+     "width": 6.9,
+     "height": 6.9,
+     "area": 47.61,
+     "requiredArea": 12,
+     "isFree": false,
+     "transit": false
+    },
+    {
+     "name": "Multipurpose Hall",
+     "type": "Open Area",
+     "x": 12.3,
+     "y": 0,
+     "width": 8.1,
+     "height": 15,
+     "area": 121.5,
+     "requiredArea": 100,
+     "isFree": false,
+     "transit": true
+    },
+    {
+     "name": "Corridor",
+     "type": "Corridor",
+     "x": 3.3,
+     "y": 15.6,
+     "width": 9,
+     "height": 4.4,
+     "area": 39.6,
+     "requiredArea": 40,
+     "isFree": false,
+     "transit": true
+    },
+    {
+     "name": "Unallocated",
+     "type": "Open Space",
+     "x": 5.4,
+     "y": 6.9,
+     "width": 6.9,
+     "height": 8.7,
+     "area": 60.03,
+     "requiredArea": 117,
+     "isFree": true,
+     "transit": false
+    }
+   ],
+   "metrics": {
+    "totalCost": 192.5065,
+    "costBreakdown": {
+     "overlap": 0,
+     "boundary": 0,
+     "adjacency": 0,
+     "corridor": 0,
+     "circulation": 162.4915,
+     "unused": 30.015,
+     "hardConstraints": 0
+    },
+    "plotArea": 600,
+    "usableArea": 500.37,
+    "circulationArea": 39.6,
+    "unusedArea": 60.03,
+    "areaEfficiency": 89.995,
+    "adjacencySatisfaction": 100,
+    "circulationScore": 69.3029,
+    "accessibilityScore": 100,
+    "avgWalk": 15.3486,
+    "maxWalk": 23.4667,
+    "violations": 0,
+    "feasible": true
+   },
+   "validation": [
+    {
+     "id": "boundary",
+     "category": "hard",
+     "status": "passed",
+     "room": "Reception",
+     "message": "Inside the plot boundary."
+    },
+    {
+     "id": "boundary",
+     "category": "hard",
+     "status": "passed",
+     "room": "Classroom 1",
+     "message": "Inside the plot boundary."
+    },
+    {
+     "id": "boundary",
+     "category": "hard",
+     "status": "passed",
+     "room": "Classroom 2",
+     "message": "Inside the plot boundary."
+    },
+    {
+     "id": "boundary",
+     "category": "hard",
+     "status": "passed",
+     "room": "Office",
+     "message": "Inside the plot boundary."
+    },
+    {
+     "id": "boundary",
+     "category": "hard",
+     "status": "passed",
+     "room": "Toilet 1",
+     "message": "Inside the plot boundary."
+    },
+    {
+     "id": "boundary",
+     "category": "hard",
+     "status": "passed",
+     "room": "Toilet 2",
+     "message": "Inside the plot boundary."
+    },
+    {
+     "id": "boundary",
+     "category": "hard",
+     "status": "passed",
+     "room": "Storage",
+     "message": "Inside the plot boundary."
+    },
+    {
+     "id": "boundary",
+     "category": "hard",
+     "status": "passed",
+     "room": "Multipurpose Hall",
+     "message": "Inside the plot boundary."
+    },
+    {
+     "id": "boundary",
+     "category": "hard",
+     "status": "passed",
+     "room": "Corridor",
+     "message": "Inside the plot boundary."
+    },
+    {
+     "id": "boundary",
+     "category": "hard",
+     "status": "passed",
+     "room": "Unallocated",
+     "message": "Inside the plot boundary."
+    },
+    {
+     "id": "overlap",
+     "category": "hard",
+     "status": "passed",
+     "room": "",
+     "message": "No two rooms overlap."
+    },
+    {
+     "id": "min_dimensions",
+     "category": "hard",
+     "status": "passed",
+     "room": "Reception",
+     "message": "Minimum dimensions satisfied (8.10 x 5.00 m)."
+    },
+    {
+     "id": "required_area",
+     "category": "hard",
+     "status": "passed",
+     "room": "Reception",
+     "message": "Area 40.50 m2 meets the required 30.00 m2."
+    },
+    {
+     "id": "min_dimensions",
+     "category": "hard",
+     "status": "passed",
+     "room": "Classroom 1",
+     "message": "Minimum dimensions satisfied (9.60 x 8.00 m)."
+    },
+    {
+     "id": "required_area",
+     "category": "hard",
+     "status": "passed",
+     "room": "Classroom 1",
+     "message": "Area 76.80 m2 meets the required 48.00 m2."
+    },
+    {
+     "id": "min_dimensions",
+     "category": "hard",
+     "status": "passed",
+     "room": "Classroom 2",
+     "message": "Minimum dimensions satisfied (9.60 x 8.00 m)."
+    },
+    {
+     "id": "required_area",
+     "category": "hard",
+     "status": "passed",
+     "room": "Classroom 2",
+     "message": "Area 76.80 m2 meets the required 48.00 m2."
+    },
+    {
+     "id": "min_dimensions",
+     "category": "hard",
+     "status": "passed",
+     "room": "Office",
+     "message": "Minimum dimensions satisfied (9.60 x 4.00 m)."
+    },
+    {
+     "id": "required_area",
+     "category": "hard",
+     "status": "passed",
+     "room": "Office",
+     "message": "Area 38.40 m2 meets the required 20.00 m2."
+    },
+    {
+     "id": "min_dimensions",
+     "category": "hard",
+     "status": "passed",
+     "room": "Toilet 1",
+     "message": "Minimum dimensions satisfied (5.40 x 15.60 m)."
+    },
+    {
+     "id": "required_area",
+     "category": "hard",
+     "status": "passed",
+     "room": "Toilet 1",
+     "message": "Area 84.24 m2 meets the required 12.00 m2."
+    },
+    {
+     "id": "min_dimensions",
+     "category": "hard",
+     "status": "passed",
+     "room": "Toilet 2",
+     "message": "Minimum dimensions satisfied (3.30 x 4.40 m)."
+    },
+    {
+     "id": "required_area",
+     "category": "hard",
+     "status": "passed",
+     "room": "Toilet 2",
+     "message": "Area 14.52 m2 meets the required 12.00 m2."
+    },
+    {
+     "id": "min_dimensions",
+     "category": "hard",
+     "status": "passed",
+     "room": "Storage",
+     "message": "Minimum dimensions satisfied (6.90 x 6.90 m)."
+    },
+    {
+     "id": "required_area",
+     "category": "hard",
+     "status": "passed",
+     "room": "Storage",
+     "message": "Area 47.61 m2 meets the required 12.00 m2."
+    },
+    {
+     "id": "min_dimensions",
+     "category": "hard",
+     "status": "passed",
+     "room": "Multipurpose Hall",
+     "message": "Minimum dimensions satisfied (8.10 x 15.00 m)."
+    },
+    {
+     "id": "required_area",
+     "category": "hard",
+     "status": "passed",
+     "room": "Multipurpose Hall",
+     "message": "Area 121.50 m2 meets the required 100.00 m2."
+    },
+    {
+     "id": "min_dimensions",
+     "category": "hard",
+     "status": "passed",
+     "room": "Corridor",
+     "message": "Minimum dimensions satisfied (9.00 x 4.40 m)."
+    },
+    {
+     "id": "required_area",
+     "category": "hard",
+     "status": "passed",
+     "room": "Corridor",
+     "message": "Area 39.60 m2 meets the required 40.00 m2."
+    },
+    {
+     "id": "corridor_width",
+     "category": "hard",
+     "status": "passed",
+     "room": "Corridor",
+     "message": "Corridor width 4.40 m is sufficient."
+    },
+    {
+     "id": "connectivity",
+     "category": "hard",
+     "status": "passed",
+     "room": "",
+     "message": "All rooms are reachable from the entrance."
+    },
+    {
+     "id": "relationship",
+     "category": "hard",
+     "status": "passed",
+     "room": "Reception",
+     "message": "Reception / ENTRANCE (must be adjacent) satisfied."
+    },
+    {
+     "id": "relationship",
+     "category": "soft",
+     "status": "passed",
+     "room": "Office",
+     "message": "Office / Reception (prefers adjacency) satisfied."
+    },
+    {
+     "id": "relationship",
+     "category": "hard",
+     "status": "passed",
+     "room": "Classroom 1",
+     "message": "Classroom 1 / Classroom 2 (must be adjacent) satisfied."
+    },
+    {
+     "id": "relationship",
+     "category": "soft",
+     "status": "passed",
+     "room": "Toilet 1",
+     "message": "Toilet 1 / Corridor (prefers adjacency) satisfied."
+    },
+    {
+     "id": "relationship",
+     "category": "soft",
+     "status": "passed",
+     "room": "Toilet 2",
+     "message": "Toilet 2 / Corridor (prefers adjacency) satisfied."
+    },
+    {
+     "id": "relationship",
+     "category": "soft",
+     "status": "passed",
+     "room": "Storage",
+     "message": "Storage / Multipurpose Hall (prefers adjacency) satisfied."
+    }
+   ],
+   "disconnected": [],
+   "circulation": {
+    "entrance": {
+     "x": 15,
+     "y": 20
+    },
+    "nodes": [
+     {
+      "name": "Reception",
+      "cx": 16.35,
+      "cy": 17.5,
+      "transit": true
+     },
+     {
+      "name": "Classroom 1",
+      "cx": 25.2,
+      "cy": 4,
+      "transit": false
+     },
+     {
+      "name": "Classroom 2",
+      "cx": 25.2,
+      "cy": 12,
+      "transit": false
+     },
+     {
+      "name": "Office",
+      "cx": 25.2,
+      "cy": 18,
+      "transit": false
+     },
+     {
+      "name": "Toilet 1",
+      "cx": 2.7,
+      "cy": 7.8,
+      "transit": false
+     },
+     {
+      "name": "Toilet 2",
+      "cx": 1.65,
+      "cy": 17.8,
+      "transit": false
+     },
+     {
+      "name": "Storage",
+      "cx": 8.85,
+      "cy": 3.45,
+      "transit": false
+     },
+     {
+      "name": "Multipurpose Hall",
+      "cx": 16.35,
+      "cy": 7.5,
+      "transit": true
+     },
+     {
+      "name": "Corridor",
+      "cx": 7.8,
+      "cy": 17.8,
+      "transit": true
+     }
+    ],
+    "edges": [
+     {
+      "a": "Reception",
+      "b": "Classroom 2",
+      "weight": 10.4575,
+      "doorX": 20.4,
+      "doorY": 15.5
+     },
+     {
+      "a": "Reception",
+      "b": "Office",
+      "weight": 8.8807,
+      "doorX": 20.4,
+      "doorY": 18
+     },
+     {
+      "a": "Reception",
+      "b": "Multipurpose Hall",
+      "weight": 10,
+      "doorX": 16.35,
+      "doorY": 15
+     },
+     {
+      "a": "Reception",
+      "b": "Corridor",
+      "weight": 8.5611,
+      "doorX": 12.3,
+      "doorY": 17.8
+     },
+     {
+      "a": "Reception",
+      "b": "ENTRANCE",
+      "weight": 2.8412,
+      "doorX": 15,
+      "doorY": 20
+     },
+     {
+      "a": "Classroom 1",
+      "b": "Classroom 2",
+      "weight": 8,
+      "doorX": 25.2,
+      "doorY": 8
+     },
+     {
+      "a": "Classroom 1",
+      "b": "Multipurpose Hall",
+      "weight": 10.1528,
+      "doorX": 20.4,
+      "doorY": 4
+     },
+     {
+      "a": "Classroom 2",
+      "b": "Office",
+      "weight": 6,
+      "doorX": 25.2,
+      "doorY": 16
+     },
+     {
+      "a": "Classroom 2",
+      "b": "Multipurpose Hall",
+      "weight": 10.5183,
+      "doorX": 20.4,
+      "doorY": 11.5
+     },
+     {
+      "a": "Toilet 1",
+      "b": "Toilet 2",
+      "weight": 10.0704,
+      "doorX": 1.65,
+      "doorY": 15.6
+     },
+     {
+      "a": "Toilet 1",
+      "b": "Storage",
+      "weight": 8.5698,
+      "doorX": 5.4,
+      "doorY": 3.45
+     },
+     {
+      "a": "Toilet 1",
+      "b": "Corridor",
+      "weight": 12.0644,
+      "doorX": 4.35,
+      "doorY": 15.6
+     },
+     {
+      "a": "Toilet 2",
+      "b": "Corridor",
+      "weight": 6.15,
+      "doorX": 3.3,
+      "doorY": 17.8
+     },
+     {
+      "a": "Storage",
+      "b": "Multipurpose Hall",
+      "weight": 9.1776,
+      "doorX": 12.3,
+      "doorY": 3.45
+     }
+    ],
+    "paths": [
+     {
+      "room": "Reception",
+      "reachable": true,
+      "distance": 2.8412,
+      "route": [
+       "ENTRANCE",
+       "Reception"
+      ],
+      "polyline": [
+       [
+        15,
+        20
+       ],
+       [
+        16.35,
+        17.5
+       ]
+      ]
+     },
+     {
+      "room": "Classroom 1",
+      "reachable": true,
+      "distance": 22.994,
+      "route": [
+       "ENTRANCE",
+       "Reception",
+       "Multipurpose Hall",
+       "Classroom 1"
+      ],
+      "polyline": [
+       [
+        15,
+        20
+       ],
+       [
+        16.35,
+        17.5
+       ],
+       [
+        16.35,
+        15
+       ],
+       [
+        16.35,
+        7.5
+       ],
+       [
+        20.4,
+        4
+       ],
+       [
+        25.2,
+        4
+       ]
+      ]
+     },
+     {
+      "room": "Classroom 2",
+      "reachable": true,
+      "distance": 13.2987,
+      "route": [
+       "ENTRANCE",
+       "Reception",
+       "Classroom 2"
+      ],
+      "polyline": [
+       [
+        15,
+        20
+       ],
+       [
+        16.35,
+        17.5
+       ],
+       [
+        20.4,
+        15.5
+       ],
+       [
+        25.2,
+        12
+       ]
+      ]
+     },
+     {
+      "room": "Office",
+      "reachable": true,
+      "distance": 11.722,
+      "route": [
+       "ENTRANCE",
+       "Reception",
+       "Office"
+      ],
+      "polyline": [
+       [
+        15,
+        20
+       ],
+       [
+        16.35,
+        17.5
+       ],
+       [
+        20.4,
+        18
+       ],
+       [
+        25.2,
+        18
+       ]
+      ]
+     },
+     {
+      "room": "Toilet 1",
+      "reachable": true,
+      "distance": 23.4667,
+      "route": [
+       "ENTRANCE",
+       "Reception",
+       "Corridor",
+       "Toilet 1"
+      ],
+      "polyline": [
+       [
+        15,
+        20
+       ],
+       [
+        16.35,
+        17.5
+       ],
+       [
+        12.3,
+        17.8
+       ],
+       [
+        7.8,
+        17.8
+       ],
+       [
+        4.35,
+        15.6
+       ],
+       [
+        2.7,
+        7.8
+       ]
+      ]
+     },
+     {
+      "room": "Toilet 2",
+      "reachable": true,
+      "distance": 17.5523,
+      "route": [
+       "ENTRANCE",
+       "Reception",
+       "Corridor",
+       "Toilet 2"
+      ],
+      "polyline": [
+       [
+        15,
+        20
+       ],
+       [
+        16.35,
+        17.5
+       ],
+       [
+        12.3,
+        17.8
+       ],
+       [
+        7.8,
+        17.8
+       ],
+       [
+        3.3,
+        17.8
+       ],
+       [
+        1.65,
+        17.8
+       ]
+      ]
+     },
+     {
+      "room": "Storage",
+      "reachable": true,
+      "distance": 22.0188,
+      "route": [
+       "ENTRANCE",
+       "Reception",
+       "Multipurpose Hall",
+       "Storage"
+      ],
+      "polyline": [
+       [
+        15,
+        20
+       ],
+       [
+        16.35,
+        17.5
+       ],
+       [
+        16.35,
+        15
+       ],
+       [
+        16.35,
+        7.5
+       ],
+       [
+        12.3,
+        3.45
+       ],
+       [
+        8.85,
+        3.45
+       ]
+      ]
+     },
+     {
+      "room": "Multipurpose Hall",
+      "reachable": true,
+      "distance": 12.8412,
+      "route": [
+       "ENTRANCE",
+       "Reception",
+       "Multipurpose Hall"
+      ],
+      "polyline": [
+       [
+        15,
+        20
+       ],
+       [
+        16.35,
+        17.5
+       ],
+       [
+        16.35,
+        15
+       ],
+       [
+        16.35,
+        7.5
+       ]
+      ]
+     },
+     {
+      "room": "Corridor",
+      "reachable": true,
+      "distance": 11.4023,
+      "route": [
+       "ENTRANCE",
+       "Reception",
+       "Corridor"
+      ],
+      "polyline": [
+       [
+        15,
+        20
+       ],
+       [
+        16.35,
+        17.5
+       ],
+       [
+        12.3,
+        17.8
+       ],
+       [
+        7.8,
+        17.8
+       ]
+      ]
+     }
+    ],
+    "disconnected": [],
+    "bottlenecks": [
+     {
+      "room": "Reception",
+      "load": 8
+     }
+    ],
+    "matrixNames": [
+     "Reception",
+     "Classroom 1",
+     "Classroom 2",
+     "Office",
+     "Toilet 1",
+     "Toilet 2",
+     "Storage",
+     "Multipurpose Hall",
+     "Corridor"
+    ],
+    "distanceMatrix": [
+     [
+      0,
+      20.1528,
+      10.4575,
+      8.8807,
+      20.6255,
+      14.7111,
+      19.1776,
+      10,
+      8.5611
+     ],
+     [
+      20.1528,
+      0,
+      8,
+      29.0336,
+      40.7783,
+      34.8639,
+      19.3304,
+      10.1528,
+      28.7139
+     ],
+     [
+      10.4575,
+      8,
+      0,
+      6,
+      31.0829,
+      25.1685,
+      19.6959,
+      10.5183,
+      19.0185
+     ],
+     [
+      8.8807,
+      29.0336,
+      6,
+      0,
+      29.5062,
+      23.5918,
+      28.0583,
+      18.8807,
+      17.4418
+     ],
+     [
+      20.6255,
+      40.7783,
+      31.0829,
+      29.5062,
+      0,
+      10.0704,
+      8.5698,
+      30.6255,
+      12.0644
+     ],
+     [
+      14.7111,
+      34.8639,
+      25.1685,
+      23.5918,
+      10.0704,
+      0,
+      33.8887,
+      24.7111,
+      6.15
+     ],
+     [
+      19.1776,
+      19.3304,
+      19.6959,
+      28.0583,
+      8.5698,
+      33.8887,
+      0,
+      9.1776,
+      27.7387
+     ],
+     [
+      10,
+      10.1528,
+      10.5183,
+      18.8807,
+      30.6255,
+      24.7111,
+      9.1776,
+      0,
+      18.5611
+     ],
+     [
+      8.5611,
+      28.7139,
+      19.0185,
+      17.4418,
+      12.0644,
+      6.15,
+      27.7387,
+      18.5611,
+      0
+     ]
+    ],
+    "avgDistance": 15.3486,
+    "maxDistance": 23.4667,
+    "components": 1,
+    "fullyConnected": true
+   },
+   "id": "L4",
+   "verified": true
+  }
+ ],
+ "note": "Precomputed by the live C++ engine and independently verified. Used only in Demo Mode."
+}

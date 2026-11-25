@@ -1,0 +1,41 @@
+{
+ "projectKey": "educational-building",
+ "layouts": [
+  {
+   "id": "L1",
+   "totalCost": 333.4588,
+   "areaEfficiency": 93.184,
+   "adjacencySatisfaction": 84.3554,
+   "circulationScore": 67.2932,
+   "accessibilityScore": 100,
+   "violations": 0
+  },
+  {
+   "id": "L2",
+   "totalCost": 333.4588,
+   "areaEfficiency": 93.184,
+   "adjacencySatisfaction": 84.3554,
+   "circulationScore": 67.2932,
+   "accessibilityScore": 100,
+   "violations": 0
+  },
+  {
+   "id": "L3",
+   "totalCost": 333.477,
+   "areaEfficiency": 93.184,
+   "adjacencySatisfaction": 84.6027,
+   "circulationScore": 67.1925,
+   "accessibilityScore": 100,
+   "violations": 0
+  },
+  {
+   "id": "L4",
+   "totalCost": 334.7949,
+   "areaEfficiency": 93.28,
+   "adjacencySatisfaction": 84.5659,
+   "circulationScore": 66.5667,
+   "accessibilityScore": 100,
+   "violations": 0
+  }
+ ]
+}

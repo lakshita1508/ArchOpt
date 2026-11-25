@@ -1,0 +1,149 @@
+{
+  "key": "community-centre",
+  "name": "Community Centre",
+  "projectType": "Community Centre",
+  "description": "30 m x 20 m community centre: reception, two classrooms, office, two toilets, storage, multipurpose hall and a corridor spine.",
+  "plot": {
+    "width": 30,
+    "height": 20
+  },
+  "entrance": {
+    "side": "south",
+    "offset": 0.5
+  },
+  "recommendedAlgorithm": "simulated_annealing",
+  "rooms": [
+    {
+      "name": "Reception",
+      "type": "Reception",
+      "requiredArea": 30,
+      "minWidth": 5,
+      "minHeight": 5,
+      "prefWidth": 5,
+      "prefHeight": 5,
+      "priority": 3
+    },
+    {
+      "name": "Classroom 1",
+      "type": "Classroom",
+      "requiredArea": 48,
+      "minWidth": 6,
+      "minHeight": 6,
+      "prefWidth": 6,
+      "prefHeight": 6,
+      "priority": 2
+    },
+    {
+      "name": "Classroom 2",
+      "type": "Classroom",
+      "requiredArea": 48,
+      "minWidth": 6,
+      "minHeight": 6,
+      "prefWidth": 6,
+      "prefHeight": 6,
+      "priority": 2
+    },
+    {
+      "name": "Office",
+      "type": "Office",
+      "requiredArea": 20,
+      "minWidth": 4,
+      "minHeight": 4,
+      "prefWidth": 4,
+      "prefHeight": 4,
+      "priority": 2
+    },
+    {
+      "name": "Toilet 1",
+      "type": "Toilet",
+      "requiredArea": 12,
+      "minWidth": 3,
+      "minHeight": 3,
+      "prefWidth": 3,
+      "prefHeight": 3,
+      "priority": 1
+    },
+    {
+      "name": "Toilet 2",
+      "type": "Toilet",
+      "requiredArea": 12,
+      "minWidth": 3,
+      "minHeight": 3,
+      "prefWidth": 3,
+      "prefHeight": 3,
+      "priority": 1
+    },
+    {
+      "name": "Storage",
+      "type": "Storage",
+      "requiredArea": 12,
+      "minWidth": 3,
+      "minHeight": 3,
+      "prefWidth": 3,
+      "prefHeight": 3,
+      "priority": 1
+    },
+    {
+      "name": "Multipurpose Hall",
+      "type": "Open Area",
+      "requiredArea": 100,
+      "minWidth": 10,
+      "minHeight": 8,
+      "prefWidth": 10,
+      "prefHeight": 8,
+      "priority": 3
+    },
+    {
+      "name": "Corridor",
+      "type": "Corridor",
+      "requiredArea": 40,
+      "minWidth": 2,
+      "minHeight": 2,
+      "prefWidth": 2,
+      "prefHeight": 2,
+      "priority": 3
+    }
+  ],
+  "relationships": [
+    {
+      "a": "Reception",
+      "b": "ENTRANCE",
+      "type": "must_adjacent",
+      "weight": 3
+    },
+    {
+      "a": "Office",
+      "b": "Reception",
+      "type": "prefer_adjacent",
+      "weight": 2
+    },
+    {
+      "a": "Classroom 1",
+      "b": "Classroom 2",
+      "type": "must_adjacent",
+      "weight": 2
+    },
+    {
+      "a": "Toilet 1",
+      "b": "Corridor",
+      "type": "prefer_adjacent",
+      "weight": 1.5
+    },
+    {
+      "a": "Toilet 2",
+      "b": "Corridor",
+      "type": "prefer_adjacent",
+      "weight": 1.5
+    },
+    {
+      "a": "Storage",
+      "b": "Multipurpose Hall",
+      "type": "prefer_adjacent",
+      "weight": 1
+    }
+  ],
+  "constraints": {
+    "minCorridorWidth": 2.0,
+    "maxExpansion": 1.5
+  }
+}

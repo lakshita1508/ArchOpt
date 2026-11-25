@@ -1,0 +1,188 @@
+{
+  "key": "educational-building",
+  "name": "Educational Building",
+  "projectType": "Educational",
+  "description": "35 m x 25 m teaching block: reception, three classrooms, faculty room, computer lab, library, toilets, storage and corridors.",
+  "plot": {
+    "width": 35,
+    "height": 25
+  },
+  "entrance": {
+    "side": "south",
+    "offset": 0.5
+  },
+  "recommendedAlgorithm": "simulated_annealing",
+  "rooms": [
+    {
+      "name": "Reception",
+      "type": "Reception",
+      "requiredArea": 30,
+      "minWidth": 5,
+      "minHeight": 5,
+      "prefWidth": 5,
+      "prefHeight": 5,
+      "priority": 3
+    },
+    {
+      "name": "Classroom 1",
+      "type": "Classroom",
+      "requiredArea": 48,
+      "minWidth": 6,
+      "minHeight": 6,
+      "prefWidth": 6,
+      "prefHeight": 6,
+      "priority": 2
+    },
+    {
+      "name": "Classroom 2",
+      "type": "Classroom",
+      "requiredArea": 48,
+      "minWidth": 6,
+      "minHeight": 6,
+      "prefWidth": 6,
+      "prefHeight": 6,
+      "priority": 2
+    },
+    {
+      "name": "Classroom 3",
+      "type": "Classroom",
+      "requiredArea": 48,
+      "minWidth": 6,
+      "minHeight": 6,
+      "prefWidth": 6,
+      "prefHeight": 6,
+      "priority": 2
+    },
+    {
+      "name": "Faculty Room",
+      "type": "Office",
+      "requiredArea": 30,
+      "minWidth": 5,
+      "minHeight": 5,
+      "prefWidth": 5,
+      "prefHeight": 5,
+      "priority": 2
+    },
+    {
+      "name": "Computer Lab",
+      "type": "Custom Room",
+      "requiredArea": 60,
+      "minWidth": 7,
+      "minHeight": 7,
+      "prefWidth": 7,
+      "prefHeight": 7,
+      "priority": 2
+    },
+    {
+      "name": "Library",
+      "type": "Custom Room",
+      "requiredArea": 70,
+      "minWidth": 7,
+      "minHeight": 7,
+      "prefWidth": 7,
+      "prefHeight": 7,
+      "priority": 2
+    },
+    {
+      "name": "Toilet 1",
+      "type": "Toilet",
+      "requiredArea": 12,
+      "minWidth": 3,
+      "minHeight": 3,
+      "prefWidth": 3,
+      "prefHeight": 3,
+      "priority": 1
+    },
+    {
+      "name": "Toilet 2",
+      "type": "Toilet",
+      "requiredArea": 12,
+      "minWidth": 3,
+      "minHeight": 3,
+      "prefWidth": 3,
+      "prefHeight": 3,
+      "priority": 1
+    },
+    {
+      "name": "Storage",
+      "type": "Storage",
+      "requiredArea": 12,
+      "minWidth": 3,
+      "minHeight": 3,
+      "prefWidth": 3,
+      "prefHeight": 3,
+      "priority": 1
+    },
+    {
+      "name": "Corridor",
+      "type": "Corridor",
+      "requiredArea": 60,
+      "minWidth": 2,
+      "minHeight": 2,
+      "prefWidth": 2,
+      "prefHeight": 2,
+      "priority": 3
+    }
+  ],
+  "relationships": [
+    {
+      "a": "Reception",
+      "b": "ENTRANCE",
+      "type": "must_adjacent",
+      "weight": 3
+    },
+    {
+      "a": "Classroom 1",
+      "b": "Classroom 2",
+      "type": "prefer_adjacent",
+      "weight": 2
+    },
+    {
+      "a": "Classroom 2",
+      "b": "Classroom 3",
+      "type": "prefer_adjacent",
+      "weight": 2
+    },
+    {
+      "a": "Classroom 1",
+      "b": "Classroom 3",
+      "type": "prefer_nearby",
+      "weight": 1
+    },
+    {
+      "a": "Faculty Room",
+      "b": "Classroom 2",
+      "type": "prefer_nearby",
+      "weight": 1.5
+    },
+    {
+      "a": "Toilet 1",
+      "b": "Corridor",
+      "type": "prefer_adjacent",
+      "weight": 1.5
+    },
+    {
+      "a": "Toilet 2",
+      "b": "Corridor",
+      "type": "prefer_adjacent",
+      "weight": 1.5
+    },
+    {
+      "a": "Library",
+      "b": "Reception",
+      "type": "must_separate",
+      "weight": 1.5
+    },
+    {
+      "a": "Computer Lab",
+      "b": "Reception",
+      "type": "must_separate",
+      "weight": 1.5
+    }
+  ],
+  "constraints": {
+    "minCorridorWidth": 2.0,
+    "maxExpansion": 1.5,
+    "separateDistance": 3.0
+  }
+}

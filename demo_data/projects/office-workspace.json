@@ -1,0 +1,150 @@
+{
+  "key": "office-workspace",
+  "name": "Office Workspace",
+  "projectType": "Office",
+  "description": "30 m x 20 m office floor: reception, manager cabin, meeting and conference rooms, open workspace, pantry, toilets, storage.",
+  "plot": {
+    "width": 30,
+    "height": 20
+  },
+  "entrance": {
+    "side": "south",
+    "offset": 0.5
+  },
+  "recommendedAlgorithm": "simulated_annealing",
+  "rooms": [
+    {
+      "name": "Reception",
+      "type": "Reception",
+      "requiredArea": 25,
+      "minWidth": 4,
+      "minHeight": 4,
+      "prefWidth": 4,
+      "prefHeight": 4,
+      "priority": 3
+    },
+    {
+      "name": "Manager Cabin",
+      "type": "Office",
+      "requiredArea": 16,
+      "minWidth": 3.5,
+      "minHeight": 3.5,
+      "prefWidth": 3.5,
+      "prefHeight": 3.5,
+      "priority": 2
+    },
+    {
+      "name": "Meeting Room",
+      "type": "Meeting Room",
+      "requiredArea": 24,
+      "minWidth": 4,
+      "minHeight": 4,
+      "prefWidth": 4,
+      "prefHeight": 4,
+      "priority": 2
+    },
+    {
+      "name": "Open Workspace",
+      "type": "Open Area",
+      "requiredArea": 120,
+      "minWidth": 10,
+      "minHeight": 8,
+      "prefWidth": 10,
+      "prefHeight": 8,
+      "priority": 3
+    },
+    {
+      "name": "Conference Room",
+      "type": "Conference Room",
+      "requiredArea": 40,
+      "minWidth": 5,
+      "minHeight": 5,
+      "prefWidth": 5,
+      "prefHeight": 5,
+      "priority": 2
+    },
+    {
+      "name": "Pantry",
+      "type": "Custom Room",
+      "requiredArea": 16,
+      "minWidth": 3,
+      "minHeight": 3,
+      "prefWidth": 3,
+      "prefHeight": 3,
+      "priority": 1
+    },
+    {
+      "name": "Toilets",
+      "type": "Toilet",
+      "requiredArea": 24,
+      "minWidth": 4,
+      "minHeight": 4,
+      "prefWidth": 4,
+      "prefHeight": 4,
+      "priority": 1
+    },
+    {
+      "name": "Storage",
+      "type": "Storage",
+      "requiredArea": 12,
+      "minWidth": 3,
+      "minHeight": 3,
+      "prefWidth": 3,
+      "prefHeight": 3,
+      "priority": 1
+    },
+    {
+      "name": "Circulation",
+      "type": "Corridor",
+      "requiredArea": 45,
+      "minWidth": 2,
+      "minHeight": 2,
+      "prefWidth": 2,
+      "prefHeight": 2,
+      "priority": 3
+    }
+  ],
+  "relationships": [
+    {
+      "a": "Reception",
+      "b": "ENTRANCE",
+      "type": "must_adjacent",
+      "weight": 3
+    },
+    {
+      "a": "Manager Cabin",
+      "b": "Reception",
+      "type": "prefer_adjacent",
+      "weight": 2
+    },
+    {
+      "a": "Meeting Room",
+      "b": "Open Workspace",
+      "type": "prefer_adjacent",
+      "weight": 2
+    },
+    {
+      "a": "Pantry",
+      "b": "Open Workspace",
+      "type": "prefer_nearby",
+      "weight": 1
+    },
+    {
+      "a": "Conference Room",
+      "b": "Open Workspace",
+      "type": "must_separate",
+      "weight": 2
+    },
+    {
+      "a": "Toilets",
+      "b": "Circulation",
+      "type": "prefer_adjacent",
+      "weight": 1
+    }
+  ],
+  "constraints": {
+    "minCorridorWidth": 1.8,
+    "maxExpansion": 1.5,
+    "separateDistance": 3.0
+  }
+}

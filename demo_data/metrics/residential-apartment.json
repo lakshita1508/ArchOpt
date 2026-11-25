@@ -1,0 +1,41 @@
+{
+ "projectKey": "residential-apartment",
+ "layouts": [
+  {
+   "id": "L1",
+   "totalCost": 156.924,
+   "areaEfficiency": 92.71,
+   "adjacencySatisfaction": 100,
+   "circulationScore": 70.2676,
+   "accessibilityScore": 100,
+   "violations": 0
+  },
+  {
+   "id": "L2",
+   "totalCost": 156.924,
+   "areaEfficiency": 92.71,
+   "adjacencySatisfaction": 100,
+   "circulationScore": 70.2676,
+   "accessibilityScore": 100,
+   "violations": 0
+  },
+  {
+   "id": "L3",
+   "totalCost": 157.0266,
+   "areaEfficiency": 92.062,
+   "adjacencySatisfaction": 100,
+   "circulationScore": 70.6387,
+   "accessibilityScore": 100,
+   "violations": 0
+  },
+  {
+   "id": "L4",
+   "totalCost": 158.152,
+   "areaEfficiency": 91.944,
+   "adjacencySatisfaction": 100,
+   "circulationScore": 70.5702,
+   "accessibilityScore": 100,
+   "violations": 0
+  }
+ ]
+}

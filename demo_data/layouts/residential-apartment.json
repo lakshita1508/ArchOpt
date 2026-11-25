@@ -1,0 +1,4007 @@
+{
+ "projectKey": "residential-apartment",
+ "generatedBy": "archopt_engine 1.0.0 (C++20)",
+ "algorithm": "genetic",
+ "seed": 42,
+ "candidatesEvaluated": 9600,
+ "feasibleFound": 3299,
+ "layouts": [
+  {
+   "rooms": [
+    {
+     "name": "Living Room",
+     "type": "Living Room",
+     "x": 9.1,
+     "y": 12.5,
+     "width": 7.8,
+     "height": 7.5,
+     "area": 58.5,
+     "requiredArea": 60,
+     "isFree": false,
+     "transit": true
+    },
+    {
+     "name": "Kitchen",
+     "type": "Kitchen",
+     "x": 0,
+     "y": 10,
+     "width": 4.4,
+     "height": 6.3,
+     "area": 27.72,
+     "requiredArea": 25,
+     "isFree": false,
+     "transit": false
+    },
+    {
+     "name": "Master Bedroom",
+     "type": "Bedroom",
+     "x": 0,
+     "y": 0,
+     "width": 9.1,
+     "height": 10,
+     "area": 91,
+     "requiredArea": 36,
+     "isFree": false,
+     "transit": false
+    },
+    {
+     "name": "Bedroom 2",
+     "type": "Bedroom",
+     "x": 9.1,
+     "y": 0,
+     "width": 7.8,
+     "height": 12.5,
+     "area": 97.5,
+     "requiredArea": 28,
+     "isFree": false,
+     "transit": false
+    },
+    {
+     "name": "Bathroom 1",
+     "type": "Toilet",
+     "x": 16.9,
+     "y": 4.5,
+     "width": 8.1,
+     "height": 3.4,
+     "area": 27.54,
+     "requiredArea": 10,
+     "isFree": false,
+     "transit": false
+    },
+    {
+     "name": "Bathroom 2",
+     "type": "Toilet",
+     "x": 20.5,
+     "y": 7.9,
+     "width": 4.5,
+     "height": 12.1,
+     "area": 54.45,
+     "requiredArea": 9,
+     "isFree": false,
+     "transit": false
+    },
+    {
+     "name": "Dining Area",
+     "type": "Dining Area",
+     "x": 4.4,
+     "y": 10,
+     "width": 4.7,
+     "height": 6.3,
+     "area": 29.61,
+     "requiredArea": 28,
+     "isFree": false,
+     "transit": true
+    },
+    {
+     "name": "Balcony",
+     "type": "Balcony",
+     "x": 0,
+     "y": 16.3,
+     "width": 9.1,
+     "height": 3.7,
+     "area": 33.67,
+     "requiredArea": 20,
+     "isFree": false,
+     "transit": false
+    },
+    {
+     "name": "Corridor",
+     "type": "Corridor",
+     "x": 16.9,
+     "y": 7.9,
+     "width": 3.6,
+     "height": 12.1,
+     "area": 43.56,
+     "requiredArea": 36,
+     "isFree": false,
+     "transit": true
+    },
+    {
+     "name": "Unallocated",
+     "type": "Open Space",
+     "x": 16.9,
+     "y": 0,
+     "width": 8.1,
+     "height": 4.5,
+     "area": 36.45,
+     "requiredArea": 122,
+     "isFree": true,
+     "transit": false
+    }
+   ],
+   "metrics": {
+    "totalCost": 156.924,
+    "costBreakdown": {
+     "overlap": 0,
+     "boundary": 0,
+     "adjacency": 0,
+     "corridor": 0,
+     "circulation": 138.699,
+     "unused": 18.225,
+     "hardConstraints": 0
+    },
+    "plotArea": 500,
+    "usableArea": 419.99,
+    "circulationArea": 43.56,
+    "unusedArea": 36.45,
+    "areaEfficiency": 92.71,
+    "adjacencySatisfaction": 100,
+    "circulationScore": 70.2676,
+    "accessibilityScore": 100,
+    "avgWalk": 13.3796,
+    "maxWalk": 19.4738,
+    "violations": 0,
+    "feasible": true
+   },
+   "validation": [
+    {
+     "id": "boundary",
+     "category": "hard",
+     "status": "passed",
+     "room": "Living Room",
+     "message": "Inside the plot boundary."
+    },
+    {
+     "id": "boundary",
+     "category": "hard",
+     "status": "passed",
+     "room": "Kitchen",
+     "message": "Inside the plot boundary."
+    },
+    {
+     "id": "boundary",
+     "category": "hard",
+     "status": "passed",
+     "room": "Master Bedroom",
+     "message": "Inside the plot boundary."
+    },
+    {
+     "id": "boundary",
+     "category": "hard",
+     "status": "passed",
+     "room": "Bedroom 2",
+     "message": "Inside the plot boundary."
+    },
+    {
+     "id": "boundary",
+     "category": "hard",
+     "status": "passed",
+     "room": "Bathroom 1",
+     "message": "Inside the plot boundary."
+    },
+    {
+     "id": "boundary",
+     "category": "hard",
+     "status": "passed",
+     "room": "Bathroom 2",
+     "message": "Inside the plot boundary."
+    },
+    {
+     "id": "boundary",
+     "category": "hard",
+     "status": "passed",
+     "room": "Dining Area",
+     "message": "Inside the plot boundary."
+    },
+    {
+     "id": "boundary",
+     "category": "hard",
+     "status": "passed",
+     "room": "Balcony",
+     "message": "Inside the plot boundary."
+    },
+    {
+     "id": "boundary",
+     "category": "hard",
+     "status": "passed",
+     "room": "Corridor",
+     "message": "Inside the plot boundary."
+    },
+    {
+     "id": "boundary",
+     "category": "hard",
+     "status": "passed",
+     "room": "Unallocated",
+     "message": "Inside the plot boundary."
+    },
+    {
+     "id": "overlap",
+     "category": "hard",
+     "status": "passed",
+     "room": "",
+     "message": "No two rooms overlap."
+    },
+    {
+     "id": "min_dimensions",
+     "category": "hard",
+     "status": "passed",
+     "room": "Living Room",
+     "message": "Minimum dimensions satisfied (7.80 x 7.50 m)."
+    },
+    {
+     "id": "required_area",
+     "category": "hard",
+     "status": "passed",
+     "room": "Living Room",
+     "message": "Area 58.50 m2 meets the required 60.00 m2."
+    },
+    {
+     "id": "min_dimensions",
+     "category": "hard",
+     "status": "passed",
+     "room": "Kitchen",
+     "message": "Minimum dimensions satisfied (4.40 x 6.30 m)."
+    },
+    {
+     "id": "required_area",
+     "category": "hard",
+     "status": "passed",
+     "room": "Kitchen",
+     "message": "Area 27.72 m2 meets the required 25.00 m2."
+    },
+    {
+     "id": "min_dimensions",
+     "category": "hard",
+     "status": "passed",
+     "room": "Master Bedroom",
+     "message": "Minimum dimensions satisfied (9.10 x 10.00 m)."
+    },
+    {
+     "id": "required_area",
+     "category": "hard",
+     "status": "passed",
+     "room": "Master Bedroom",
+     "message": "Area 91.00 m2 meets the required 36.00 m2."
+    },
+    {
+     "id": "min_dimensions",
+     "category": "hard",
+     "status": "passed",
+     "room": "Bedroom 2",
+     "message": "Minimum dimensions satisfied (7.80 x 12.50 m)."
+    },
+    {
+     "id": "required_area",
+     "category": "hard",
+     "status": "passed",
+     "room": "Bedroom 2",
+     "message": "Area 97.50 m2 meets the required 28.00 m2."
+    },
+    {
+     "id": "min_dimensions",
+     "category": "hard",
+     "status": "passed",
+     "room": "Bathroom 1",
+     "message": "Minimum dimensions satisfied (8.10 x 3.40 m)."
+    },
+    {
+     "id": "required_area",
+     "category": "hard",
+     "status": "passed",
+     "room": "Bathroom 1",
+     "message": "Area 27.54 m2 meets the required 10.00 m2."
+    },
+    {
+     "id": "min_dimensions",
+     "category": "hard",
+     "status": "passed",
+     "room": "Bathroom 2",
+     "message": "Minimum dimensions satisfied (4.50 x 12.10 m)."
+    },
+    {
+     "id": "required_area",
+     "category": "hard",
+     "status": "passed",
+     "room": "Bathroom 2",
+     "message": "Area 54.45 m2 meets the required 9.00 m2."
+    },
+    {
+     "id": "min_dimensions",
+     "category": "hard",
+     "status": "passed",
+     "room": "Dining Area",
+     "message": "Minimum dimensions satisfied (4.70 x 6.30 m)."
+    },
+    {
+     "id": "required_area",
+     "category": "hard",
+     "status": "passed",
+     "room": "Dining Area",
+     "message": "Area 29.61 m2 meets the required 28.00 m2."
+    },
+    {
+     "id": "min_dimensions",
+     "category": "hard",
+     "status": "passed",
+     "room": "Balcony",
+     "message": "Minimum dimensions satisfied (9.10 x 3.70 m)."
+    },
+    {
+     "id": "required_area",
+     "category": "hard",
+     "status": "passed",
+     "room": "Balcony",
+     "message": "Area 33.67 m2 meets the required 20.00 m2."
+    },
+    {
+     "id": "min_dimensions",
+     "category": "hard",
+     "status": "passed",
+     "room": "Corridor",
+     "message": "Minimum dimensions satisfied (3.60 x 12.10 m)."
+    },
+    {
+     "id": "required_area",
+     "category": "hard",
+     "status": "passed",
+     "room": "Corridor",
+     "message": "Area 43.56 m2 meets the required 36.00 m2."
+    },
+    {
+     "id": "corridor_width",
+     "category": "hard",
+     "status": "passed",
+     "room": "Corridor",
+     "message": "Corridor width 3.60 m is sufficient."
+    },
+    {
+     "id": "connectivity",
+     "category": "hard",
+     "status": "passed",
+     "room": "",
+     "message": "All rooms are reachable from the entrance."
+    },
+    {
+     "id": "relationship",
+     "category": "hard",
+     "status": "passed",
+     "room": "Living Room",
+     "message": "Living Room / ENTRANCE (must be adjacent) satisfied."
+    },
+    {
+     "id": "relationship",
+     "category": "hard",
+     "status": "passed",
+     "room": "Dining Area",
+     "message": "Dining Area / Kitchen (must be adjacent) satisfied."
+    },
+    {
+     "id": "relationship",
+     "category": "soft",
+     "status": "passed",
+     "room": "Master Bedroom",
+     "message": "Master Bedroom / Bedroom 2 (prefers adjacency) satisfied."
+    },
+    {
+     "id": "relationship",
+     "category": "soft",
+     "status": "passed",
+     "room": "Bathroom 1",
+     "message": "Bathroom 1 / Corridor (prefers adjacency) satisfied."
+    },
+    {
+     "id": "relationship",
+     "category": "soft",
+     "status": "passed",
+     "room": "Bathroom 2",
+     "message": "Bathroom 2 / Corridor (prefers adjacency) satisfied."
+    },
+    {
+     "id": "relationship",
+     "category": "soft",
+     "status": "passed",
+     "room": "Balcony",
+     "message": "Balcony / Living Room (prefers adjacency) satisfied."
+    }
+   ],
+   "disconnected": [],
+   "circulation": {
+    "entrance": {
+     "x": 12.5,
+     "y": 20
+    },
+    "nodes": [
+     {
+      "name": "Living Room",
+      "cx": 13,
+      "cy": 16.25,
+      "transit": true
+     },
+     {
+      "name": "Kitchen",
+      "cx": 2.2,
+      "cy": 13.15,
+      "transit": false
+     },
+     {
+      "name": "Master Bedroom",
+      "cx": 4.55,
+      "cy": 5,
+      "transit": false
+     },
+     {
+      "name": "Bedroom 2",
+      "cx": 13,
+      "cy": 6.25,
+      "transit": false
+     },
+     {
+      "name": "Bathroom 1",
+      "cx": 20.95,
+      "cy": 6.2,
+      "transit": false
+     },
+     {
+      "name": "Bathroom 2",
+      "cx": 22.75,
+      "cy": 13.95,
+      "transit": false
+     },
+     {
+      "name": "Dining Area",
+      "cx": 6.75,
+      "cy": 13.15,
+      "transit": true
+     },
+     {
+      "name": "Balcony",
+      "cx": 4.55,
+      "cy": 18.15,
+      "transit": false
+     },
+     {
+      "name": "Corridor",
+      "cx": 18.7,
+      "cy": 13.95,
+      "transit": true
+     }
+    ],
+    "edges": [
+     {
+      "a": "Living Room",
+      "b": "Bedroom 2",
+      "weight": 10,
+      "doorX": 13,
+      "doorY": 12.5
+     },
+     {
+      "a": "Living Room",
+      "b": "Dining Area",
+      "weight": 6.9783,
+      "doorX": 9.1,
+      "doorY": 14.4
+     },
+     {
+      "a": "Living Room",
+      "b": "Balcony",
+      "weight": 8.8882,
+      "doorX": 9.1,
+      "doorY": 18.15
+     },
+     {
+      "a": "Living Room",
+      "b": "Corridor",
+      "weight": 6.8206,
+      "doorX": 16.9,
+      "doorY": 16.25
+     },
+     {
+      "a": "Living Room",
+      "b": "ENTRANCE",
+      "weight": 3.7832,
+      "doorX": 12.5,
+      "doorY": 20
+     },
+     {
+      "a": "Kitchen",
+      "b": "Master Bedroom",
+      "weight": 8.6747,
+      "doorX": 2.2,
+      "doorY": 10
+     },
+     {
+      "a": "Kitchen",
+      "b": "Dining Area",
+      "weight": 4.55,
+      "doorX": 4.4,
+      "doorY": 13.15
+     },
+     {
+      "a": "Kitchen",
+      "b": "Balcony",
+      "weight": 6.1408,
+      "doorX": 2.2,
+      "doorY": 16.3
+     },
+     {
+      "a": "Master Bedroom",
+      "b": "Bedroom 2",
+      "weight": 8.6454,
+      "doorX": 9.1,
+      "doorY": 5
+     },
+     {
+      "a": "Master Bedroom",
+      "b": "Dining Area",
+      "weight": 8.6126,
+      "doorX": 6.75,
+      "doorY": 10
+     },
+     {
+      "a": "Bedroom 2",
+      "b": "Bathroom 1",
+      "weight": 7.9503,
+      "doorX": 16.9,
+      "doorY": 6.2
+     },
+     {
+      "a": "Bedroom 2",
+      "b": "Dining Area",
+      "weight": 9.3631,
+      "doorX": 9.1,
+      "doorY": 11.25
+     },
+     {
+      "a": "Bedroom 2",
+      "b": "Corridor",
+      "weight": 9.7105,
+      "doorX": 16.9,
+      "doorY": 10.2
+     },
+     {
+      "a": "Bathroom 1",
+      "b": "Bathroom 2",
+      "weight": 8.5259,
+      "doorX": 22.75,
+      "doorY": 7.9
+     },
+     {
+      "a": "Bathroom 1",
+      "b": "Corridor",
+      "weight": 8.87,
+      "doorX": 18.7,
+      "doorY": 7.9
+     },
+     {
+      "a": "Bathroom 2",
+      "b": "Corridor",
+      "weight": 4.05,
+      "doorX": 20.5,
+      "doorY": 13.95
+     },
+     {
+      "a": "Dining Area",
+      "b": "Balcony",
+      "weight": 6.0245,
+      "doorX": 6.75,
+      "doorY": 16.3
+     }
+    ],
+    "paths": [
+     {
+      "room": "Living Room",
+      "reachable": true,
+      "distance": 3.7832,
+      "route": [
+       "ENTRANCE",
+       "Living Room"
+      ],
+      "polyline": [
+       [
+        12.5,
+        20
+       ],
+       [
+        13,
+        16.25
+       ]
+      ]
+     },
+     {
+      "room": "Kitchen",
+      "reachable": true,
+      "distance": 15.3115,
+      "route": [
+       "ENTRANCE",
+       "Living Room",
+       "Dining Area",
+       "Kitchen"
+      ],
+      "polyline": [
+       [
+        12.5,
+        20
+       ],
+       [
+        13,
+        16.25
+       ],
+       [
+        9.1,
+        14.4
+       ],
+       [
+        6.75,
+        13.15
+       ],
+       [
+        4.4,
+        13.15
+       ],
+       [
+        2.2,
+        13.15
+       ]
+      ]
+     },
+     {
+      "room": "Master Bedroom",
+      "reachable": true,
+      "distance": 19.3741,
+      "route": [
+       "ENTRANCE",
+       "Living Room",
+       "Dining Area",
+       "Master Bedroom"
+      ],
+      "polyline": [
+       [
+        12.5,
+        20
+       ],
+       [
+        13,
+        16.25
+       ],
+       [
+        9.1,
+        14.4
+       ],
+       [
+        6.75,
+        13.15
+       ],
+       [
+        6.75,
+        10
+       ],
+       [
+        4.55,
+        5
+       ]
+      ]
+     },
+     {
+      "room": "Bedroom 2",
+      "reachable": true,
+      "distance": 13.7832,
+      "route": [
+       "ENTRANCE",
+       "Living Room",
+       "Bedroom 2"
+      ],
+      "polyline": [
+       [
+        12.5,
+        20
+       ],
+       [
+        13,
+        16.25
+       ],
+       [
+        13,
+        12.5
+       ],
+       [
+        13,
+        6.25
+       ]
+      ]
+     },
+     {
+      "room": "Bathroom 1",
+      "reachable": true,
+      "distance": 19.4738,
+      "route": [
+       "ENTRANCE",
+       "Living Room",
+       "Corridor",
+       "Bathroom 1"
+      ],
+      "polyline": [
+       [
+        12.5,
+        20
+       ],
+       [
+        13,
+        16.25
+       ],
+       [
+        16.9,
+        16.25
+       ],
+       [
+        18.7,
+        13.95
+       ],
+       [
+        18.7,
+        7.9
+       ],
+       [
+        20.95,
+        6.2
+       ]
+      ]
+     },
+     {
+      "room": "Bathroom 2",
+      "reachable": true,
+      "distance": 14.6538,
+      "route": [
+       "ENTRANCE",
+       "Living Room",
+       "Corridor",
+       "Bathroom 2"
+      ],
+      "polyline": [
+       [
+        12.5,
+        20
+       ],
+       [
+        13,
+        16.25
+       ],
+       [
+        16.9,
+        16.25
+       ],
+       [
+        18.7,
+        13.95
+       ],
+       [
+        20.5,
+        13.95
+       ],
+       [
+        22.75,
+        13.95
+       ]
+      ]
+     },
+     {
+      "room": "Dining Area",
+      "reachable": true,
+      "distance": 10.7615,
+      "route": [
+       "ENTRANCE",
+       "Living Room",
+       "Dining Area"
+      ],
+      "polyline": [
+       [
+        12.5,
+        20
+       ],
+       [
+        13,
+        16.25
+       ],
+       [
+        9.1,
+        14.4
+       ],
+       [
+        6.75,
+        13.15
+       ]
+      ]
+     },
+     {
+      "room": "Balcony",
+      "reachable": true,
+      "distance": 12.6714,
+      "route": [
+       "ENTRANCE",
+       "Living Room",
+       "Balcony"
+      ],
+      "polyline": [
+       [
+        12.5,
+        20
+       ],
+       [
+        13,
+        16.25
+       ],
+       [
+        9.1,
+        18.15
+       ],
+       [
+        4.55,
+        18.15
+       ]
+      ]
+     },
+     {
+      "room": "Corridor",
+      "reachable": true,
+      "distance": 10.6038,
+      "route": [
+       "ENTRANCE",
+       "Living Room",
+       "Corridor"
+      ],
+      "polyline": [
+       [
+        12.5,
+        20
+       ],
+       [
+        13,
+        16.25
+       ],
+       [
+        16.9,
+        16.25
+       ],
+       [
+        18.7,
+        13.95
+       ]
+      ]
+     }
+    ],
+    "disconnected": [],
+    "bottlenecks": [
+     {
+      "room": "Living Room",
+      "load": 8
+     }
+    ],
+    "matrixNames": [
+     "Living Room",
+     "Kitchen",
+     "Master Bedroom",
+     "Bedroom 2",
+     "Bathroom 1",
+     "Bathroom 2",
+     "Dining Area",
+     "Balcony",
+     "Corridor"
+    ],
+    "distanceMatrix": [
+     [
+      0,
+      11.5283,
+      15.5909,
+      10,
+      15.6906,
+      10.8706,
+      6.9783,
+      8.8882,
+      6.8206
+     ],
+     [
+      11.5283,
+      0,
+      8.6747,
+      13.9131,
+      27.2189,
+      22.3989,
+      4.55,
+      6.1408,
+      18.3489
+     ],
+     [
+      15.5909,
+      8.6747,
+      0,
+      8.6454,
+      31.2815,
+      26.4615,
+      8.6126,
+      14.6371,
+      22.4115
+     ],
+     [
+      10,
+      13.9131,
+      8.6454,
+      0,
+      7.9503,
+      13.7605,
+      9.3631,
+      15.3876,
+      9.7105
+     ],
+     [
+      15.6906,
+      27.2189,
+      31.2815,
+      7.9503,
+      0,
+      8.5259,
+      22.6689,
+      24.5788,
+      8.87
+     ],
+     [
+      10.8706,
+      22.3989,
+      26.4615,
+      13.7605,
+      8.5259,
+      0,
+      17.8489,
+      19.7588,
+      4.05
+     ],
+     [
+      6.9783,
+      4.55,
+      8.6126,
+      9.3631,
+      22.6689,
+      17.8489,
+      0,
+      6.0245,
+      13.7989
+     ],
+     [
+      8.8882,
+      6.1408,
+      14.6371,
+      15.3876,
+      24.5788,
+      19.7588,
+      6.0245,
+      0,
+      15.7088
+     ],
+     [
+      6.8206,
+      18.3489,
+      22.4115,
+      9.7105,
+      8.87,
+      4.05,
+      13.7989,
+      15.7088,
+      0
+     ]
+    ],
+    "avgDistance": 13.3796,
+    "maxDistance": 19.4738,
+    "components": 1,
+    "fullyConnected": true
+   },
+   "id": "L1",
+   "verified": true
+  },
+  {
+   "rooms": [
+    {
+     "name": "Living Room",
+     "type": "Living Room",
+     "x": 9.1,
+     "y": 12.5,
+     "width": 7.8,
+     "height": 7.5,
+     "area": 58.5,
+     "requiredArea": 60,
+     "isFree": false,
+     "transit": true
+    },
+    {
+     "name": "Kitchen",
+     "type": "Kitchen",
+     "x": 0,
+     "y": 10,
+     "width": 4.4,
+     "height": 6.3,
+     "area": 27.72,
+     "requiredArea": 25,
+     "isFree": false,
+     "transit": false
+    },
+    {
+     "name": "Master Bedroom",
+     "type": "Bedroom",
+     "x": 0,
+     "y": 0,
+     "width": 9.1,
+     "height": 10,
+     "area": 91,
+     "requiredArea": 36,
+     "isFree": false,
+     "transit": false
+    },
+    {
+     "name": "Bedroom 2",
+     "type": "Bedroom",
+     "x": 9.1,
+     "y": 0,
+     "width": 7.8,
+     "height": 12.5,
+     "area": 97.5,
+     "requiredArea": 28,
+     "isFree": false,
+     "transit": false
+    },
+    {
+     "name": "Bathroom 1",
+     "type": "Toilet",
+     "x": 16.9,
+     "y": 4.5,
+     "width": 8.1,
+     "height": 3.4,
+     "area": 27.54,
+     "requiredArea": 10,
+     "isFree": false,
+     "transit": false
+    },
+    {
+     "name": "Bathroom 2",
+     "type": "Toilet",
+     "x": 20.5,
+     "y": 7.9,
+     "width": 4.5,
+     "height": 12.1,
+     "area": 54.45,
+     "requiredArea": 9,
+     "isFree": false,
+     "transit": false
+    },
+    {
+     "name": "Dining Area",
+     "type": "Dining Area",
+     "x": 4.4,
+     "y": 10,
+     "width": 4.7,
+     "height": 6.3,
+     "area": 29.61,
+     "requiredArea": 28,
+     "isFree": false,
+     "transit": true
+    },
+    {
+     "name": "Balcony",
+     "type": "Balcony",
+     "x": 0,
+     "y": 16.3,
+     "width": 9.1,
+     "height": 3.7,
+     "area": 33.67,
+     "requiredArea": 20,
+     "isFree": false,
+     "transit": false
+    },
+    {
+     "name": "Corridor",
+     "type": "Corridor",
+     "x": 16.9,
+     "y": 7.9,
+     "width": 3.6,
+     "height": 12.1,
+     "area": 43.56,
+     "requiredArea": 36,
+     "isFree": false,
+     "transit": true
+    },
+    {
+     "name": "Unallocated",
+     "type": "Open Space",
+     "x": 16.9,
+     "y": 0,
+     "width": 8.1,
+     "height": 4.5,
+     "area": 36.45,
+     "requiredArea": 122,
+     "isFree": true,
+     "transit": false
+    }
+   ],
+   "metrics": {
+    "totalCost": 156.924,
+    "costBreakdown": {
+     "overlap": 0,
+     "boundary": 0,
+     "adjacency": 0,
+     "corridor": 0,
+     "circulation": 138.699,
+     "unused": 18.225,
+     "hardConstraints": 0
+    },
+    "plotArea": 500,
+    "usableArea": 419.99,
+    "circulationArea": 43.56,
+    "unusedArea": 36.45,
+    "areaEfficiency": 92.71,
+    "adjacencySatisfaction": 100,
+    "circulationScore": 70.2676,
+    "accessibilityScore": 100,
+    "avgWalk": 13.3796,
+    "maxWalk": 19.4738,
+    "violations": 0,
+    "feasible": true
+   },
+   "validation": [
+    {
+     "id": "boundary",
+     "category": "hard",
+     "status": "passed",
+     "room": "Living Room",
+     "message": "Inside the plot boundary."
+    },
+    {
+     "id": "boundary",
+     "category": "hard",
+     "status": "passed",
+     "room": "Kitchen",
+     "message": "Inside the plot boundary."
+    },
+    {
+     "id": "boundary",
+     "category": "hard",
+     "status": "passed",
+     "room": "Master Bedroom",
+     "message": "Inside the plot boundary."
+    },
+    {
+     "id": "boundary",
+     "category": "hard",
+     "status": "passed",
+     "room": "Bedroom 2",
+     "message": "Inside the plot boundary."
+    },
+    {
+     "id": "boundary",
+     "category": "hard",
+     "status": "passed",
+     "room": "Bathroom 1",
+     "message": "Inside the plot boundary."
+    },
+    {
+     "id": "boundary",
+     "category": "hard",
+     "status": "passed",
+     "room": "Bathroom 2",
+     "message": "Inside the plot boundary."
+    },
+    {
+     "id": "boundary",
+     "category": "hard",
+     "status": "passed",
+     "room": "Dining Area",
+     "message": "Inside the plot boundary."
+    },
+    {
+     "id": "boundary",
+     "category": "hard",
+     "status": "passed",
+     "room": "Balcony",
+     "message": "Inside the plot boundary."
+    },
+    {
+     "id": "boundary",
+     "category": "hard",
+     "status": "passed",
+     "room": "Corridor",
+     "message": "Inside the plot boundary."
+    },
+    {
+     "id": "boundary",
+     "category": "hard",
+     "status": "passed",
+     "room": "Unallocated",
+     "message": "Inside the plot boundary."
+    },
+    {
+     "id": "overlap",
+     "category": "hard",
+     "status": "passed",
+     "room": "",
+     "message": "No two rooms overlap."
+    },
+    {
+     "id": "min_dimensions",
+     "category": "hard",
+     "status": "passed",
+     "room": "Living Room",
+     "message": "Minimum dimensions satisfied (7.80 x 7.50 m)."
+    },
+    {
+     "id": "required_area",
+     "category": "hard",
+     "status": "passed",
+     "room": "Living Room",
+     "message": "Area 58.50 m2 meets the required 60.00 m2."
+    },
+    {
+     "id": "min_dimensions",
+     "category": "hard",
+     "status": "passed",
+     "room": "Kitchen",
+     "message": "Minimum dimensions satisfied (4.40 x 6.30 m)."
+    },
+    {
+     "id": "required_area",
+     "category": "hard",
+     "status": "passed",
+     "room": "Kitchen",
+     "message": "Area 27.72 m2 meets the required 25.00 m2."
+    },
+    {
+     "id": "min_dimensions",
+     "category": "hard",
+     "status": "passed",
+     "room": "Master Bedroom",
+     "message": "Minimum dimensions satisfied (9.10 x 10.00 m)."
+    },
+    {
+     "id": "required_area",
+     "category": "hard",
+     "status": "passed",
+     "room": "Master Bedroom",
+     "message": "Area 91.00 m2 meets the required 36.00 m2."
+    },
+    {
+     "id": "min_dimensions",
+     "category": "hard",
+     "status": "passed",
+     "room": "Bedroom 2",
+     "message": "Minimum dimensions satisfied (7.80 x 12.50 m)."
+    },
+    {
+     "id": "required_area",
+     "category": "hard",
+     "status": "passed",
+     "room": "Bedroom 2",
+     "message": "Area 97.50 m2 meets the required 28.00 m2."
+    },
+    {
+     "id": "min_dimensions",
+     "category": "hard",
+     "status": "passed",
+     "room": "Bathroom 1",
+     "message": "Minimum dimensions satisfied (8.10 x 3.40 m)."
+    },
+    {
+     "id": "required_area",
+     "category": "hard",
+     "status": "passed",
+     "room": "Bathroom 1",
+     "message": "Area 27.54 m2 meets the required 10.00 m2."
+    },
+    {
+     "id": "min_dimensions",
+     "category": "hard",
+     "status": "passed",
+     "room": "Bathroom 2",
+     "message": "Minimum dimensions satisfied (4.50 x 12.10 m)."
+    },
+    {
+     "id": "required_area",
+     "category": "hard",
+     "status": "passed",
+     "room": "Bathroom 2",
+     "message": "Area 54.45 m2 meets the required 9.00 m2."
+    },
+    {
+     "id": "min_dimensions",
+     "category": "hard",
+     "status": "passed",
+     "room": "Dining Area",
+     "message": "Minimum dimensions satisfied (4.70 x 6.30 m)."
+    },
+    {
+     "id": "required_area",
+     "category": "hard",
+     "status": "passed",
+     "room": "Dining Area",
+     "message": "Area 29.61 m2 meets the required 28.00 m2."
+    },
+    {
+     "id": "min_dimensions",
+     "category": "hard",
+     "status": "passed",
+     "room": "Balcony",
+     "message": "Minimum dimensions satisfied (9.10 x 3.70 m)."
+    },
+    {
+     "id": "required_area",
+     "category": "hard",
+     "status": "passed",
+     "room": "Balcony",
+     "message": "Area 33.67 m2 meets the required 20.00 m2."
+    },
+    {
+     "id": "min_dimensions",
+     "category": "hard",
+     "status": "passed",
+     "room": "Corridor",
+     "message": "Minimum dimensions satisfied (3.60 x 12.10 m)."
+    },
+    {
+     "id": "required_area",
+     "category": "hard",
+     "status": "passed",
+     "room": "Corridor",
+     "message": "Area 43.56 m2 meets the required 36.00 m2."
+    },
+    {
+     "id": "corridor_width",
+     "category": "hard",
+     "status": "passed",
+     "room": "Corridor",
+     "message": "Corridor width 3.60 m is sufficient."
+    },
+    {
+     "id": "connectivity",
+     "category": "hard",
+     "status": "passed",
+     "room": "",
+     "message": "All rooms are reachable from the entrance."
+    },
+    {
+     "id": "relationship",
+     "category": "hard",
+     "status": "passed",
+     "room": "Living Room",
+     "message": "Living Room / ENTRANCE (must be adjacent) satisfied."
+    },
+    {
+     "id": "relationship",
+     "category": "hard",
+     "status": "passed",
+     "room": "Dining Area",
+     "message": "Dining Area / Kitchen (must be adjacent) satisfied."
+    },
+    {
+     "id": "relationship",
+     "category": "soft",
+     "status": "passed",
+     "room": "Master Bedroom",
+     "message": "Master Bedroom / Bedroom 2 (prefers adjacency) satisfied."
+    },
+    {
+     "id": "relationship",
+     "category": "soft",
+     "status": "passed",
+     "room": "Bathroom 1",
+     "message": "Bathroom 1 / Corridor (prefers adjacency) satisfied."
+    },
+    {
+     "id": "relationship",
+     "category": "soft",
+     "status": "passed",
+     "room": "Bathroom 2",
+     "message": "Bathroom 2 / Corridor (prefers adjacency) satisfied."
+    },
+    {
+     "id": "relationship",
+     "category": "soft",
+     "status": "passed",
+     "room": "Balcony",
+     "message": "Balcony / Living Room (prefers adjacency) satisfied."
+    }
+   ],
+   "disconnected": [],
+   "circulation": {
+    "entrance": {
+     "x": 12.5,
+     "y": 20
+    },
+    "nodes": [
+     {
+      "name": "Living Room",
+      "cx": 13,
+      "cy": 16.25,
+      "transit": true
+     },
+     {
+      "name": "Kitchen",
+      "cx": 2.2,
+      "cy": 13.15,
+      "transit": false
+     },
+     {
+      "name": "Master Bedroom",
+      "cx": 4.55,
+      "cy": 5,
+      "transit": false
+     },
+     {
+      "name": "Bedroom 2",
+      "cx": 13,
+      "cy": 6.25,
+      "transit": false
+     },
+     {
+      "name": "Bathroom 1",
+      "cx": 20.95,
+      "cy": 6.2,
+      "transit": false
+     },
+     {
+      "name": "Bathroom 2",
+      "cx": 22.75,
+      "cy": 13.95,
+      "transit": false
+     },
+     {
+      "name": "Dining Area",
+      "cx": 6.75,
+      "cy": 13.15,
+      "transit": true
+     },
+     {
+      "name": "Balcony",
+      "cx": 4.55,
+      "cy": 18.15,
+      "transit": false
+     },
+     {
+      "name": "Corridor",
+      "cx": 18.7,
+      "cy": 13.95,
+      "transit": true
+     }
+    ],
+    "edges": [
+     {
+      "a": "Living Room",
+      "b": "Bedroom 2",
+      "weight": 10,
+      "doorX": 13,
+      "doorY": 12.5
+     },
+     {
+      "a": "Living Room",
+      "b": "Dining Area",
+      "weight": 6.9783,
+      "doorX": 9.1,
+      "doorY": 14.4
+     },
+     {
+      "a": "Living Room",
+      "b": "Balcony",
+      "weight": 8.8882,
+      "doorX": 9.1,
+      "doorY": 18.15
+     },
+     {
+      "a": "Living Room",
+      "b": "Corridor",
+      "weight": 6.8206,
+      "doorX": 16.9,
+      "doorY": 16.25
+     },
+     {
+      "a": "Living Room",
+      "b": "ENTRANCE",
+      "weight": 3.7832,
+      "doorX": 12.5,
+      "doorY": 20
+     },
+     {
+      "a": "Kitchen",
+      "b": "Master Bedroom",
+      "weight": 8.6747,
+      "doorX": 2.2,
+      "doorY": 10
+     },
+     {
+      "a": "Kitchen",
+      "b": "Dining Area",
+      "weight": 4.55,
+      "doorX": 4.4,
+      "doorY": 13.15
+     },
+     {
+      "a": "Kitchen",
+      "b": "Balcony",
+      "weight": 6.1408,
+      "doorX": 2.2,
+      "doorY": 16.3
+     },
+     {
+      "a": "Master Bedroom",
+      "b": "Bedroom 2",
+      "weight": 8.6454,
+      "doorX": 9.1,
+      "doorY": 5
+     },
+     {
+      "a": "Master Bedroom",
+      "b": "Dining Area",
+      "weight": 8.6126,
+      "doorX": 6.75,
+      "doorY": 10
+     },
+     {
+      "a": "Bedroom 2",
+      "b": "Bathroom 1",
+      "weight": 7.9503,
+      "doorX": 16.9,
+      "doorY": 6.2
+     },
+     {
+      "a": "Bedroom 2",
+      "b": "Dining Area",
+      "weight": 9.3631,
+      "doorX": 9.1,
+      "doorY": 11.25
+     },
+     {
+      "a": "Bedroom 2",
+      "b": "Corridor",
+      "weight": 9.7105,
+      "doorX": 16.9,
+      "doorY": 10.2
+     },
+     {
+      "a": "Bathroom 1",
+      "b": "Bathroom 2",
+      "weight": 8.5259,
+      "doorX": 22.75,
+      "doorY": 7.9
+     },
+     {
+      "a": "Bathroom 1",
+      "b": "Corridor",
+      "weight": 8.87,
+      "doorX": 18.7,
+      "doorY": 7.9
+     },
+     {
+      "a": "Bathroom 2",
+      "b": "Corridor",
+      "weight": 4.05,
+      "doorX": 20.5,
+      "doorY": 13.95
+     },
+     {
+      "a": "Dining Area",
+      "b": "Balcony",
+      "weight": 6.0245,
+      "doorX": 6.75,
+      "doorY": 16.3
+     }
+    ],
+    "paths": [
+     {
+      "room": "Living Room",
+      "reachable": true,
+      "distance": 3.7832,
+      "route": [
+       "ENTRANCE",
+       "Living Room"
+      ],
+      "polyline": [
+       [
+        12.5,
+        20
+       ],
+       [
+        13,
+        16.25
+       ]
+      ]
+     },
+     {
+      "room": "Kitchen",
+      "reachable": true,
+      "distance": 15.3115,
+      "route": [
+       "ENTRANCE",
+       "Living Room",
+       "Dining Area",
+       "Kitchen"
+      ],
+      "polyline": [
+       [
+        12.5,
+        20
+       ],
+       [
+        13,
+        16.25
+       ],
+       [
+        9.1,
+        14.4
+       ],
+       [
+        6.75,
+        13.15
+       ],
+       [
+        4.4,
+        13.15
+       ],
+       [
+        2.2,
+        13.15
+       ]
+      ]
+     },
+     {
+      "room": "Master Bedroom",
+      "reachable": true,
+      "distance": 19.3741,
+      "route": [
+       "ENTRANCE",
+       "Living Room",
+       "Dining Area",
+       "Master Bedroom"
+      ],
+      "polyline": [
+       [
+        12.5,
+        20
+       ],
+       [
+        13,
+        16.25
+       ],
+       [
+        9.1,
+        14.4
+       ],
+       [
+        6.75,
+        13.15
+       ],
+       [
+        6.75,
+        10
+       ],
+       [
+        4.55,
+        5
+       ]
+      ]
+     },
+     {
+      "room": "Bedroom 2",
+      "reachable": true,
+      "distance": 13.7832,
+      "route": [
+       "ENTRANCE",
+       "Living Room",
+       "Bedroom 2"
+      ],
+      "polyline": [
+       [
+        12.5,
+        20
+       ],
+       [
+        13,
+        16.25
+       ],
+       [
+        13,
+        12.5
+       ],
+       [
+        13,
+        6.25
+       ]
+      ]
+     },
+     {
+      "room": "Bathroom 1",
+      "reachable": true,
+      "distance": 19.4738,
+      "route": [
+       "ENTRANCE",
+       "Living Room",
+       "Corridor",
+       "Bathroom 1"
+      ],
+      "polyline": [
+       [
+        12.5,
+        20
+       ],
+       [
+        13,
+        16.25
+       ],
+       [
+        16.9,
+        16.25
+       ],
+       [
+        18.7,
+        13.95
+       ],
+       [
+        18.7,
+        7.9
+       ],
+       [
+        20.95,
+        6.2
+       ]
+      ]
+     },
+     {
+      "room": "Bathroom 2",
+      "reachable": true,
+      "distance": 14.6538,
+      "route": [
+       "ENTRANCE",
+       "Living Room",
+       "Corridor",
+       "Bathroom 2"
+      ],
+      "polyline": [
+       [
+        12.5,
+        20
+       ],
+       [
+        13,
+        16.25
+       ],
+       [
+        16.9,
+        16.25
+       ],
+       [
+        18.7,
+        13.95
+       ],
+       [
+        20.5,
+        13.95
+       ],
+       [
+        22.75,
+        13.95
+       ]
+      ]
+     },
+     {
+      "room": "Dining Area",
+      "reachable": true,
+      "distance": 10.7615,
+      "route": [
+       "ENTRANCE",
+       "Living Room",
+       "Dining Area"
+      ],
+      "polyline": [
+       [
+        12.5,
+        20
+       ],
+       [
+        13,
+        16.25
+       ],
+       [
+        9.1,
+        14.4
+       ],
+       [
+        6.75,
+        13.15
+       ]
+      ]
+     },
+     {
+      "room": "Balcony",
+      "reachable": true,
+      "distance": 12.6714,
+      "route": [
+       "ENTRANCE",
+       "Living Room",
+       "Balcony"
+      ],
+      "polyline": [
+       [
+        12.5,
+        20
+       ],
+       [
+        13,
+        16.25
+       ],
+       [
+        9.1,
+        18.15
+       ],
+       [
+        4.55,
+        18.15
+       ]
+      ]
+     },
+     {
+      "room": "Corridor",
+      "reachable": true,
+      "distance": 10.6038,
+      "route": [
+       "ENTRANCE",
+       "Living Room",
+       "Corridor"
+      ],
+      "polyline": [
+       [
+        12.5,
+        20
+       ],
+       [
+        13,
+        16.25
+       ],
+       [
+        16.9,
+        16.25
+       ],
+       [
+        18.7,
+        13.95
+       ]
+      ]
+     }
+    ],
+    "disconnected": [],
+    "bottlenecks": [
+     {
+      "room": "Living Room",
+      "load": 8
+     }
+    ],
+    "matrixNames": [
+     "Living Room",
+     "Kitchen",
+     "Master Bedroom",
+     "Bedroom 2",
+     "Bathroom 1",
+     "Bathroom 2",
+     "Dining Area",
+     "Balcony",
+     "Corridor"
+    ],
+    "distanceMatrix": [
+     [
+      0,
+      11.5283,
+      15.5909,
+      10,
+      15.6906,
+      10.8706,
+      6.9783,
+      8.8882,
+      6.8206
+     ],
+     [
+      11.5283,
+      0,
+      8.6747,
+      13.9131,
+      27.2189,
+      22.3989,
+      4.55,
+      6.1408,
+      18.3489
+     ],
+     [
+      15.5909,
+      8.6747,
+      0,
+      8.6454,
+      31.2815,
+      26.4615,
+      8.6126,
+      14.6371,
+      22.4115
+     ],
+     [
+      10,
+      13.9131,
+      8.6454,
+      0,
+      7.9503,
+      13.7605,
+      9.3631,
+      15.3876,
+      9.7105
+     ],
+     [
+      15.6906,
+      27.2189,
+      31.2815,
+      7.9503,
+      0,
+      8.5259,
+      22.6689,
+      24.5788,
+      8.87
+     ],
+     [
+      10.8706,
+      22.3989,
+      26.4615,
+      13.7605,
+      8.5259,
+      0,
+      17.8489,
+      19.7588,
+      4.05
+     ],
+     [
+      6.9783,
+      4.55,
+      8.6126,
+      9.3631,
+      22.6689,
+      17.8489,
+      0,
+      6.0245,
+      13.7989
+     ],
+     [
+      8.8882,
+      6.1408,
+      14.6371,
+      15.3876,
+      24.5788,
+      19.7588,
+      6.0245,
+      0,
+      15.7088
+     ],
+     [
+      6.8206,
+      18.3489,
+      22.4115,
+      9.7105,
+      8.87,
+      4.05,
+      13.7989,
+      15.7088,
+      0
+     ]
+    ],
+    "avgDistance": 13.3796,
+    "maxDistance": 19.4738,
+    "components": 1,
+    "fullyConnected": true
+   },
+   "id": "L2",
+   "verified": true
+  },
+  {
+   "rooms": [
+    {
+     "name": "Living Room",
+     "type": "Living Room",
+     "x": 9.1,
+     "y": 12.6,
+     "width": 7.8,
+     "height": 7.4,
+     "area": 57.72,
+     "requiredArea": 60,
+     "isFree": false,
+     "transit": true
+    },
+    {
+     "name": "Kitchen",
+     "type": "Kitchen",
+     "x": 0,
+     "y": 10.1,
+     "width": 4.6,
+     "height": 6.3,
+     "area": 28.98,
+     "requiredArea": 25,
+     "isFree": false,
+     "transit": false
+    },
+    {
+     "name": "Master Bedroom",
+     "type": "Bedroom",
+     "x": 0,
+     "y": 0,
+     "width": 9.1,
+     "height": 10.1,
+     "area": 91.91,
+     "requiredArea": 36,
+     "isFree": false,
+     "transit": false
+    },
+    {
+     "name": "Bedroom 2",
+     "type": "Bedroom",
+     "x": 9.1,
+     "y": 0,
+     "width": 7.8,
+     "height": 12.6,
+     "area": 98.28,
+     "requiredArea": 28,
+     "isFree": false,
+     "transit": false
+    },
+    {
+     "name": "Bathroom 1",
+     "type": "Toilet",
+     "x": 16.9,
+     "y": 4.9,
+     "width": 8.1,
+     "height": 3.6,
+     "area": 29.16,
+     "requiredArea": 10,
+     "isFree": false,
+     "transit": false
+    },
+    {
+     "name": "Bathroom 2",
+     "type": "Toilet",
+     "x": 20.5,
+     "y": 8.5,
+     "width": 4.5,
+     "height": 11.5,
+     "area": 51.75,
+     "requiredArea": 9,
+     "isFree": false,
+     "transit": false
+    },
+    {
+     "name": "Dining Area",
+     "type": "Dining Area",
+     "x": 4.6,
+     "y": 10.1,
+     "width": 4.5,
+     "height": 6.3,
+     "area": 28.35,
+     "requiredArea": 28,
+     "isFree": false,
+     "transit": true
+    },
+    {
+     "name": "Balcony",
+     "type": "Balcony",
+     "x": 0,
+     "y": 16.4,
+     "width": 9.1,
+     "height": 3.6,
+     "area": 32.76,
+     "requiredArea": 20,
+     "isFree": false,
+     "transit": false
+    },
+    {
+     "name": "Corridor",
+     "type": "Corridor",
+     "x": 16.9,
+     "y": 8.5,
+     "width": 3.6,
+     "height": 11.5,
+     "area": 41.4,
+     "requiredArea": 36,
+     "isFree": false,
+     "transit": true
+    },
+    {
+     "name": "Unallocated",
+     "type": "Open Space",
+     "x": 16.9,
+     "y": 0,
+     "width": 8.1,
+     "height": 4.9,
+     "area": 39.69,
+     "requiredArea": 122,
+     "isFree": true,
+     "transit": false
+    }
+   ],
+   "metrics": {
+    "totalCost": 157.0266,
+    "costBreakdown": {
+     "overlap": 0,
+     "boundary": 0,
+     "adjacency": 0,
+     "corridor": 0,
+     "circulation": 137.1816,
+     "unused": 19.845,
+     "hardConstraints": 0
+    },
+    "plotArea": 500,
+    "usableArea": 418.91,
+    "circulationArea": 41.4,
+    "unusedArea": 39.69,
+    "areaEfficiency": 92.062,
+    "adjacencySatisfaction": 100,
+    "circulationScore": 70.6387,
+    "accessibilityScore": 100,
+    "avgWalk": 13.2126,
+    "maxWalk": 19.302,
+    "violations": 0,
+    "feasible": true
+   },
+   "validation": [
+    {
+     "id": "boundary",
+     "category": "hard",
+     "status": "passed",
+     "room": "Living Room",
+     "message": "Inside the plot boundary."
+    },
+    {
+     "id": "boundary",
+     "category": "hard",
+     "status": "passed",
+     "room": "Kitchen",
+     "message": "Inside the plot boundary."
+    },
+    {
+     "id": "boundary",
+     "category": "hard",
+     "status": "passed",
+     "room": "Master Bedroom",
+     "message": "Inside the plot boundary."
+    },
+    {
+     "id": "boundary",
+     "category": "hard",
+     "status": "passed",
+     "room": "Bedroom 2",
+     "message": "Inside the plot boundary."
+    },
+    {
+     "id": "boundary",
+     "category": "hard",
+     "status": "passed",
+     "room": "Bathroom 1",
+     "message": "Inside the plot boundary."
+    },
+    {
+     "id": "boundary",
+     "category": "hard",
+     "status": "passed",
+     "room": "Bathroom 2",
+     "message": "Inside the plot boundary."
+    },
+    {
+     "id": "boundary",
+     "category": "hard",
+     "status": "passed",
+     "room": "Dining Area",
+     "message": "Inside the plot boundary."
+    },
+    {
+     "id": "boundary",
+     "category": "hard",
+     "status": "passed",
+     "room": "Balcony",
+     "message": "Inside the plot boundary."
+    },
+    {
+     "id": "boundary",
+     "category": "hard",
+     "status": "passed",
+     "room": "Corridor",
+     "message": "Inside the plot boundary."
+    },
+    {
+     "id": "boundary",
+     "category": "hard",
+     "status": "passed",
+     "room": "Unallocated",
+     "message": "Inside the plot boundary."
+    },
+    {
+     "id": "overlap",
+     "category": "hard",
+     "status": "passed",
+     "room": "",
+     "message": "No two rooms overlap."
+    },
+    {
+     "id": "min_dimensions",
+     "category": "hard",
+     "status": "passed",
+     "room": "Living Room",
+     "message": "Minimum dimensions satisfied (7.80 x 7.40 m)."
+    },
+    {
+     "id": "required_area",
+     "category": "hard",
+     "status": "passed",
+     "room": "Living Room",
+     "message": "Area 57.72 m2 meets the required 60.00 m2."
+    },
+    {
+     "id": "min_dimensions",
+     "category": "hard",
+     "status": "passed",
+     "room": "Kitchen",
+     "message": "Minimum dimensions satisfied (4.60 x 6.30 m)."
+    },
+    {
+     "id": "required_area",
+     "category": "hard",
+     "status": "passed",
+     "room": "Kitchen",
+     "message": "Area 28.98 m2 meets the required 25.00 m2."
+    },
+    {
+     "id": "min_dimensions",
+     "category": "hard",
+     "status": "passed",
+     "room": "Master Bedroom",
+     "message": "Minimum dimensions satisfied (9.10 x 10.10 m)."
+    },
+    {
+     "id": "required_area",
+     "category": "hard",
+     "status": "passed",
+     "room": "Master Bedroom",
+     "message": "Area 91.91 m2 meets the required 36.00 m2."
+    },
+    {
+     "id": "min_dimensions",
+     "category": "hard",
+     "status": "passed",
+     "room": "Bedroom 2",
+     "message": "Minimum dimensions satisfied (7.80 x 12.60 m)."
+    },
+    {
+     "id": "required_area",
+     "category": "hard",
+     "status": "passed",
+     "room": "Bedroom 2",
+     "message": "Area 98.28 m2 meets the required 28.00 m2."
+    },
+    {
+     "id": "min_dimensions",
+     "category": "hard",
+     "status": "passed",
+     "room": "Bathroom 1",
+     "message": "Minimum dimensions satisfied (8.10 x 3.60 m)."
+    },
+    {
+     "id": "required_area",
+     "category": "hard",
+     "status": "passed",
+     "room": "Bathroom 1",
+     "message": "Area 29.16 m2 meets the required 10.00 m2."
+    },
+    {
+     "id": "min_dimensions",
+     "category": "hard",
+     "status": "passed",
+     "room": "Bathroom 2",
+     "message": "Minimum dimensions satisfied (4.50 x 11.50 m)."
+    },
+    {
+     "id": "required_area",
+     "category": "hard",
+     "status": "passed",
+     "room": "Bathroom 2",
+     "message": "Area 51.75 m2 meets the required 9.00 m2."
+    },
+    {
+     "id": "min_dimensions",
+     "category": "hard",
+     "status": "passed",
+     "room": "Dining Area",
+     "message": "Minimum dimensions satisfied (4.50 x 6.30 m)."
+    },
+    {
+     "id": "required_area",
+     "category": "hard",
+     "status": "passed",
+     "room": "Dining Area",
+     "message": "Area 28.35 m2 meets the required 28.00 m2."
+    },
+    {
+     "id": "min_dimensions",
+     "category": "hard",
+     "status": "passed",
+     "room": "Balcony",
+     "message": "Minimum dimensions satisfied (9.10 x 3.60 m)."
+    },
+    {
+     "id": "required_area",
+     "category": "hard",
+     "status": "passed",
+     "room": "Balcony",
+     "message": "Area 32.76 m2 meets the required 20.00 m2."
+    },
+    {
+     "id": "min_dimensions",
+     "category": "hard",
+     "status": "passed",
+     "room": "Corridor",
+     "message": "Minimum dimensions satisfied (3.60 x 11.50 m)."
+    },
+    {
+     "id": "required_area",
+     "category": "hard",
+     "status": "passed",
+     "room": "Corridor",
+     "message": "Area 41.40 m2 meets the required 36.00 m2."
+    },
+    {
+     "id": "corridor_width",
+     "category": "hard",
+     "status": "passed",
+     "room": "Corridor",
+     "message": "Corridor width 3.60 m is sufficient."
+    },
+    {
+     "id": "connectivity",
+     "category": "hard",
+     "status": "passed",
+     "room": "",
+     "message": "All rooms are reachable from the entrance."
+    },
+    {
+     "id": "relationship",
+     "category": "hard",
+     "status": "passed",
+     "room": "Living Room",
+     "message": "Living Room / ENTRANCE (must be adjacent) satisfied."
+    },
+    {
+     "id": "relationship",
+     "category": "hard",
+     "status": "passed",
+     "room": "Dining Area",
+     "message": "Dining Area / Kitchen (must be adjacent) satisfied."
+    },
+    {
+     "id": "relationship",
+     "category": "soft",
+     "status": "passed",
+     "room": "Master Bedroom",
+     "message": "Master Bedroom / Bedroom 2 (prefers adjacency) satisfied."
+    },
+    {
+     "id": "relationship",
+     "category": "soft",
+     "status": "passed",
+     "room": "Bathroom 1",
+     "message": "Bathroom 1 / Corridor (prefers adjacency) satisfied."
+    },
+    {
+     "id": "relationship",
+     "category": "soft",
+     "status": "passed",
+     "room": "Bathroom 2",
+     "message": "Bathroom 2 / Corridor (prefers adjacency) satisfied."
+    },
+    {
+     "id": "relationship",
+     "category": "soft",
+     "status": "passed",
+     "room": "Balcony",
+     "message": "Balcony / Living Room (prefers adjacency) satisfied."
+    }
+   ],
+   "disconnected": [],
+   "circulation": {
+    "entrance": {
+     "x": 12.5,
+     "y": 20
+    },
+    "nodes": [
+     {
+      "name": "Living Room",
+      "cx": 13,
+      "cy": 16.3,
+      "transit": true
+     },
+     {
+      "name": "Kitchen",
+      "cx": 2.3,
+      "cy": 13.25,
+      "transit": false
+     },
+     {
+      "name": "Master Bedroom",
+      "cx": 4.55,
+      "cy": 5.05,
+      "transit": false
+     },
+     {
+      "name": "Bedroom 2",
+      "cx": 13,
+      "cy": 6.3,
+      "transit": false
+     },
+     {
+      "name": "Bathroom 1",
+      "cx": 20.95,
+      "cy": 6.7,
+      "transit": false
+     },
+     {
+      "name": "Bathroom 2",
+      "cx": 22.75,
+      "cy": 14.25,
+      "transit": false
+     },
+     {
+      "name": "Dining Area",
+      "cx": 6.85,
+      "cy": 13.25,
+      "transit": true
+     },
+     {
+      "name": "Balcony",
+      "cx": 4.55,
+      "cy": 18.2,
+      "transit": false
+     },
+     {
+      "name": "Corridor",
+      "cx": 18.7,
+      "cy": 14.25,
+      "transit": true
+     }
+    ],
+    "edges": [
+     {
+      "a": "Living Room",
+      "b": "Bedroom 2",
+      "weight": 10,
+      "doorX": 13,
+      "doorY": 12.6
+     },
+     {
+      "a": "Living Room",
+      "b": "Dining Area",
+      "weight": 6.8693,
+      "doorX": 9.1,
+      "doorY": 14.5
+     },
+     {
+      "a": "Living Room",
+      "b": "Balcony",
+      "weight": 8.8882,
+      "doorX": 9.1,
+      "doorY": 18.2
+     },
+     {
+      "a": "Living Room",
+      "b": "Corridor",
+      "weight": 6.6281,
+      "doorX": 16.9,
+      "doorY": 16.3
+     },
+     {
+      "a": "Living Room",
+      "b": "ENTRANCE",
+      "weight": 3.7336,
+      "doorX": 12.5,
+      "doorY": 20
+     },
+     {
+      "a": "Kitchen",
+      "b": "Master Bedroom",
+      "weight": 8.6786,
+      "doorX": 2.3,
+      "doorY": 10.1
+     },
+     {
+      "a": "Kitchen",
+      "b": "Dining Area",
+      "weight": 4.55,
+      "doorX": 4.6,
+      "doorY": 13.25
+     },
+     {
+      "a": "Kitchen",
+      "b": "Balcony",
+      "weight": 6.0314,
+      "doorX": 2.3,
+      "doorY": 16.4
+     },
+     {
+      "a": "Master Bedroom",
+      "b": "Bedroom 2",
+      "weight": 8.6454,
+      "doorX": 9.1,
+      "doorY": 5.05
+     },
+     {
+      "a": "Master Bedroom",
+      "b": "Dining Area",
+      "weight": 8.6991,
+      "doorX": 6.85,
+      "doorY": 10.1
+     },
+     {
+      "a": "Bedroom 2",
+      "b": "Bathroom 1",
+      "weight": 7.9705,
+      "doorX": 16.9,
+      "doorY": 6.7
+     },
+     {
+      "a": "Bedroom 2",
+      "b": "Dining Area",
+      "weight": 9.3255,
+      "doorX": 9.1,
+      "doorY": 11.35
+     },
+     {
+      "a": "Bedroom 2",
+      "b": "Corridor",
+      "weight": 9.8828,
+      "doorX": 16.9,
+      "doorY": 10.55
+     },
+     {
+      "a": "Bathroom 1",
+      "b": "Bathroom 2",
+      "weight": 8.2956,
+      "doorX": 22.75,
+      "doorY": 8.5
+     },
+     {
+      "a": "Bathroom 1",
+      "b": "Corridor",
+      "weight": 8.6314,
+      "doorX": 18.7,
+      "doorY": 8.5
+     },
+     {
+      "a": "Bathroom 2",
+      "b": "Corridor",
+      "weight": 4.05,
+      "doorX": 20.5,
+      "doorY": 14.25
+     },
+     {
+      "a": "Dining Area",
+      "b": "Balcony",
+      "weight": 6.0706,
+      "doorX": 6.85,
+      "doorY": 16.4
+     }
+    ],
+    "paths": [
+     {
+      "room": "Living Room",
+      "reachable": true,
+      "distance": 3.7336,
+      "route": [
+       "ENTRANCE",
+       "Living Room"
+      ],
+      "polyline": [
+       [
+        12.5,
+        20
+       ],
+       [
+        13,
+        16.3
+       ]
+      ]
+     },
+     {
+      "room": "Kitchen",
+      "reachable": true,
+      "distance": 15.1529,
+      "route": [
+       "ENTRANCE",
+       "Living Room",
+       "Dining Area",
+       "Kitchen"
+      ],
+      "polyline": [
+       [
+        12.5,
+        20
+       ],
+       [
+        13,
+        16.3
+       ],
+       [
+        9.1,
+        14.5
+       ],
+       [
+        6.85,
+        13.25
+       ],
+       [
+        4.6,
+        13.25
+       ],
+       [
+        2.3,
+        13.25
+       ]
+      ]
+     },
+     {
+      "room": "Master Bedroom",
+      "reachable": true,
+      "distance": 19.302,
+      "route": [
+       "ENTRANCE",
+       "Living Room",
+       "Dining Area",
+       "Master Bedroom"
+      ],
+      "polyline": [
+       [
+        12.5,
+        20
+       ],
+       [
+        13,
+        16.3
+       ],
+       [
+        9.1,
+        14.5
+       ],
+       [
+        6.85,
+        13.25
+       ],
+       [
+        6.85,
+        10.1
+       ],
+       [
+        4.55,
+        5.05
+       ]
+      ]
+     },
+     {
+      "room": "Bedroom 2",
+      "reachable": true,
+      "distance": 13.7336,
+      "route": [
+       "ENTRANCE",
+       "Living Room",
+       "Bedroom 2"
+      ],
+      "polyline": [
+       [
+        12.5,
+        20
+       ],
+       [
+        13,
+        16.3
+       ],
+       [
+        13,
+        12.6
+       ],
+       [
+        13,
+        6.3
+       ]
+      ]
+     },
+     {
+      "room": "Bathroom 1",
+      "reachable": true,
+      "distance": 18.9931,
+      "route": [
+       "ENTRANCE",
+       "Living Room",
+       "Corridor",
+       "Bathroom 1"
+      ],
+      "polyline": [
+       [
+        12.5,
+        20
+       ],
+       [
+        13,
+        16.3
+       ],
+       [
+        16.9,
+        16.3
+       ],
+       [
+        18.7,
+        14.25
+       ],
+       [
+        18.7,
+        8.5
+       ],
+       [
+        20.95,
+        6.7
+       ]
+      ]
+     },
+     {
+      "room": "Bathroom 2",
+      "reachable": true,
+      "distance": 14.4117,
+      "route": [
+       "ENTRANCE",
+       "Living Room",
+       "Corridor",
+       "Bathroom 2"
+      ],
+      "polyline": [
+       [
+        12.5,
+        20
+       ],
+       [
+        13,
+        16.3
+       ],
+       [
+        16.9,
+        16.3
+       ],
+       [
+        18.7,
+        14.25
+       ],
+       [
+        20.5,
+        14.25
+       ],
+       [
+        22.75,
+        14.25
+       ]
+      ]
+     },
+     {
+      "room": "Dining Area",
+      "reachable": true,
+      "distance": 10.6029,
+      "route": [
+       "ENTRANCE",
+       "Living Room",
+       "Dining Area"
+      ],
+      "polyline": [
+       [
+        12.5,
+        20
+       ],
+       [
+        13,
+        16.3
+       ],
+       [
+        9.1,
+        14.5
+       ],
+       [
+        6.85,
+        13.25
+       ]
+      ]
+     },
+     {
+      "room": "Balcony",
+      "reachable": true,
+      "distance": 12.6218,
+      "route": [
+       "ENTRANCE",
+       "Living Room",
+       "Balcony"
+      ],
+      "polyline": [
+       [
+        12.5,
+        20
+       ],
+       [
+        13,
+        16.3
+       ],
+       [
+        9.1,
+        18.2
+       ],
+       [
+        4.55,
+        18.2
+       ]
+      ]
+     },
+     {
+      "room": "Corridor",
+      "reachable": true,
+      "distance": 10.3617,
+      "route": [
+       "ENTRANCE",
+       "Living Room",
+       "Corridor"
+      ],
+      "polyline": [
+       [
+        12.5,
+        20
+       ],
+       [
+        13,
+        16.3
+       ],
+       [
+        16.9,
+        16.3
+       ],
+       [
+        18.7,
+        14.25
+       ]
+      ]
+     }
+    ],
+    "disconnected": [],
+    "bottlenecks": [
+     {
+      "room": "Living Room",
+      "load": 8
+     }
+    ],
+    "matrixNames": [
+     "Living Room",
+     "Kitchen",
+     "Master Bedroom",
+     "Bedroom 2",
+     "Bathroom 1",
+     "Bathroom 2",
+     "Dining Area",
+     "Balcony",
+     "Corridor"
+    ],
+    "distanceMatrix": [
+     [
+      0,
+      11.4193,
+      15.5684,
+      10,
+      15.2595,
+      10.6781,
+      6.8693,
+      8.8882,
+      6.6281
+     ],
+     [
+      11.4193,
+      0,
+      8.6786,
+      13.8755,
+      26.6788,
+      22.0973,
+      4.55,
+      6.0314,
+      18.0473
+     ],
+     [
+      15.5684,
+      8.6786,
+      0,
+      8.6454,
+      30.8279,
+      26.2464,
+      8.6991,
+      14.7697,
+      22.1964
+     ],
+     [
+      10,
+      13.8755,
+      8.6454,
+      0,
+      7.9705,
+      13.9328,
+      9.3255,
+      15.3962,
+      9.8828
+     ],
+     [
+      15.2595,
+      26.6788,
+      30.8279,
+      7.9705,
+      0,
+      8.2956,
+      22.1288,
+      24.1477,
+      8.6314
+     ],
+     [
+      10.6781,
+      22.0973,
+      26.2464,
+      13.9328,
+      8.2956,
+      0,
+      17.5473,
+      19.5663,
+      4.05
+     ],
+     [
+      6.8693,
+      4.55,
+      8.6991,
+      9.3255,
+      22.1288,
+      17.5473,
+      0,
+      6.0706,
+      13.4973
+     ],
+     [
+      8.8882,
+      6.0314,
+      14.7697,
+      15.3962,
+      24.1477,
+      19.5663,
+      6.0706,
+      0,
+      15.5163
+     ],
+     [
+      6.6281,
+      18.0473,
+      22.1964,
+      9.8828,
+      8.6314,
+      4.05,
+      13.4973,
+      15.5163,
+      0
+     ]
+    ],
+    "avgDistance": 13.2126,
+    "maxDistance": 19.302,
+    "components": 1,
+    "fullyConnected": true
+   },
+   "id": "L3",
+   "verified": true
+  },
+  {
+   "rooms": [
+    {
+     "name": "Living Room",
+     "type": "Living Room",
+     "x": 9.8,
+     "y": 12.5,
+     "width": 7.6,
+     "height": 7.5,
+     "area": 57,
+     "requiredArea": 60,
+     "isFree": false,
+     "transit": true
+    },
+    {
+     "name": "Kitchen",
+     "type": "Kitchen",
+     "x": 0,
+     "y": 10,
+     "width": 5.3,
+     "height": 6.3,
+     "area": 33.39,
+     "requiredArea": 25,
+     "isFree": false,
+     "transit": false
+    },
+    {
+     "name": "Master Bedroom",
+     "type": "Bedroom",
+     "x": 0,
+     "y": 0,
+     "width": 9.8,
+     "height": 10,
+     "area": 98,
+     "requiredArea": 36,
+     "isFree": false,
+     "transit": false
+    },
+    {
+     "name": "Bedroom 2",
+     "type": "Bedroom",
+     "x": 9.8,
+     "y": 0,
+     "width": 7.6,
+     "height": 12.5,
+     "area": 95,
+     "requiredArea": 28,
+     "isFree": false,
+     "transit": false
+    },
+    {
+     "name": "Bathroom 1",
+     "type": "Toilet",
+     "x": 17.4,
+     "y": 5.3,
+     "width": 7.6,
+     "height": 4,
+     "area": 30.4,
+     "requiredArea": 10,
+     "isFree": false,
+     "transit": false
+    },
+    {
+     "name": "Bathroom 2",
+     "type": "Toilet",
+     "x": 21.2,
+     "y": 9.3,
+     "width": 3.8,
+     "height": 10.7,
+     "area": 40.66,
+     "requiredArea": 9,
+     "isFree": false,
+     "transit": false
+    },
+    {
+     "name": "Dining Area",
+     "type": "Dining Area",
+     "x": 5.3,
+     "y": 10,
+     "width": 4.5,
+     "height": 6.3,
+     "area": 28.35,
+     "requiredArea": 28,
+     "isFree": false,
+     "transit": true
+    },
+    {
+     "name": "Balcony",
+     "type": "Balcony",
+     "x": 0,
+     "y": 16.3,
+     "width": 9.8,
+     "height": 3.7,
+     "area": 36.26,
+     "requiredArea": 20,
+     "isFree": false,
+     "transit": false
+    },
+    {
+     "name": "Corridor",
+     "type": "Corridor",
+     "x": 17.4,
+     "y": 9.3,
+     "width": 3.8,
+     "height": 10.7,
+     "area": 40.66,
+     "requiredArea": 36,
+     "isFree": false,
+     "transit": true
+    },
+    {
+     "name": "Unallocated",
+     "type": "Open Space",
+     "x": 17.4,
+     "y": 0,
+     "width": 7.6,
+     "height": 5.3,
+     "area": 40.28,
+     "requiredArea": 122,
+     "isFree": true,
+     "transit": false
+    }
+   ],
+   "metrics": {
+    "totalCost": 158.152,
+    "costBreakdown": {
+     "overlap": 0,
+     "boundary": 0,
+     "adjacency": 0,
+     "corridor": 0,
+     "circulation": 138.012,
+     "unused": 20.14,
+     "hardConstraints": 0
+    },
+    "plotArea": 500,
+    "usableArea": 419.06,
+    "circulationArea": 40.66,
+    "unusedArea": 40.28,
+    "areaEfficiency": 91.944,
+    "adjacencySatisfaction": 100,
+    "circulationScore": 70.5702,
+    "accessibilityScore": 100,
+    "avgWalk": 13.2434,
+    "maxWalk": 19.5172,
+    "violations": 0,
+    "feasible": true
+   },
+   "validation": [
+    {
+     "id": "boundary",
+     "category": "hard",
+     "status": "passed",
+     "room": "Living Room",
+     "message": "Inside the plot boundary."
+    },
+    {
+     "id": "boundary",
+     "category": "hard",
+     "status": "passed",
+     "room": "Kitchen",
+     "message": "Inside the plot boundary."
+    },
+    {
+     "id": "boundary",
+     "category": "hard",
+     "status": "passed",
+     "room": "Master Bedroom",
+     "message": "Inside the plot boundary."
+    },
+    {
+     "id": "boundary",
+     "category": "hard",
+     "status": "passed",
+     "room": "Bedroom 2",
+     "message": "Inside the plot boundary."
+    },
+    {
+     "id": "boundary",
+     "category": "hard",
+     "status": "passed",
+     "room": "Bathroom 1",
+     "message": "Inside the plot boundary."
+    },
+    {
+     "id": "boundary",
+     "category": "hard",
+     "status": "passed",
+     "room": "Bathroom 2",
+     "message": "Inside the plot boundary."
+    },
+    {
+     "id": "boundary",
+     "category": "hard",
+     "status": "passed",
+     "room": "Dining Area",
+     "message": "Inside the plot boundary."
+    },
+    {
+     "id": "boundary",
+     "category": "hard",
+     "status": "passed",
+     "room": "Balcony",
+     "message": "Inside the plot boundary."
+    },
+    {
+     "id": "boundary",
+     "category": "hard",
+     "status": "passed",
+     "room": "Corridor",
+     "message": "Inside the plot boundary."
+    },
+    {
+     "id": "boundary",
+     "category": "hard",
+     "status": "passed",
+     "room": "Unallocated",
+     "message": "Inside the plot boundary."
+    },
+    {
+     "id": "overlap",
+     "category": "hard",
+     "status": "passed",
+     "room": "",
+     "message": "No two rooms overlap."
+    },
+    {
+     "id": "min_dimensions",
+     "category": "hard",
+     "status": "passed",
+     "room": "Living Room",
+     "message": "Minimum dimensions satisfied (7.60 x 7.50 m)."
+    },
+    {
+     "id": "required_area",
+     "category": "hard",
+     "status": "passed",
+     "room": "Living Room",
+     "message": "Area 57.00 m2 meets the required 60.00 m2."
+    },
+    {
+     "id": "min_dimensions",
+     "category": "hard",
+     "status": "passed",
+     "room": "Kitchen",
+     "message": "Minimum dimensions satisfied (5.30 x 6.30 m)."
+    },
+    {
+     "id": "required_area",
+     "category": "hard",
+     "status": "passed",
+     "room": "Kitchen",
+     "message": "Area 33.39 m2 meets the required 25.00 m2."
+    },
+    {
+     "id": "min_dimensions",
+     "category": "hard",
+     "status": "passed",
+     "room": "Master Bedroom",
+     "message": "Minimum dimensions satisfied (9.80 x 10.00 m)."
+    },
+    {
+     "id": "required_area",
+     "category": "hard",
+     "status": "passed",
+     "room": "Master Bedroom",
+     "message": "Area 98.00 m2 meets the required 36.00 m2."
+    },
+    {
+     "id": "min_dimensions",
+     "category": "hard",
+     "status": "passed",
+     "room": "Bedroom 2",
+     "message": "Minimum dimensions satisfied (7.60 x 12.50 m)."
+    },
+    {
+     "id": "required_area",
+     "category": "hard",
+     "status": "passed",
+     "room": "Bedroom 2",
+     "message": "Area 95.00 m2 meets the required 28.00 m2."
+    },
+    {
+     "id": "min_dimensions",
+     "category": "hard",
+     "status": "passed",
+     "room": "Bathroom 1",
+     "message": "Minimum dimensions satisfied (7.60 x 4.00 m)."
+    },
+    {
+     "id": "required_area",
+     "category": "hard",
+     "status": "passed",
+     "room": "Bathroom 1",
+     "message": "Area 30.40 m2 meets the required 10.00 m2."
+    },
+    {
+     "id": "min_dimensions",
+     "category": "hard",
+     "status": "passed",
+     "room": "Bathroom 2",
+     "message": "Minimum dimensions satisfied (3.80 x 10.70 m)."
+    },
+    {
+     "id": "required_area",
+     "category": "hard",
+     "status": "passed",
+     "room": "Bathroom 2",
+     "message": "Area 40.66 m2 meets the required 9.00 m2."
+    },
+    {
+     "id": "min_dimensions",
+     "category": "hard",
+     "status": "passed",
+     "room": "Dining Area",
+     "message": "Minimum dimensions satisfied (4.50 x 6.30 m)."
+    },
+    {
+     "id": "required_area",
+     "category": "hard",
+     "status": "passed",
+     "room": "Dining Area",
+     "message": "Area 28.35 m2 meets the required 28.00 m2."
+    },
+    {
+     "id": "min_dimensions",
+     "category": "hard",
+     "status": "passed",
+     "room": "Balcony",
+     "message": "Minimum dimensions satisfied (9.80 x 3.70 m)."
+    },
+    {
+     "id": "required_area",
+     "category": "hard",
+     "status": "passed",
+     "room": "Balcony",
+     "message": "Area 36.26 m2 meets the required 20.00 m2."
+    },
+    {
+     "id": "min_dimensions",
+     "category": "hard",
+     "status": "passed",
+     "room": "Corridor",
+     "message": "Minimum dimensions satisfied (3.80 x 10.70 m)."
+    },
+    {
+     "id": "required_area",
+     "category": "hard",
+     "status": "passed",
+     "room": "Corridor",
+     "message": "Area 40.66 m2 meets the required 36.00 m2."
+    },
+    {
+     "id": "corridor_width",
+     "category": "hard",
+     "status": "passed",
+     "room": "Corridor",
+     "message": "Corridor width 3.80 m is sufficient."
+    },
+    {
+     "id": "connectivity",
+     "category": "hard",
+     "status": "passed",
+     "room": "",
+     "message": "All rooms are reachable from the entrance."
+    },
+    {
+     "id": "relationship",
+     "category": "hard",
+     "status": "passed",
+     "room": "Living Room",
+     "message": "Living Room / ENTRANCE (must be adjacent) satisfied."
+    },
+    {
+     "id": "relationship",
+     "category": "hard",
+     "status": "passed",
+     "room": "Dining Area",
+     "message": "Dining Area / Kitchen (must be adjacent) satisfied."
+    },
+    {
+     "id": "relationship",
+     "category": "soft",
+     "status": "passed",
+     "room": "Master Bedroom",
+     "message": "Master Bedroom / Bedroom 2 (prefers adjacency) satisfied."
+    },
+    {
+     "id": "relationship",
+     "category": "soft",
+     "status": "passed",
+     "room": "Bathroom 1",
+     "message": "Bathroom 1 / Corridor (prefers adjacency) satisfied."
+    },
+    {
+     "id": "relationship",
+     "category": "soft",
+     "status": "passed",
+     "room": "Bathroom 2",
+     "message": "Bathroom 2 / Corridor (prefers adjacency) satisfied."
+    },
+    {
+     "id": "relationship",
+     "category": "soft",
+     "status": "passed",
+     "room": "Balcony",
+     "message": "Balcony / Living Room (prefers adjacency) satisfied."
+    }
+   ],
+   "disconnected": [],
+   "circulation": {
+    "entrance": {
+     "x": 12.5,
+     "y": 20
+    },
+    "nodes": [
+     {
+      "name": "Living Room",
+      "cx": 13.6,
+      "cy": 16.25,
+      "transit": true
+     },
+     {
+      "name": "Kitchen",
+      "cx": 2.65,
+      "cy": 13.15,
+      "transit": false
+     },
+     {
+      "name": "Master Bedroom",
+      "cx": 4.9,
+      "cy": 5,
+      "transit": false
+     },
+     {
+      "name": "Bedroom 2",
+      "cx": 13.6,
+      "cy": 6.25,
+      "transit": false
+     },
+     {
+      "name": "Bathroom 1",
+      "cx": 21.2,
+      "cy": 7.3,
+      "transit": false
+     },
+     {
+      "name": "Bathroom 2",
+      "cx": 23.1,
+      "cy": 14.65,
+      "transit": false
+     },
+     {
+      "name": "Dining Area",
+      "cx": 7.55,
+      "cy": 13.15,
+      "transit": true
+     },
+     {
+      "name": "Balcony",
+      "cx": 4.9,
+      "cy": 18.15,
+      "transit": false
+     },
+     {
+      "name": "Corridor",
+      "cx": 19.3,
+      "cy": 14.65,
+      "transit": true
+     }
+    ],
+    "edges": [
+     {
+      "a": "Living Room",
+      "b": "Bedroom 2",
+      "weight": 10,
+      "doorX": 13.6,
+      "doorY": 12.5
+     },
+     {
+      "a": "Living Room",
+      "b": "Dining Area",
+      "weight": 6.8003,
+      "doorX": 9.8,
+      "doorY": 14.4
+     },
+     {
+      "a": "Living Room",
+      "b": "Balcony",
+      "weight": 9.1485,
+      "doorX": 9.8,
+      "doorY": 18.15
+     },
+     {
+      "a": "Living Room",
+      "b": "Corridor",
+      "weight": 6.2839,
+      "doorX": 17.4,
+      "doorY": 16.25
+     },
+     {
+      "a": "Living Room",
+      "b": "ENTRANCE",
+      "weight": 3.908,
+      "doorX": 12.5,
+      "doorY": 20
+     },
+     {
+      "a": "Kitchen",
+      "b": "Master Bedroom",
+      "weight": 8.6329,
+      "doorX": 2.65,
+      "doorY": 10
+     },
+     {
+      "a": "Kitchen",
+      "b": "Dining Area",
+      "weight": 4.9,
+      "doorX": 5.3,
+      "doorY": 13.15
+     },
+     {
+      "a": "Kitchen",
+      "b": "Balcony",
+      "weight": 6.0629,
+      "doorX": 2.65,
+      "doorY": 16.3
+     },
+     {
+      "a": "Master Bedroom",
+      "b": "Bedroom 2",
+      "weight": 8.9003,
+      "doorX": 9.8,
+      "doorY": 5
+     },
+     {
+      "a": "Master Bedroom",
+      "b": "Dining Area",
+      "weight": 8.8088,
+      "doorX": 7.55,
+      "doorY": 10
+     },
+     {
+      "a": "Bedroom 2",
+      "b": "Bathroom 1",
+      "weight": 7.7424,
+      "doorX": 17.4,
+      "doorY": 7.3
+     },
+     {
+      "a": "Bedroom 2",
+      "b": "Dining Area",
+      "weight": 9.225,
+      "doorX": 9.8,
+      "doorY": 11.25
+     },
+     {
+      "a": "Bedroom 2",
+      "b": "Corridor",
+      "weight": 10.2091,
+      "doorX": 17.4,
+      "doorY": 10.9
+     },
+     {
+      "a": "Bathroom 1",
+      "b": "Bathroom 2",
+      "weight": 8.1086,
+      "doorX": 23.1,
+      "doorY": 9.3
+     },
+     {
+      "a": "Bathroom 1",
+      "b": "Corridor",
+      "weight": 8.1086,
+      "doorX": 19.3,
+      "doorY": 9.3
+     },
+     {
+      "a": "Bathroom 2",
+      "b": "Corridor",
+      "weight": 3.8,
+      "doorX": 21.2,
+      "doorY": 14.65
+     },
+     {
+      "a": "Dining Area",
+      "b": "Balcony",
+      "weight": 6.3819,
+      "doorX": 7.55,
+      "doorY": 16.3
+     }
+    ],
+    "paths": [
+     {
+      "room": "Living Room",
+      "reachable": true,
+      "distance": 3.908,
+      "route": [
+       "ENTRANCE",
+       "Living Room"
+      ],
+      "polyline": [
+       [
+        12.5,
+        20
+       ],
+       [
+        13.6,
+        16.25
+       ]
+      ]
+     },
+     {
+      "room": "Kitchen",
+      "reachable": true,
+      "distance": 15.6083,
+      "route": [
+       "ENTRANCE",
+       "Living Room",
+       "Dining Area",
+       "Kitchen"
+      ],
+      "polyline": [
+       [
+        12.5,
+        20
+       ],
+       [
+        13.6,
+        16.25
+       ],
+       [
+        9.8,
+        14.4
+       ],
+       [
+        7.55,
+        13.15
+       ],
+       [
+        5.3,
+        13.15
+       ],
+       [
+        2.65,
+        13.15
+       ]
+      ]
+     },
+     {
+      "room": "Master Bedroom",
+      "reachable": true,
+      "distance": 19.5172,
+      "route": [
+       "ENTRANCE",
+       "Living Room",
+       "Dining Area",
+       "Master Bedroom"
+      ],
+      "polyline": [
+       [
+        12.5,
+        20
+       ],
+       [
+        13.6,
+        16.25
+       ],
+       [
+        9.8,
+        14.4
+       ],
+       [
+        7.55,
+        13.15
+       ],
+       [
+        7.55,
+        10
+       ],
+       [
+        4.9,
+        5
+       ]
+      ]
+     },
+     {
+      "room": "Bedroom 2",
+      "reachable": true,
+      "distance": 13.908,
+      "route": [
+       "ENTRANCE",
+       "Living Room",
+       "Bedroom 2"
+      ],
+      "polyline": [
+       [
+        12.5,
+        20
+       ],
+       [
+        13.6,
+        16.25
+       ],
+       [
+        13.6,
+        12.5
+       ],
+       [
+        13.6,
+        6.25
+       ]
+      ]
+     },
+     {
+      "room": "Bathroom 1",
+      "reachable": true,
+      "distance": 18.3006,
+      "route": [
+       "ENTRANCE",
+       "Living Room",
+       "Corridor",
+       "Bathroom 1"
+      ],
+      "polyline": [
+       [
+        12.5,
+        20
+       ],
+       [
+        13.6,
+        16.25
+       ],
+       [
+        17.4,
+        16.25
+       ],
+       [
+        19.3,
+        14.65
+       ],
+       [
+        19.3,
+        9.3
+       ],
+       [
+        21.2,
+        7.3
+       ]
+      ]
+     },
+     {
+      "room": "Bathroom 2",
+      "reachable": true,
+      "distance": 13.992,
+      "route": [
+       "ENTRANCE",
+       "Living Room",
+       "Corridor",
+       "Bathroom 2"
+      ],
+      "polyline": [
+       [
+        12.5,
+        20
+       ],
+       [
+        13.6,
+        16.25
+       ],
+       [
+        17.4,
+        16.25
+       ],
+       [
+        19.3,
+        14.65
+       ],
+       [
+        21.2,
+        14.65
+       ],
+       [
+        23.1,
+        14.65
+       ]
+      ]
+     },
+     {
+      "room": "Dining Area",
+      "reachable": true,
+      "distance": 10.7083,
+      "route": [
+       "ENTRANCE",
+       "Living Room",
+       "Dining Area"
+      ],
+      "polyline": [
+       [
+        12.5,
+        20
+       ],
+       [
+        13.6,
+        16.25
+       ],
+       [
+        9.8,
+        14.4
+       ],
+       [
+        7.55,
+        13.15
+       ]
+      ]
+     },
+     {
+      "room": "Balcony",
+      "reachable": true,
+      "distance": 13.0565,
+      "route": [
+       "ENTRANCE",
+       "Living Room",
+       "Balcony"
+      ],
+      "polyline": [
+       [
+        12.5,
+        20
+       ],
+       [
+        13.6,
+        16.25
+       ],
+       [
+        9.8,
+        18.15
+       ],
+       [
+        4.9,
+        18.15
+       ]
+      ]
+     },
+     {
+      "room": "Corridor",
+      "reachable": true,
+      "distance": 10.192,
+      "route": [
+       "ENTRANCE",
+       "Living Room",
+       "Corridor"
+      ],
+      "polyline": [
+       [
+        12.5,
+        20
+       ],
+       [
+        13.6,
+        16.25
+       ],
+       [
+        17.4,
+        16.25
+       ],
+       [
+        19.3,
+        14.65
+       ]
+      ]
+     }
+    ],
+    "disconnected": [],
+    "bottlenecks": [
+     {
+      "room": "Living Room",
+      "load": 8
+     }
+    ],
+    "matrixNames": [
+     "Living Room",
+     "Kitchen",
+     "Master Bedroom",
+     "Bedroom 2",
+     "Bathroom 1",
+     "Bathroom 2",
+     "Dining Area",
+     "Balcony",
+     "Corridor"
+    ],
+    "distanceMatrix": [
+     [
+      0,
+      11.7003,
+      15.6092,
+      10,
+      14.3926,
+      10.0839,
+      6.8003,
+      9.1485,
+      6.2839
+     ],
+     [
+      11.7003,
+      0,
+      8.6329,
+      14.125,
+      26.0929,
+      21.7843,
+      4.9,
+      6.0629,
+      17.9843
+     ],
+     [
+      15.6092,
+      8.6329,
+      0,
+      8.9003,
+      30.0017,
+      25.6931,
+      8.8088,
+      15.1907,
+      21.8931
+     ],
+     [
+      10,
+      14.125,
+      8.9003,
+      0,
+      7.7424,
+      14.0091,
+      9.225,
+      15.6069,
+      10.2091
+     ],
+     [
+      14.3926,
+      26.0929,
+      30.0017,
+      7.7424,
+      0,
+      8.1086,
+      21.1929,
+      23.5411,
+      8.1086
+     ],
+     [
+      10.0839,
+      21.7843,
+      25.6931,
+      14.0091,
+      8.1086,
+      0,
+      16.8843,
+      19.2325,
+      3.8
+     ],
+     [
+      6.8003,
+      4.9,
+      8.8088,
+      9.225,
+      21.1929,
+      16.8843,
+      0,
+      6.3819,
+      13.0843
+     ],
+     [
+      9.1485,
+      6.0629,
+      15.1907,
+      15.6069,
+      23.5411,
+      19.2325,
+      6.3819,
+      0,
+      15.4325
+     ],
+     [
+      6.2839,
+      17.9843,
+      21.8931,
+      10.2091,
+      8.1086,
+      3.8,
+      13.0843,
+      15.4325,
+      0
+     ]
+    ],
+    "avgDistance": 13.2434,
+    "maxDistance": 19.5172,
+    "components": 1,
+    "fullyConnected": true
+   },
+   "id": "L4",
+   "verified": true
+  }
+ ],
+ "note": "Precomputed by the live C++ engine and independently verified. Used only in Demo Mode."
+}

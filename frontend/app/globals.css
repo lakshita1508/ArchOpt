@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {  /* LIGHT theme (default) - palette from the ArchOpt design brief */
+  --bg: 248 250 252;        /* #F8FAFC */
+  --card: 255 255 255;      /* #FFFFFF */
+  --primary: 23 37 84;      /* #172554 */
+  --secondary: 232 240 254; /* #E8F0FE */
+  --accent: 79 70 229;      /* #4F46E5 */
+  --ink: 30 41 59;          /* #1E293B */
+  --muted: 100 116 139;     /* #64748B */
+  --line: 226 232 240;      /* #E2E8F0 */
+  --success: 21 128 61;  --success-soft: 220 252 231;
+  --warning: 194 65 12;  --warning-soft: 255 237 213;
+  --danger: 185 28 28;   --danger-soft: 254 226 226;
+}
+html.dark {
+  --bg: 15 23 42; --card: 30 41 59; --primary: 165 180 252; --secondary: 39 52 80; --accent: 129 140 248;
+  --ink: 226 232 240; --muted: 148 163 184; --line: 51 65 85;
+  --success: 74 222 128; --success-soft: 20 83 45; --warning: 251 146 60; --warning-soft: 124 45 18; --danger: 248 113 113; --danger-soft: 127 29 29;
+}
+
+@layer base {
+  html, body { @apply bg-bg text-ink font-sans antialiased; }
+  h1, h2, h3 { @apply text-primary; }
+}
+@layer components {
+  .card { @apply bg-card border border-line rounded-md shadow-card; }
+  .btn { @apply inline-flex items-center justify-center gap-2 px-3.5 py-2 text-sm font-medium rounded-md border border-line bg-card text-ink hover:bg-secondary disabled:opacity-50 disabled:cursor-not-allowed transition-colors; }
+  .btn-primary { @apply bg-primary text-white border-primary hover:bg-primary/90 hover:text-white; }
+  html.dark .btn-primary { @apply text-slate-900; }
+  .btn-accent { @apply bg-accent text-white border-accent hover:bg-accent/90 hover:text-white; }
+  .btn-danger { @apply bg-danger-soft text-danger border-danger/30 hover:bg-danger/10; }
+  .btn-sm { @apply px-2.5 py-1 text-xs; }
+  .input { @apply w-full px-3 py-2 text-sm rounded-md border border-line bg-card text-ink placeholder:text-muted focus:outline-none focus:ring-2 focus:ring-accent/30 focus:border-accent; }
+  .label { @apply block text-xs font-semibold text-muted mb-1 uppercase tracking-wide; }
+  .badge { @apply inline-flex items-center px-2 py-0.5 text-[11px] font-bold rounded border uppercase tracking-wide; }
+  .th { @apply text-left text-xs font-semibold text-muted uppercase tracking-wide px-3 py-2 border-b border-line; }
+  .td { @apply px-3 py-2 text-sm border-b border-line/70; }
+  .field-error { @apply text-xs text-danger mt-1; }
+}

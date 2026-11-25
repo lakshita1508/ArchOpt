@@ -1,0 +1,149 @@
+{
+  "key": "residential-apartment",
+  "name": "Residential Apartment",
+  "projectType": "Residential",
+  "description": "25 m x 20 m two-bedroom apartment with living/dining, kitchen, two bathrooms, balcony and corridor.",
+  "plot": {
+    "width": 25,
+    "height": 20
+  },
+  "entrance": {
+    "side": "south",
+    "offset": 0.5
+  },
+  "recommendedAlgorithm": "genetic",
+  "rooms": [
+    {
+      "name": "Living Room",
+      "type": "Living Room",
+      "requiredArea": 60,
+      "minWidth": 6,
+      "minHeight": 6,
+      "prefWidth": 6,
+      "prefHeight": 6,
+      "priority": 3
+    },
+    {
+      "name": "Kitchen",
+      "type": "Kitchen",
+      "requiredArea": 25,
+      "minWidth": 3.5,
+      "minHeight": 3.5,
+      "prefWidth": 3.5,
+      "prefHeight": 3.5,
+      "priority": 2
+    },
+    {
+      "name": "Master Bedroom",
+      "type": "Bedroom",
+      "requiredArea": 36,
+      "minWidth": 4.5,
+      "minHeight": 4.5,
+      "prefWidth": 4.5,
+      "prefHeight": 4.5,
+      "priority": 2
+    },
+    {
+      "name": "Bedroom 2",
+      "type": "Bedroom",
+      "requiredArea": 28,
+      "minWidth": 3.5,
+      "minHeight": 3.5,
+      "prefWidth": 3.5,
+      "prefHeight": 3.5,
+      "priority": 2
+    },
+    {
+      "name": "Bathroom 1",
+      "type": "Toilet",
+      "requiredArea": 10,
+      "minWidth": 2,
+      "minHeight": 2.5,
+      "prefWidth": 2,
+      "prefHeight": 2.5,
+      "priority": 1
+    },
+    {
+      "name": "Bathroom 2",
+      "type": "Toilet",
+      "requiredArea": 9,
+      "minWidth": 2,
+      "minHeight": 2.5,
+      "prefWidth": 2,
+      "prefHeight": 2.5,
+      "priority": 1
+    },
+    {
+      "name": "Dining Area",
+      "type": "Dining Area",
+      "requiredArea": 28,
+      "minWidth": 4,
+      "minHeight": 4,
+      "prefWidth": 4,
+      "prefHeight": 4,
+      "priority": 2
+    },
+    {
+      "name": "Balcony",
+      "type": "Balcony",
+      "requiredArea": 20,
+      "minWidth": 2,
+      "minHeight": 3,
+      "prefWidth": 2,
+      "prefHeight": 3,
+      "priority": 1
+    },
+    {
+      "name": "Corridor",
+      "type": "Corridor",
+      "requiredArea": 36,
+      "minWidth": 1.2,
+      "minHeight": 1.2,
+      "prefWidth": 1.2,
+      "prefHeight": 1.2,
+      "priority": 3
+    }
+  ],
+  "relationships": [
+    {
+      "a": "Living Room",
+      "b": "ENTRANCE",
+      "type": "must_adjacent",
+      "weight": 3
+    },
+    {
+      "a": "Dining Area",
+      "b": "Kitchen",
+      "type": "must_adjacent",
+      "weight": 2
+    },
+    {
+      "a": "Master Bedroom",
+      "b": "Bedroom 2",
+      "type": "prefer_adjacent",
+      "weight": 2
+    },
+    {
+      "a": "Bathroom 1",
+      "b": "Corridor",
+      "type": "prefer_adjacent",
+      "weight": 1.5
+    },
+    {
+      "a": "Bathroom 2",
+      "b": "Corridor",
+      "type": "prefer_adjacent",
+      "weight": 1.5
+    },
+    {
+      "a": "Balcony",
+      "b": "Living Room",
+      "type": "prefer_adjacent",
+      "weight": 1
+    }
+  ],
+  "constraints": {
+    "minCorridorWidth": 1.2,
+    "maxExpansion": 1.5
+  }
+}

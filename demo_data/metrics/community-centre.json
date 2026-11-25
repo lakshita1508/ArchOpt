@@ -1,0 +1,41 @@
+{
+ "projectKey": "community-centre",
+ "layouts": [
+  {
+   "id": "L1",
+   "totalCost": 176.4757,
+   "areaEfficiency": 95.5517,
+   "adjacencySatisfaction": 100,
+   "circulationScore": 69.7897,
+   "accessibilityScore": 100,
+   "violations": 0
+  },
+  {
+   "id": "L2",
+   "totalCost": 176.8907,
+   "areaEfficiency": 95.5517,
+   "adjacencySatisfaction": 100,
+   "circulationScore": 69.6514,
+   "accessibilityScore": 100,
+   "violations": 0
+  },
+  {
+   "id": "L3",
+   "totalCost": 177.3579,
+   "areaEfficiency": 95.7867,
+   "adjacencySatisfaction": 100,
+   "circulationScore": 69.2574,
+   "accessibilityScore": 100,
+   "violations": 0
+  },
+  {
+   "id": "L4",
+   "totalCost": 192.5065,
+   "areaEfficiency": 89.995,
+   "adjacencySatisfaction": 100,
+   "circulationScore": 69.3029,
+   "accessibilityScore": 100,
+   "violations": 0
+  }
+ ]
+}
