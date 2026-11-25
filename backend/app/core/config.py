@@ -25,8 +25,11 @@ TOKEN_TTL_SECONDS = 12 * 3600
 DEMO_USERNAME = "vikramgupta"
 DEMO_PASSWORD = "12345678"
 ENGINE_TIMEOUT_SECONDS = int(os.getenv("ARCHOPT_ENGINE_TIMEOUT", "180"))
-CORS_ORIGINS = ["http://localhost:3000", "http://127.0.0.1:3000"]
-ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY", "").strip()
+CORS_ORIGINS = [
+    "http://localhost:3000",
+    "http://127.0.0.1:3000",
+    "https://archopt-delta.vercel.app",
+]ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY", "").strip()
 ANTHROPIC_MODEL = os.getenv("ANTHROPIC_MODEL", "claude-haiku-5-5")
 
 
